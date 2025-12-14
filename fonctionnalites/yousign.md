@@ -237,7 +237,7 @@ Formulr reçoit les webhooks Yousign pour :
 | Erreur | Cause | Solution |
 |--------|-------|----------|
 | "API key invalid" | Clé incorrecte | Vérifiez la clé dans les paramètres |
-| "No signature field" | Pas de zone `{{sX|signature}}` | Ajoutez les zones dans le template |
+| "No signature field" | Pas de zone de signature dans le template | Ajoutez les zones avec la syntaxe signature |
 | "Invalid email" | Email signataire invalide | Vérifiez le format de l'email |
 | "Quota exceeded" | Forfait Yousign épuisé | Contactez Yousign |
 

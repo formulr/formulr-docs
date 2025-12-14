@@ -5,6 +5,20 @@ export default defineConfig({
   description: 'Documentation officielle de Formulr - Créez des formulaires intelligents pour collecter, valider et automatiser vos processus métier.',
   lang: 'fr-FR',
 
+  markdown: {
+    // Désactive l'interprétation Vue dans les blocs de code
+    breaks: false,
+  },
+
+  vue: {
+    template: {
+      compilerOptions: {
+        // Ignore les {{ }} qui ne sont pas des expressions Vue valides
+        isCustomElement: (tag) => tag.includes('{{'),
+      },
+    },
+  },
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.svg' }],
     ['meta', { name: 'theme-color', content: '#0E245D' }],
