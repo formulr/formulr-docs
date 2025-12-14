@@ -21,5 +21,5 @@ Découvrez les dernières nouveautés et améliorations de Formulr.
 
 <div class="tip custom-block">
   <p class="custom-block-title">📬 Restez informé</p>
-  <p>Suivez-nous sur <a href="https://www.linkedin.com/company/formulr/" target="_blank">LinkedIn</a> pour être notifié des nouvelles fonctionnalités.</p>
+  <p>Suivez-nous sur <a href="https://www.linkedin.com/company/formulr-io/" target="_blank">LinkedIn</a> pour être notifié des nouvelles fonctionnalités.</p>
 </div>
