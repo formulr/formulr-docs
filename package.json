@@ -1,0 +1,19 @@
+{
+  "name": "formulr-docs",
+  "version": "1.0.0",
+  "description": "Documentation officielle de Formulr",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "keywords": ["formulr", "documentation", "forms"],
+  "author": "Formulr",
+  "license": "PROPRIETARY",
+  "packageManager": "pnpm@10.8.0",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.25"
+  }
+}

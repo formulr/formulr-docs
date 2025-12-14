@@ -1,0 +1,163 @@
+/**
+ * Formulr Brand Colors
+ * Based on landing pages design system
+ */
+
+:root {
+  /* Primary colors - Dark Blue */
+  --vp-c-brand-1: #0E245D;
+  --vp-c-brand-2: #1a3a7a;
+  --vp-c-brand-3: #264b94;
+  --vp-c-brand-soft: rgba(14, 36, 93, 0.1);
+
+  /* Accent - Teal */
+  --formulr-teal: #71E1C3;
+  --formulr-teal-soft: rgba(113, 225, 195, 0.2);
+
+  /* Accent - Purple */
+  --formulr-purple: #A089CA;
+  --formulr-purple-soft: rgba(160, 137, 202, 0.2);
+
+  /* Background tweaks */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-soft: #f8f9fc;
+  --vp-c-bg-mute: #f1f3f8;
+
+  /* Hero gradient */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #0E245D 0%, #A089CA 100%);
+  --vp-home-hero-image-background-image: radial-gradient(circle, rgba(113, 225, 195, 0.3) 0%, rgba(14, 36, 93, 0.1) 70%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #71E1C3;
+  --vp-c-brand-2: #8de8d0;
+  --vp-c-brand-3: #a9efdd;
+  --vp-c-brand-soft: rgba(113, 225, 195, 0.15);
+
+  --vp-c-bg: #0a0f1a;
+  --vp-c-bg-soft: #111827;
+  --vp-c-bg-mute: #1a2234;
+}
+
+/* Custom button styles */
+.VPButton.brand {
+  background: linear-gradient(135deg, #0E245D 0%, #1a3a7a 100%);
+  border-color: #0E245D;
+}
+
+.VPButton.brand:hover {
+  background: linear-gradient(135deg, #1a3a7a 0%, #264b94 100%);
+  border-color: #1a3a7a;
+}
+
+.dark .VPButton.brand {
+  background: linear-gradient(135deg, #71E1C3 0%, #8de8d0 100%);
+  border-color: #71E1C3;
+  color: #0E245D;
+}
+
+.dark .VPButton.brand:hover {
+  background: linear-gradient(135deg, #8de8d0 0%, #a9efdd 100%);
+}
+
+/* Feature cards on home page */
+.VPFeature {
+  border: 1px solid var(--vp-c-bg-mute);
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-4px);
+  border-color: var(--vp-c-brand-soft);
+  box-shadow: 0 12px 24px -8px rgba(14, 36, 93, 0.15);
+}
+
+/* Badge styles */
+.VPBadge {
+  font-weight: 500;
+}
+
+.VPBadge.tip {
+  background-color: var(--formulr-teal-soft);
+  color: #0E245D;
+}
+
+.VPBadge.info {
+  background-color: var(--formulr-purple-soft);
+  color: #0E245D;
+}
+
+/* Sidebar active item */
+.VPSidebar .is-active > .link {
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+/* Custom callouts */
+.custom-block.tip {
+  border-color: var(--formulr-teal);
+  background-color: var(--formulr-teal-soft);
+}
+
+.custom-block.info {
+  border-color: var(--formulr-purple);
+  background-color: var(--formulr-purple-soft);
+}
+
+/* Code blocks */
+.vp-code-group .tabs label.active {
+  color: var(--vp-c-brand-1);
+}
+
+/* Navigation bar logo */
+.VPNavBarTitle .logo {
+  height: 28px;
+}
+
+/* Hero section tweaks */
+.VPHero .name {
+  font-weight: 700;
+}
+
+.VPHero .tagline {
+  color: #4b5563;
+}
+
+.dark .VPHero .tagline {
+  color: #9ca3af;
+}
+
+/* Table styles */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+th, td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* Image captions */
+.vp-doc img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
