@@ -6,7 +6,7 @@ titleTemplate: Créez des formulaires intelligents
 hero:
   name: Formulr
   text: Documentation
-  tagline: Créez des formulaires intelligents pour collecter, valider et automatiser vos processus métier.
+  tagline: La plateforme pour créer des formulaires intelligents, collecter et valider vos données, et automatiser vos processus métier.
   image:
     src: /logo.svg
     alt: Formulr
