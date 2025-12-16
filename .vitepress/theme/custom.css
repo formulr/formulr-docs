@@ -26,7 +26,7 @@
   /* Hero gradient */
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: linear-gradient(135deg, #0E245D 0%, #A089CA 100%);
-  --vp-home-hero-image-background-image: radial-gradient(circle, rgba(113, 225, 195, 0.3) 0%, rgba(14, 36, 93, 0.1) 70%);
+  --vp-home-hero-image-background-image: radial-gradient(circle, rgba(14, 36, 93, 0.3) 0%, rgba(14, 36, 93, 0.1) 70%);
   --vp-home-hero-image-filter: blur(44px);
 }
 

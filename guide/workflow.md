@@ -1,132 +1,132 @@
 ---
-title: Workflow et statuts
-description: Personnalisez le cycle de vie de vos réponses avec les workflows.
+title: Workflow and Statuses
+description: Customize the lifecycle of your responses with workflows.
 ---
 
-# Workflow et statuts
+# Workflow and Statuses
 
-Les workflows vous permettent de définir le parcours de validation de vos réponses.
+Workflows allow you to define the validation path of your responses.
 
-## Statuts par défaut
+## Default Statuses
 
-Chaque réponse passe par différents statuts :
+Each response goes through different statuses:
 
-| Statut | Description | Couleur |
+| Status | Description | Color |
 |--------|-------------|---------|
-| **En cours** | L'utilisateur remplit le formulaire | Bleu |
-| **Complété** | Toutes les étapes sont remplies | Jaune |
-| **Validé** | Approuvé par votre équipe | Vert |
-| **Refusé** | Non conforme, corrections demandées | Rouge |
-| **Archivé** | Traitement terminé | Gris |
+| **In Progress** | User is filling the form | Blue |
+| **Completed** | All steps are filled | Yellow |
+| **Validated** | Approved by your team | Green |
+| **Rejected** | Non-compliant, corrections requested | Red |
+| **Archived** | Processing finished | Gray |
 
-## Éditeur de workflow
+## Workflow Editor
 
-L'éditeur visuel permet de personnaliser le parcours :
+The visual editor allows you to customize the path:
 
-### Accéder à l'éditeur
+### Accessing the Editor
 
-1. Ouvrez votre campagne
-2. Cliquez sur **"Modifier workflow"**
-3. L'éditeur s'ouvre en plein écran
+1. Open your campaign
+2. Click **"Edit workflow"**
+3. The editor opens in full screen
 
 ### Interface
 
-- **Nœuds** : représentent les états/actions
-- **Connexions** : liens entre les nœuds
-- **Panneau gauche** : bibliothèque d'actions
-- **Canvas central** : zone de construction
+- **Nodes**: represent states/actions
+- **Connections**: links between nodes
+- **Left panel**: action library
+- **Central canvas**: construction area
 
-### Types de nœuds
+### Node Types
 
-#### États
+#### States
 
-- **Début** : point d'entrée du workflow
-- **Fin** : fin du parcours
-- **État personnalisé** : statut intermédiaire
+- **Start**: workflow entry point
+- **End**: end of the path
+- **Custom state**: intermediate status
 
 #### Actions
 
-- **Envoyer un email** : notification automatique
-- **Assigner** : changer le responsable
-- **Attendre** : délai avant l'action suivante
-- **Condition** : branchement selon critères
+- **Send email**: automatic notification
+- **Assign**: change the owner
+- **Wait**: delay before next action
+- **Condition**: branching based on criteria
 
-## Créer un workflow
+## Creating a Workflow
 
-### Exemple : Validation en deux étapes
+### Example: Two-Step Validation
 
 ```
-Début
+Start
   ↓
-Vérification initiale (État)
+Initial verification (State)
   ↓
-[Condition: documents complets ?]
-  ├── Oui → Validation manager (État)
+[Condition: documents complete?]
+  ├── Yes → Manager validation (State)
   │           ↓
-  │         [Approuvé ?]
-  │           ├── Oui → Validé (Fin)
-  │           └── Non → Refusé → Retour utilisateur
-  └── Non → Demande de compléments
+  │         [Approved?]
+  │           ├── Yes → Validated (End)
+  │           └── No → Rejected → Return to user
+  └── No → Request additional information
               ↓
-            Retour à l'utilisateur
+            Return to user
 ```
 
-### Construire le workflow
+### Building the Workflow
 
-1. Glissez les nœuds depuis le panneau gauche
-2. Connectez-les en tirant des lignes
-3. Configurez chaque nœud (double-clic)
-4. Enregistrez
+1. Drag nodes from the left panel
+2. Connect them by drawing lines
+3. Configure each node (double-click)
+4. Save
 
 ## Conditions
 
-Les conditions permettent des branchements logiques :
+Conditions allow logical branching:
 
-### Types de conditions
+### Condition Types
 
-- **Valeur d'un champ** : selon la réponse à une question
-- **Fichiers joints** : présence/absence de documents
-- **Date** : avant/après une échéance
-- **Rôle** : selon le responsable actuel
+- **Field value**: based on answer to a question
+- **Attached files**: presence/absence of documents
+- **Date**: before/after a deadline
+- **Role**: based on current owner
 
 ### Configuration
 
-1. Ajoutez un nœud Condition
-2. Définissez les critères
-3. Créez les branches (Oui/Non ou multiples)
+1. Add a Condition node
+2. Define the criteria
+3. Create branches (Yes/No or multiple)
 
-## Actions automatiques
+## Automatic Actions
 
-### Envoyer un email
+### Send Email
 
-Configurez des notifications automatiques :
-- **Destinataire** : utilisateur, responsable, email fixe
-- **Template** : choisissez un modèle d'email
-- **Délai** : immédiat ou différé
+Configure automatic notifications:
+- **Recipient**: user, owner, fixed email
+- **Template**: choose an email template
+- **Delay**: immediate or delayed
 
-### Assigner
+### Assign
 
-Changez automatiquement le responsable :
-- Selon l'étape atteinte
-- Selon le type de dossier
-- En rotation (équilibrage de charge)
+Automatically change the owner:
+- Based on step reached
+- Based on file type
+- In rotation (load balancing)
 
 ### Webhook
 
-Déclenchez une action externe :
-- Appel à votre système
-- Intégration CRM
-- Notification Slack/Teams
+Trigger an external action:
+- Call to your system
+- CRM integration
+- Slack/Teams notification
 
-## Bonnes pratiques
+## Best Practices
 
-1. **Gardez la simplicité** - Un workflow complexe est difficile à maintenir
-2. **Documentez** - Nommez clairement vos nœuds
-3. **Testez** - Vérifiez chaque chemin possible
-4. **Itérez** - Commencez simple, enrichissez progressivement
+1. **Keep it simple** - A complex workflow is difficult to maintain
+2. **Document** - Clearly name your nodes
+3. **Test** - Verify every possible path
+4. **Iterate** - Start simple, progressively enrich
 
-## Prochaines étapes
+## Next Steps
 
-- [Notifications](/fonctionnalites/notifications) - Configurer les emails
-- [API & Webhooks](/fonctionnalites/api-webhooks) - Intégrations externes
-- [Relances automatiques](/fonctionnalites/relances) - Rappels programmés
+- [Notifications](/en/features/notifications) - Configure emails
+- [API & Webhooks](/en/features/api-webhooks) - External integrations
+- [Automatic reminders](/en/features/reminders) - Scheduled reminders

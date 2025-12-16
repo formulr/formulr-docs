@@ -1,89 +1,89 @@
 ---
-title: Export des données
-description: Exportez les données de vos campagnes en CSV, Excel ou PDF.
+title: Data Export
+description: Export your campaign data in CSV, Excel, or PDF format.
 ---
 
-# Export des données
+# Data Export
 
-Formulr permet d'exporter vos données dans différents formats pour analyse ou archivage.
+Formulr allows you to export your data in different formats for analysis or archiving.
 
-## Export depuis la liste des réponses
+## Export from Response List
 
-### Sélection des réponses
+### Selecting Responses
 
-1. Allez dans l'onglet **Réponses** de votre campagne
-2. Cochez les réponses à exporter
-   - Ou cliquez sur "Tout sélectionner"
-3. Cliquez sur le bouton **Exporter**
+1. Go to the **Responses** tab of your campaign
+2. Check the responses to export
+   - Or click "Select all"
+3. Click the **Export** button
 
-### Formats disponibles
+### Available Formats
 
 | Format | Usage |
 |--------|-------|
-| **CSV** | Import dans Excel, Google Sheets, bases de données |
-| **Excel (.xlsx)** | Fichier Excel natif avec mise en forme |
-| **PDF** | Récapitulatif imprimable par réponse |
+| **CSV** | Import into Excel, Google Sheets, databases |
+| **Excel (.xlsx)** | Native Excel file with formatting |
+| **PDF** | Printable summary per response |
 
-## Contenu de l'export
+## Export Content
 
-### Données incluses
+### Included Data
 
-- Informations du répondant (nom, email)
-- Date de création et modification
-- Statut de la réponse
-- Toutes les valeurs saisies par module
-- Métadonnées (IP, navigateur, etc.)
+- Respondent information (name, email)
+- Creation and modification date
+- Response status
+- All values entered by module
+- Metadata (IP, browser, etc.)
 
-### Structure CSV/Excel
+### CSV/Excel Structure
 
-Chaque ligne = une réponse
-Chaque colonne = un champ du formulaire
+Each row = one response
+Each column = one form field
 
 ```csv
-ID,Email,Nom,Prénom,Date,Statut,Question1,Question2,...
-abc123,marie@example.com,Dupont,Marie,2024-12-01,Validé,Réponse1,Réponse2,...
+ID,Email,Name,FirstName,Date,Status,Question1,Question2,...
+abc123,marie@example.com,Dupont,Marie,2024-12-01,Validated,Answer1,Answer2,...
 ```
 
-## Export des fichiers
+## File Export
 
-Les fichiers uploadés ne sont pas inclus directement dans l'export CSV/Excel.
+Uploaded files are not directly included in the CSV/Excel export.
 
-### Télécharger les fichiers
+### Downloading Files
 
-1. Ouvrez le détail d'une réponse
-2. Cliquez sur chaque fichier pour le télécharger
-3. Ou utilisez le bouton "Télécharger tous les fichiers"
+1. Open the response detail
+2. Click on each file to download it
+3. Or use the "Download all files" button
 
-### Export en masse des fichiers
+### Bulk File Export
 
-Pour un grand nombre de réponses :
-1. Contactez le support
-2. Un export ZIP peut être préparé
+For a large number of responses:
+1. Contact support
+2. A ZIP export can be prepared
 
 ## Export via API
 
-Pour des exports automatisés, utilisez l'API :
+For automated exports, use the API:
 
 ```bash
 GET /api/v1/campaigns/{id}/responses?format=csv
 ```
 
-[Documentation API →](/fonctionnalites/api-webhooks)
+[API Documentation →](/en/features/api-webhooks)
 
-## Planification d'exports
+## Scheduled Exports
 
-::: info Bientôt disponible
-Les exports planifiés (quotidien, hebdomadaire) seront disponibles prochainement.
+::: info Coming Soon
+Scheduled exports (daily, weekly) will be available soon.
 :::
 
-## Bonnes pratiques
+## Best Practices
 
-1. **Exportez régulièrement** - Pour sauvegarder vos données
-2. **Utilisez les filtres** - Exportez par période ou statut
-3. **Archivez les exports** - Conservez un historique
-4. **Respectez le RGPD** - Sécurisez les données personnelles
+1. **Export regularly** - To back up your data
+2. **Use filters** - Export by period or status
+3. **Archive exports** - Keep a history
+4. **Respect GDPR** - Secure personal data
 
-## Prochaines étapes
+## Next Steps
 
-- [API & Webhooks](/fonctionnalites/api-webhooks) - Automatiser les exports
-- [Templates PDF](/fonctionnalites/templates-pdf) - Documents personnalisés
+- [API & Webhooks](/en/features/api-webhooks) - Automate exports
+- [PDF Templates](/en/features/pdf-templates) - Personalized documents

@@ -1,45 +1,45 @@
 # Formulr Documentation
 
-Documentation officielle de Formulr, propulsée par [VitePress](https://vitepress.dev/).
+Official Formulr documentation, powered by [VitePress](https://vitepress.dev/).
 
-## Langues
+## Languages
 
-- Français (par défaut) : `/`
-- English : `/en/`
+- English (default): `/`
+- Français: `/fr/`
 
-## Développement
+## Development
 
 ```bash
-# Installer les dépendances
+# Install dependencies
 pnpm install
 
-# Lancer le serveur de développement
-pnpm run docs:dev
+# Start development server
+pnpm dev
 
-# Build pour la production
-pnpm run docs:build
+# Build for production
+pnpm build
 
-# Prévisualiser le build
-pnpm run docs:preview
+# Preview build
+pnpm preview
 ```
 
 ## Structure
 
 ```
 ├── .vitepress/
-│   └── config.ts       # Configuration VitePress + i18n
-├── guide/              # Guide utilisateur (FR)
-├── fonctionnalites/    # Fonctionnalités (FR)
-├── changelog/          # Changelog (FR)
-├── en/                 # Documentation anglaise
+│   └── config.ts       # VitePress configuration + i18n
+├── guide/              # User guide (EN)
+├── features/           # Features (EN)
+├── changelog/          # Changelog (EN)
+├── fr/                 # French documentation
 │   ├── guide/
 │   ├── features/
 │   └── changelog/
-└── public/             # Assets statiques
+└── public/             # Static assets
 ```
 
-## Déploiement
+## Deployment
 
-La documentation est automatiquement déployée sur Vercel à chaque push sur `main`.
+Documentation is automatically deployed to Vercel on every push to `main`.
 
-URL : https://docs.formulr.io
+URL: https://docs.formulr.io

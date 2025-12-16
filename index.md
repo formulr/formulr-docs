@@ -1,48 +1,48 @@
 ---
 layout: home
 title: Formulr Documentation
-titleTemplate: Créez des formulaires intelligents
+titleTemplate: Create intelligent forms
 
 hero:
   name: Formulr
   text: Documentation
-  tagline: La plateforme pour créer des formulaires intelligents, collecter et valider vos données, et automatiser vos processus métier.
+  tagline: Create intelligent forms to collect, validate, and automate your business processes.
   image:
     src: /logo.svg
     alt: Formulr
   actions:
     - theme: brand
-      text: Guide de démarrage
+      text: Getting Started Guide
       link: /guide/
     - theme: alt
-      text: Fonctionnalités
-      link: /fonctionnalites/
+      text: Features
+      link: /features/
 
 features:
   - icon: 📝
-    title: Éditeur visuel
-    details: Créez des formulaires complexes sans coder. Glissez-déposez des modules, configurez la validation et personnalisez le design.
-    link: /fonctionnalites/modules
+    title: Visual Editor
+    details: Create complex forms without coding. Drag and drop modules, configure validation, and customize the design.
+    link: /features/modules
   - icon: 📄
-    title: Documents PDF
-    details: Générez automatiquement des documents PDF personnalisés avec vos templates Liquid et les données collectées.
-    link: /fonctionnalites/templates-pdf
+    title: PDF Documents
+    details: Automatically generate personalized PDF documents with your Liquid templates and collected data.
+    link: /features/pdf-templates
   - icon: ✍️
-    title: Signature électronique
-    details: Intégrez la signature électronique Yousign directement dans vos formulaires pour des processus 100% dématérialisés.
-    link: /fonctionnalites/signature-electronique
+    title: Electronic Signature
+    details: Integrate Yousign electronic signature directly into your forms for 100% paperless processes.
+    link: /features/electronic-signature
   - icon: 🌍
-    title: Multi-langue
-    details: Traduisez vos formulaires en plusieurs langues avec notre interface intuitive ou automatiquement avec l'IA.
-    link: /fonctionnalites/traductions
+    title: Multi-language
+    details: Translate your forms into multiple languages with our intuitive interface or automatically with AI.
+    link: /features/translations
   - icon: 🔄
     title: Workflows
-    details: Automatisez vos processus avec des workflows visuels, des conditions et des actions automatiques.
-    link: /fonctionnalites/workflows
+    details: Automate your processes with visual workflows, conditions, and automatic actions.
+    link: /features/workflows
   - icon: 🤖
-    title: Analyse IA
-    details: Utilisez l'intelligence artificielle pour analyser les réponses et générer des résumés automatiques.
-    link: /fonctionnalites/analyse-ia
+    title: AI Analysis
+    details: Use artificial intelligence to analyze responses and generate automatic summaries.
+    link: /features/ai-analysis
 ---
 
 <style>

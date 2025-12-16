@@ -1,25 +1,25 @@
 ---
 title: Changelog
-description: Toutes les nouveautés et améliorations de Formulr.
+description: All the latest features and improvements in Formulr.
 ---
 
 # Changelog
 
-Découvrez les dernières nouveautés et améliorations de Formulr.
+Discover the latest features and improvements in Formulr.
 
 ## 2024
 
-### [Décembre 2024](/changelog/2024-12)
+### [December 2024](/en/changelog/2024-12)
 
-- ✨ **Éditeur de templates PDF** - Nouvel éditeur WYSIWYG et Liquid
-- ✨ **Traduction IA** - Traduction automatique des formulaires
-- ✨ **Guide interactif** - Tutoriel intégré pour découvrir les fonctionnalités
-- 🎨 **Refonte onglet Paramètres** - Partage et Analyse IA regroupés
-- 🐛 Nombreuses corrections de bugs
+- ✨ **PDF Template Editor** - New WYSIWYG and Liquid editor
+- ✨ **AI Translation** - Automatic form translation
+- ✨ **Interactive Guide** - Built-in tutorial to discover features
+- 🎨 **Settings Tab Redesign** - Share and AI Analysis grouped together
+- 🐛 Numerous bug fixes
 
 ---
 
 <div class="tip custom-block">
-  <p class="custom-block-title">📬 Restez informé</p>
-  <p>Suivez-nous sur <a href="https://www.linkedin.com/company/formulr-io/" target="_blank">LinkedIn</a> pour être notifié des nouvelles fonctionnalités.</p>
+  <p class="custom-block-title">📬 Stay Informed</p>
+  <p>Follow us on <a href="https://www.linkedin.com/company/formulr-io/" target="_blank">LinkedIn</a> to be notified of new features.</p>
 </div>

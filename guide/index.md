@@ -1,62 +1,62 @@
 ---
-title: Qu'est-ce que Formulr ?
-description: Découvrez Formulr, la plateforme de création de formulaires intelligents pour digitaliser vos processus métier.
+title: What is Formulr?
+description: Discover Formulr, the intelligent form creation platform for digitalizing your business processes.
 ---
 
-# Qu'est-ce que Formulr ?
+# What is Formulr?
 
-Formulr est une plateforme de création de formulaires intelligents conçue pour digitaliser et automatiser vos processus de collecte d'informations.
+Formulr is an intelligent form creation platform designed to digitalize and automate your information collection processes.
 
-## Pour qui ?
+## Who is it for?
 
-Formulr s'adresse aux entreprises qui ont besoin de :
+Formulr is designed for businesses that need to:
 
-- **Collecter des informations** de clients, partenaires ou collaborateurs
-- **Valider des documents** avec un workflow de vérification
-- **Générer des contrats** ou documents personnalisés
-- **Obtenir des signatures** électroniques légales
-- **Automatiser** les relances et notifications
+- **Collect information** from clients, partners, or collaborators
+- **Validate documents** with a verification workflow
+- **Generate contracts** or personalized documents
+- **Obtain legal** electronic signatures
+- **Automate** reminders and notifications
 
-## Cas d'usage
+## Use Cases
 
-### 🏦 Banques & Assurances
-Onboarding client, collecte de pièces justificatives, souscription de contrats.
+### 🏦 Banking & Insurance
+Client onboarding, supporting document collection, contract subscription.
 
-### 🏢 Immobilier
-Dossiers locataires, états des lieux, mandats de gestion.
+### 🏢 Real Estate
+Tenant files, inventory of fixtures, property management mandates.
 
-### 📊 Cabinets comptables
-Collecte de documents fiscaux, lettres de mission, questionnaires clients.
+### 📊 Accounting Firms
+Tax document collection, engagement letters, client questionnaires.
 
-### 🎓 Écoles & Formation
-Inscriptions, dossiers d'admission, suivi des conventions de stage.
+### 🎓 Schools & Training
+Registrations, admission files, internship agreement tracking.
 
-## Concepts clés
+## Key Concepts
 
-### Campagnes
+### Campaigns
 
-Une **campagne** est un formulaire que vous créez et partagez. Elle contient :
-- Des **étapes** pour organiser le parcours utilisateur
-- Des **sections** pour regrouper les champs
-- Des **modules** (champs de saisie, upload de fichiers, signatures...)
+A **campaign** is a form that you create and share. It contains:
+- **Steps** to organize the user journey
+- **Sections** to group fields
+- **Modules** (input fields, file uploads, signatures...)
 
-### Réponses
+### Responses
 
-Chaque fois qu'un utilisateur remplit votre campagne, une **réponse** est créée. Vous pouvez :
-- Suivre l'avancement en temps réel
-- Valider ou refuser les informations
-- Générer des documents
-- Exporter les données
+Each time a user completes your campaign, a **response** is created. You can:
+- Track progress in real-time
+- Validate or reject information
+- Generate documents
+- Export data
 
-### Templates de documents
+### Document Templates
 
-Créez des **templates PDF** avec la syntaxe Liquid pour générer automatiquement des documents personnalisés (contrats, récapitulatifs, attestations...).
+Create **PDF templates** with Liquid syntax to automatically generate personalized documents (contracts, summaries, certificates...).
 
-## Prochaines étapes
+## Next Steps
 
 <div class="tip custom-block">
-  <p class="custom-block-title">🚀 Prêt à commencer ?</p>
-  <p>Suivez notre guide de démarrage rapide pour créer votre première campagne en quelques minutes.</p>
+  <p class="custom-block-title">🚀 Ready to get started?</p>
+  <p>Follow our quick start guide to create your first campaign in minutes.</p>
 </div>
 
-➡️ [Démarrage rapide](/guide/demarrage-rapide)
+➡️ [Quick Start](/en/guide/quick-start)

@@ -1,146 +1,146 @@
 ---
-title: Sections et modules
-description: Organisez votre formulaire avec des sections et ajoutez des champs avec les modules.
+title: Sections and Modules
+description: Organize your form with sections and add fields with modules.
 ---
 
-# Sections et modules
+# Sections and Modules
 
 ## Sections
 
-Les sections permettent d'organiser visuellement votre formulaire en regroupant les champs par thème.
+Sections help visually organize your form by grouping fields by theme.
 
-### Ajouter une section
+### Add a Section
 
-1. Cliquez sur **"Ajouter une section"** en bas de l'éditeur
-2. La section apparaît avec un nom par défaut
-3. Cliquez sur le nom pour le modifier
+1. Click **"Add a section"** at the bottom of the editor
+2. The section appears with a default name
+3. Click on the name to modify it
 
-### Actions sur une section
+### Actions on a Section
 
-Survolez une section pour voir les actions disponibles :
+Hover over a section to see available actions:
 
 | Action | Description |
 |--------|-------------|
-| ✏️ **Renommer** | Modifier le titre de la section |
-| ⚙️ **Paramètres** | Configuration avancée |
-| 📋 **Dupliquer** | Copier la section avec ses modules |
-| 🗑️ **Supprimer** | Retirer la section |
+| ✏️ **Rename** | Modify the section title |
+| ⚙️ **Settings** | Advanced configuration |
+| 📋 **Duplicate** | Copy the section with its modules |
+| 🗑️ **Delete** | Remove the section |
 
-### Paramètres de section
+### Section Settings
 
-- **Titre** : affiché aux utilisateurs
-- **Description** : texte explicatif (optionnel)
-- **Collapsible** : permet de replier la section
+- **Title**: displayed to users
+- **Description**: explanatory text (optional)
+- **Collapsible**: allows folding the section
 
-### Réorganiser les sections
+### Reorganize Sections
 
-- Glissez-déposez depuis le sommaire (panneau droit)
-- Ou utilisez les flèches de réorganisation
+- Drag-and-drop from the summary (right panel)
+- Or use the reorganization arrows
 
 ## Modules
 
-Les modules sont les champs de saisie de votre formulaire.
+Modules are the input fields of your form.
 
-### Ajouter un module
+### Add a Module
 
-1. Cliquez sur **"Ajouter un module"** dans une section
-2. La bibliothèque de modules s'ouvre
-3. Cliquez sur le type de module souhaité
-4. Le module est ajouté à la section
+1. Click **"Add a module"** within a section
+2. The module library opens
+3. Click on the desired module type
+4. The module is added to the section
 
-### Types de modules disponibles
+### Available Module Types
 
-#### Saisie de texte
-
-| Module | Usage |
-|--------|-------|
-| **Texte court** | Nom, prénom, ville... |
-| **Texte long** | Commentaires, descriptions |
-| **Email** | Avec validation automatique |
-| **Téléphone** | Avec formatage |
-| **Nombre** | Valeurs numériques |
-
-#### Dates et heures
+#### Text Input
 
 | Module | Usage |
 |--------|-------|
-| **Date** | Sélecteur de date |
-| **Date et heure** | Date avec horaire |
-| **Plage de dates** | Période du/au |
+| **Short text** | Name, first name, city... |
+| **Long text** | Comments, descriptions |
+| **Email** | With automatic validation |
+| **Phone** | With formatting |
+| **Number** | Numeric values |
 
-#### Choix
-
-| Module | Usage |
-|--------|-------|
-| **Liste déroulante** | Choix unique dans une liste |
-| **Boutons radio** | Choix unique visible |
-| **Cases à cocher** | Choix multiples |
-| **Oui/Non** | Question binaire |
-
-#### Fichiers
+#### Dates and Times
 
 | Module | Usage |
 |--------|-------|
-| **Upload de fichier** | Document unique |
-| **Upload multiple** | Plusieurs documents |
-| **Photo** | Capture ou upload d'image |
+| **Date** | Date picker |
+| **Date and time** | Date with time |
+| **Date range** | Period from/to |
 
-#### Spéciaux
+#### Choices
 
 | Module | Usage |
 |--------|-------|
-| **Signature** | Zone de signature manuscrite |
-| **Tableau** | Données tabulaires |
-| **Informations de contact** | Bloc coordonnées complet |
-| **Adresse** | Avec autocomplétion |
-| **IBAN** | Avec validation |
+| **Dropdown** | Single choice from a list |
+| **Radio buttons** | Visible single choice |
+| **Checkboxes** | Multiple choices |
+| **Yes/No** | Binary question |
 
-### Configurer un module
+#### Files
 
-Cliquez sur l'icône ⚙️ d'un module pour accéder à ses paramètres :
+| Module | Usage |
+|--------|-------|
+| **File upload** | Single document |
+| **Multiple upload** | Multiple documents |
+| **Photo** | Capture or upload image |
 
-#### Paramètres communs
+#### Special
 
-- **Libellé** : question ou instruction affichée
-- **Placeholder** : texte d'exemple dans le champ
-- **Texte d'aide** : indication supplémentaire
-- **Obligatoire** : le champ doit être rempli
-- **Identifiant** : nom technique pour les templates
+| Module | Usage |
+|--------|-------|
+| **Signature** | Handwritten signature area |
+| **Table** | Tabular data |
+| **Contact information** | Complete contact block |
+| **Address** | With autocomplete |
+| **IBAN** | With validation |
 
-#### Paramètres spécifiques
+### Configure a Module
 
-Chaque type de module a ses propres options :
-- **Texte** : longueur min/max, expression régulière
-- **Nombre** : valeur min/max, décimales
-- **Fichier** : types acceptés, taille max
-- **Liste** : options disponibles
+Click on a module's ⚙️ icon to access its settings:
 
-### Réorganiser les modules
+#### Common Settings
 
-- Glissez-déposez les modules dans une section
-- Déplacez entre sections via le sommaire
-- L'ordre affiché est l'ordre de saisie
+- **Label**: question or instruction displayed
+- **Placeholder**: example text in the field
+- **Help text**: additional indication
+- **Required**: field must be filled
+- **Identifier**: technical name for templates
 
-### Dupliquer un module
+#### Specific Settings
 
-1. Survolez le module
-2. Cliquez sur **Dupliquer**
-3. Le module est copié avec sa configuration
+Each module type has its own options:
+- **Text**: min/max length, regular expression
+- **Number**: min/max value, decimals
+- **File**: accepted types, max size
+- **List**: available options
 
-::: tip Astuce
-Dupliquez un module configuré pour gagner du temps, puis modifiez juste le libellé.
+### Reorganize Modules
+
+- Drag-and-drop modules within a section
+- Move between sections via the summary
+- The displayed order is the input order
+
+### Duplicate a Module
+
+1. Hover over the module
+2. Click **Duplicate**
+3. The module is copied with its configuration
+
+::: tip Tip
+Duplicate a configured module to save time, then just modify the label.
 :::
 
-## Bonnes pratiques
+## Best Practices
 
-1. **Groupez logiquement** - Une section = un thème
-2. **Limitez les champs** - Ne demandez que l'essentiel
-3. **Utilisez les placeholders** - Donnez des exemples
-4. **Pensez mobile** - Testez sur petit écran
-5. **Ordonnez intelligemment** - Du plus simple au plus complexe
+1. **Group logically** - One section = one theme
+2. **Limit fields** - Only ask for essentials
+3. **Use placeholders** - Provide examples
+4. **Think mobile** - Test on small screens
+5. **Order intelligently** - From simplest to most complex
 
-## Prochaines étapes
+## Next Steps
 
-- [Types de modules détaillés](/fonctionnalites/modules)
-- [Validation des champs](/fonctionnalites/validation)
-- [Logique conditionnelle](/fonctionnalites/logique-conditionnelle)
+- [Detailed module types](/en/features/modules)
+- [Field validation](/en/features/validation)
+- [Conditional logic](/en/features/conditional-logic)

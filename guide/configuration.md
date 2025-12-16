@@ -1,132 +1,132 @@
 ---
 title: Configuration
-description: Configurez les paramètres avancés de votre campagne Formulr.
+description: Configure the advanced settings of your Formulr campaign.
 ---
 
 # Configuration
 
-L'onglet **Paramètres** de votre campagne donne accès à toutes les options de configuration.
+The **Settings** tab of your campaign provides access to all configuration options.
 
-## Responsable
+## Owner
 
-Le responsable de campagne est le collaborateur principal :
+The campaign owner is the primary team member:
 
-- Reçoit les notifications par défaut
-- Contact affiché pour les utilisateurs
-- Peut être modifié à tout moment
+- Receives notifications by default
+- Contact displayed to users
+- Can be changed at any time
 
-Pour assigner un responsable :
-1. Cliquez sur le champ **Responsable**
-2. Sélectionnez un collaborateur dans la liste
-3. Le changement est enregistré automatiquement
+To assign an owner:
+1. Click on the **Owner** field
+2. Select a team member from the list
+3. The change is saved automatically
 
-## Date butoir
+## Deadline
 
-La date butoir définit l'échéance pour compléter le formulaire.
+The deadline defines the time limit to complete the form.
 
-### Pas de date butoir
+### No Deadline
 
-Aucune limite de temps. Les utilisateurs peuvent répondre quand ils le souhaitent.
+No time limit. Users can respond whenever they wish.
 
-### Date fixe
+### Fixed Date
 
-Une date précise identique pour tous :
-- Utile pour les campagnes saisonnières
-- Tous les utilisateurs ont la même échéance
+A specific date identical for everyone:
+- Useful for seasonal campaigns
+- All users have the same deadline
 
-### Date calculée
+### Calculated Date
 
-L'échéance est calculée individuellement :
-- Définissez un nombre de jours
-- Le compte à rebours démarre quand l'utilisateur commence
-- Ex: "30 jours après le début"
+The deadline is calculated individually:
+- Define a number of days
+- The countdown starts when the user begins
+- E.g., "30 days after start"
 
-::: tip Exemple
-Pour une collecte de documents avec date calculée de 15 jours :
-- Marie commence le 1er décembre → échéance le 16 décembre
-- Pierre commence le 5 décembre → échéance le 20 décembre
+::: tip Example
+For a document collection with a calculated date of 15 days:
+- Marie starts on December 1st → deadline December 16th
+- Pierre starts on December 5th → deadline December 20th
 :::
 
-## Relances automatiques
+## Automatic Reminders
 
-Activez les rappels pour les formulaires non complétés.
+Enable reminders for incomplete forms.
 
 ### Configuration
 
-1. Cochez **"Activer les rappels automatiques"**
-2. Choisissez la fréquence :
-   - Une fois par jour
-   - Tous les 2 jours
-   - Une fois par semaine
-   - Toutes les 2 semaines
-3. Définissez le nombre maximum de relances
+1. Check **"Enable automatic reminders"**
+2. Choose the frequency:
+   - Once per day
+   - Every 2 days
+   - Once per week
+   - Every 2 weeks
+3. Define the maximum number of reminders
 
-### Fonctionnement
+### How It Works
 
-- Les relances sont envoyées automatiquement par email
-- Uniquement aux utilisateurs avec des étapes en cours
-- S'arrêtent quand le formulaire est complété
-- Respectent le nombre maximum défini
+- Reminders are sent automatically by email
+- Only to users with steps in progress
+- Stop when the form is completed
+- Respect the maximum number defined
 
-## Partage
+## Sharing
 
-### Lien de partage
+### Sharing Link
 
-Une fois la campagne publiée, copiez le lien pour le partager :
+Once the campaign is published, copy the link to share it:
 - Via email
-- Sur votre site web
-- Dans vos communications
+- On your website
+- In your communications
 
-### Invitation par email
+### Email Invitation
 
-Envoyez des invitations directement depuis Formulr :
-1. Saisissez les adresses email
-2. Appuyez sur Entrée pour valider chaque adresse
-3. Cliquez sur Envoyer
+Send invitations directly from Formulr:
+1. Enter email addresses
+2. Press Enter to validate each address
+3. Click Send
 
-Les destinataires reçoivent un email avec le lien direct.
+Recipients receive an email with the direct link.
 
-::: warning Attention
-Le partage n'est disponible qu'après publication de la campagne.
+::: warning Warning
+Sharing is only available after the campaign is published.
 :::
 
-## Analyse IA
+## AI Analysis
 
-Configurez l'intelligence artificielle pour analyser les réponses.
+Configure artificial intelligence to analyze responses.
 
-### Prompt d'analyse
+### Analysis Prompt
 
-Définissez les instructions pour l'IA :
+Define the instructions for the AI:
 
 ```
-Analyse les documents soumis et fournis :
-- Les points clés identifiés
-- Des recommandations
-- Des alertes si des anomalies sont détectées
+Analyze the submitted documents and provide:
+- Key points identified
+- Recommendations
+- Alerts if anomalies are detected
 ```
 
-L'IA utilisera ces instructions pour générer un résumé automatique de chaque réponse.
+The AI will use these instructions to generate an automatic summary of each response.
 
-### Utilisation
+### Usage
 
-- Le résumé IA apparaît dans le détail de chaque réponse
-- Aide à traiter rapidement un grand nombre de soumissions
-- Ne remplace pas la vérification humaine
+- The AI summary appears in the detail of each response
+- Helps process a large number of submissions quickly
+- Does not replace human verification
 
-## Onglets de la campagne
+## Campaign Tabs
 
-Depuis l'en-tête de la campagne, accédez aux différentes sections :
+From the campaign header, access different sections:
 
-| Onglet | Fonction |
+| Tab | Function |
 |--------|----------|
-| **Modifier** | Éditeur de formulaire |
-| **Paramètres** | Configuration (cette page) |
-| **Réponses** | Liste des soumissions |
-| **Documents** | Templates PDF |
-| **Traductions** | Versions multilingues |
+| **Edit** | Form editor |
+| **Settings** | Configuration (this page) |
+| **Responses** | List of submissions |
+| **Documents** | PDF templates |
+| **Translations** | Multilingual versions |
 
-## Prochaines étapes
+## Next Steps
 
-- [Publication](/guide/publication) - Rendre la campagne accessible
-- [Gérer les réponses](/guide/reponses) - Traiter les soumissions
-- [Workflows](/fonctionnalites/workflows) - Automatiser les processus
+- [Publishing](/en/guide/publishing) - Make the campaign accessible
+- [Managing responses](/en/guide/responses) - Process submissions
+- [Workflows](/en/features/workflows) - Automate processes
