@@ -1,0 +1,13 @@
+{
+  "name": "formulr-screenshot-capture",
+  "version": "1.0.0",
+  "description": "Script pour capturer automatiquement les screenshots de Formulr",
+  "type": "module",
+  "scripts": {
+    "capture": "node capture-screenshots.js"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0",
+    "dotenv": "^16.4.5"
+  }
+}
