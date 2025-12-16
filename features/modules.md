@@ -300,6 +300,6 @@ All modules share these options:
 
 ## Next Steps
 
-- [Field Validation](/en/features/validation)
-- [Conditional Logic](/en/features/conditional-logic)
-- [Sections and Modules](/en/guide/sections-modules)
+- [Field Validation](/features/validation)
+- [Conditional Logic](/features/conditional-logic)
+- [Sections and Modules](/guide/sections-modules)

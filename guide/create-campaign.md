@@ -84,7 +84,7 @@ Sections group fields by theme:
 Modules are the input fields:
 - Over 15 types available
 - Individually configurable
-- [See all module types →](/en/features/modules)
+- [See all module types →](/features/modules)
 
 ## Summary
 
@@ -103,6 +103,6 @@ Your changes are saved automatically. The status displays at the top:
 
 ## Next Steps
 
-- [Sections and modules](/en/guide/sections-modules) - Structure your form
-- [Configuration](/en/guide/configuration) - Advanced settings
-- [Publishing](/en/guide/publishing) - Make the campaign accessible
+- [Sections and modules](/guide/sections-modules) - Structure your form
+- [Configuration](/guide/configuration) - Advanced settings
+- [Publishing](/guide/publishing) - Make the campaign accessible

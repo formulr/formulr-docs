@@ -233,10 +233,10 @@ Pour des scénarios avancés, combinez avec les workflows :
     → [Email de relance standard]
 ```
 
-[En savoir plus sur les workflows →](/fonctionnalites/workflows)
+[En savoir plus sur les workflows →](/fr/features/workflows)
 
 ## Prochaines étapes
 
-- [Notifications](/fonctionnalites/notifications) - Configuration des emails
-- [Workflows](/fonctionnalites/workflows) - Automatisation avancée
-- [Réponses](/guide/reponses) - Gérer les réponses
+- [Notifications](/fr/features/notifications) - Configuration des emails
+- [Workflows](/fr/features/workflows) - Automatisation avancée
+- [Réponses](/fr/guide/responses) - Gérer les réponses

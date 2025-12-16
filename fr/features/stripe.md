@@ -275,6 +275,6 @@ Les frais de paiement sont inclus dans votre abonnement Formulr. Consultez notre
 
 ## Prochaines étapes
 
-- [Workflows](/fonctionnalites/workflows) - Automatiser après paiement
-- [Templates PDF](/fonctionnalites/templates-pdf) - Factures personnalisées
-- [Notifications](/fonctionnalites/notifications) - Emails de confirmation
+- [Workflows](/fr/features/workflows) - Automatiser après paiement
+- [Templates PDF](/fr/features/pdf-templates) - Factures personnalisées
+- [Notifications](/fr/features/notifications) - Emails de confirmation

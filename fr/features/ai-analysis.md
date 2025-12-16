@@ -198,6 +198,6 @@ Pour protéger la vie privée :
 
 ## Prochaines étapes
 
-- [Workflows](/fonctionnalites/workflows) - Automatiser avec l'IA
-- [Export](/guide/export) - Exporter les analyses
-- [API & Webhooks](/fonctionnalites/api-webhooks) - Intégrer l'IA
+- [Workflows](/fr/features/workflows) - Automatiser avec l'IA
+- [Export](/fr/guide/export) - Exporter les analyses
+- [API & Webhooks](/fr/features/api-webhooks) - Intégrer l'IA

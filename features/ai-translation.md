@@ -146,7 +146,7 @@ Document templates can also be translated:
 3. Adapt the template content
 4. The correct template is used based on response language
 
-[Learn more about PDF templates →](/en/features/pdf-templates)
+[Learn more about PDF templates →](/features/pdf-templates)
 
 ## Limitations
 
@@ -156,5 +156,5 @@ Document templates can also be translated:
 
 ## Next Steps
 
-- [PDF Templates](/en/features/pdf-templates) - Multilingual documents
-- [Publication](/en/guide/publishing) - Share your form
+- [PDF Templates](/features/pdf-templates) - Multilingual documents
+- [Publication](/guide/publishing) - Share your form

@@ -127,6 +127,6 @@ Depuis l'en-tête de la campagne, accédez aux différentes sections :
 
 ## Prochaines étapes
 
-- [Publication](/guide/publication) - Rendre la campagne accessible
-- [Gérer les réponses](/guide/reponses) - Traiter les soumissions
-- [Workflows](/fonctionnalites/workflows) - Automatiser les processus
+- [Publication](/fr/guide/publishing) - Rendre la campagne accessible
+- [Gérer les réponses](/fr/guide/responses) - Traiter les soumissions
+- [Workflows](/fr/features/workflows) - Automatiser les processus

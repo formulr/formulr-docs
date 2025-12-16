@@ -9,7 +9,7 @@ Discover the latest features and improvements in Formulr.
 
 ## 2024
 
-### [December 2024](/en/changelog/2024-12)
+### [December 2024](/changelog/2024-12)
 
 - ✨ **PDF Template Editor** - New WYSIWYG and Liquid editor
 - ✨ **AI Translation** - Automatic form translation

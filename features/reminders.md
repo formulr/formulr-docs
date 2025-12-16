@@ -233,10 +233,10 @@ For advanced scenarios, combine with workflows:
     → [Standard reminder email]
 ```
 
-[Learn more about workflows →](/en/features/workflows)
+[Learn more about workflows →](/features/workflows)
 
 ## Next Steps
 
-- [Notifications](/en/features/notifications) - Email configuration
-- [Workflows](/en/features/workflows) - Advanced automation
-- [Responses](/en/guide/responses) - Manage responses
+- [Notifications](/features/notifications) - Email configuration
+- [Workflows](/features/workflows) - Advanced automation
+- [Responses](/guide/responses) - Manage responses

@@ -166,5 +166,5 @@ Section "Offre Enterprise"
 
 ## Prochaines étapes
 
-- [Validation des champs](/fonctionnalites/validation) - Règles de validation
-- [Workflows](/fonctionnalites/workflows) - Automatisation avancée
+- [Validation des champs](/fr/features/validation) - Règles de validation
+- [Workflows](/fr/features/workflows) - Automatisation avancée

@@ -109,7 +109,7 @@ For each response, you can generate PDF documents:
 3. Select the template
 4. The PDF is created with the response data
 
-[Learn more about templates →](/en/features/pdf-templates)
+[Learn more about templates →](/features/pdf-templates)
 
 ## Electronic Signature
 
@@ -119,7 +119,7 @@ If your template contains signature areas:
 2. Launch the signature procedure
 3. Track progress in the panel
 
-[Learn more about signature →](/en/features/electronic-signature)
+[Learn more about signature →](/features/electronic-signature)
 
 ## Data Export
 
@@ -136,10 +136,10 @@ From the response list:
 2. Click **Export**
 3. Choose the format (CSV, Excel)
 
-[Learn more about export →](/en/guide/export)
+[Learn more about export →](/guide/export)
 
 ## Next Steps
 
-- [Workflow and statuses](/en/guide/workflow) - Customize the lifecycle
-- [Data export](/en/guide/export) - Retrieve your data
-- [PDF templates](/en/features/pdf-templates) - Generate documents
+- [Workflow and statuses](/guide/workflow) - Customize the lifecycle
+- [Data export](/guide/export) - Retrieve your data
+- [PDF templates](/features/pdf-templates) - Generate documents

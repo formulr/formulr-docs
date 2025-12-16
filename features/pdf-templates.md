@@ -117,5 +117,5 @@ The correct template will be automatically used based on the response language.
 
 ## Next Steps
 
-- [Electronic Signature](/en/features/electronic-signature) - Integrate Yousign
-- [Automatic Generation](/en/features/document-generation) - Automate document creation
+- [Electronic Signature](/features/electronic-signature) - Integrate Yousign
+- [Automatic Generation](/features/document-generation) - Automate document creation

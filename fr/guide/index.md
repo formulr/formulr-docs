@@ -59,4 +59,4 @@ Créez des **templates PDF** avec la syntaxe Liquid pour générer automatiqueme
   <p>Suivez notre guide de démarrage rapide pour créer votre première campagne en quelques minutes.</p>
 </div>
 
-➡️ [Démarrage rapide](/guide/demarrage-rapide)
+➡️ [Démarrage rapide](/fr/guide/quick-start)

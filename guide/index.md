@@ -59,4 +59,4 @@ Create **PDF templates** with Liquid syntax to automatically generate personaliz
   <p>Follow our quick start guide to create your first campaign in minutes.</p>
 </div>
 
-➡️ [Quick Start](/en/guide/quick-start)
+➡️ [Quick Start](/guide/quick-start)

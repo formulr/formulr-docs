@@ -141,6 +141,6 @@ Dupliquez un module configuré pour gagner du temps, puis modifiez juste le libe
 
 ## Prochaines étapes
 
-- [Types de modules détaillés](/fonctionnalites/modules)
-- [Validation des champs](/fonctionnalites/validation)
-- [Logique conditionnelle](/fonctionnalites/logique-conditionnelle)
+- [Types de modules détaillés](/fr/features/modules)
+- [Validation des champs](/fr/features/validation)
+- [Logique conditionnelle](/fr/features/conditional-logic)

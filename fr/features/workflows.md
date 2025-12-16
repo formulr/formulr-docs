@@ -251,6 +251,6 @@ En cas d'échec :
 
 ## Prochaines étapes
 
-- [Notifications](/fonctionnalites/notifications) - Configuration des emails
-- [Relances](/fonctionnalites/relances) - Automatiser les rappels
-- [API & Webhooks](/fonctionnalites/api-webhooks) - Intégrations externes
+- [Notifications](/fr/features/notifications) - Configuration des emails
+- [Relances](/fr/features/reminders) - Automatiser les rappels
+- [API & Webhooks](/fr/features/api-webhooks) - Intégrations externes

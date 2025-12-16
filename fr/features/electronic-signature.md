@@ -156,6 +156,6 @@ Les signatures Yousign sont :
 
 ## Prochaines étapes
 
-- [Templates PDF](/fonctionnalites/templates-pdf) - Créer des documents
-- [Yousign](/fonctionnalites/yousign) - Configuration avancée
-- [Workflows](/fonctionnalites/workflows) - Automatisation
+- [Templates PDF](/fr/features/pdf-templates) - Créer des documents
+- [Yousign](/fr/features/yousign) - Configuration avancée
+- [Workflows](/fr/features/workflows) - Automatisation

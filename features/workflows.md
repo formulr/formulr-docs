@@ -251,6 +251,6 @@ In case of failure:
 
 ## Next Steps
 
-- [Notifications](/en/features/notifications) - Email configuration
-- [Reminders](/en/features/reminders) - Automate reminders
-- [API & Webhooks](/en/features/api-webhooks) - External integrations
+- [Notifications](/features/notifications) - Email configuration
+- [Reminders](/features/reminders) - Automate reminders
+- [API & Webhooks](/features/api-webhooks) - External integrations

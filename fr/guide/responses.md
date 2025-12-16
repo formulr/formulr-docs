@@ -109,7 +109,7 @@ Pour chaque réponse, vous pouvez générer des documents PDF :
 3. Sélectionnez le template
 4. Le PDF est créé avec les données de la réponse
 
-[En savoir plus sur les templates →](/fonctionnalites/templates-pdf)
+[En savoir plus sur les templates →](/fr/features/pdf-templates)
 
 ## Signature électronique
 
@@ -119,7 +119,7 @@ Si votre template contient des zones de signature :
 2. Lancez la procédure de signature
 3. Suivez l'avancement dans le panneau
 
-[En savoir plus sur la signature →](/fonctionnalites/signature-electronique)
+[En savoir plus sur la signature →](/fr/features/electronic-signature)
 
 ## Export des données
 
@@ -136,10 +136,10 @@ Depuis la liste des réponses :
 2. Cliquez sur **Exporter**
 3. Choisissez le format (CSV, Excel)
 
-[En savoir plus sur l'export →](/guide/export)
+[En savoir plus sur l'export →](/fr/guide/export)
 
 ## Prochaines étapes
 
-- [Workflow et statuts](/guide/workflow) - Personnaliser le cycle de vie
-- [Export des données](/guide/export) - Récupérer vos données
-- [Templates PDF](/fonctionnalites/templates-pdf) - Générer des documents
+- [Workflow et statuts](/fr/guide/workflow) - Personnaliser le cycle de vie
+- [Export des données](/fr/guide/export) - Récupérer vos données
+- [Templates PDF](/fr/features/pdf-templates) - Générer des documents

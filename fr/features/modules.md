@@ -300,6 +300,6 @@ Tous les modules partagent ces options :
 
 ## Prochaines étapes
 
-- [Validation des champs](/fonctionnalites/validation)
-- [Logique conditionnelle](/fonctionnalites/logique-conditionnelle)
-- [Sections et modules](/guide/sections-modules)
+- [Validation des champs](/fr/features/validation)
+- [Logique conditionnelle](/fr/features/conditional-logic)
+- [Sections et modules](/fr/guide/sections-modules)

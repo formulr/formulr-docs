@@ -141,6 +141,6 @@ Duplicate a configured module to save time, then just modify the label.
 
 ## Next Steps
 
-- [Detailed module types](/en/features/modules)
-- [Field validation](/en/features/validation)
-- [Conditional logic](/en/features/conditional-logic)
+- [Detailed module types](/features/modules)
+- [Field validation](/features/validation)
+- [Conditional logic](/features/conditional-logic)

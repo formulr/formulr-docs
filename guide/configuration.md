@@ -127,6 +127,6 @@ From the campaign header, access different sections:
 
 ## Next Steps
 
-- [Publishing](/en/guide/publishing) - Make the campaign accessible
-- [Managing responses](/en/guide/responses) - Process submissions
-- [Workflows](/en/features/workflows) - Automate processes
+- [Publishing](/guide/publishing) - Make the campaign accessible
+- [Managing responses](/guide/responses) - Process submissions
+- [Workflows](/features/workflows) - Automate processes

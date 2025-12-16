@@ -9,7 +9,7 @@ Découvrez les dernières nouveautés et améliorations de Formulr.
 
 ## 2024
 
-### [Décembre 2024](/changelog/2024-12)
+### [Décembre 2024](/fr/changelog/2024-12)
 
 - ✨ **Éditeur de templates PDF** - Nouvel éditeur WYSIWYG et Liquid
 - ✨ **Traduction IA** - Traduction automatique des formulaires

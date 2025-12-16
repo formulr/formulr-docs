@@ -88,5 +88,5 @@ When a user accesses your form:
 
 ## Next Steps
 
-- [AI Translation](/en/features/ai-translation) - Learn more about automatic translation
-- [Multi-language PDF Templates](/en/features/pdf-templates) - Localized documents
+- [AI Translation](/features/ai-translation) - Learn more about automatic translation
+- [Multi-language PDF Templates](/features/pdf-templates) - Localized documents

@@ -86,6 +86,6 @@ In the **"Responses"** tab of your campaign:
 
 ## Next Steps
 
-- [Discover all module types](/en/features/modules)
-- [Create document templates](/en/features/pdf-templates)
-- [Configure workflows](/en/features/workflows)
+- [Discover all module types](/features/modules)
+- [Create document templates](/features/pdf-templates)
+- [Configure workflows](/features/workflows)

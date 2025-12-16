@@ -117,5 +117,5 @@ Le bon template sera automatiquement utilisé selon la langue de la réponse.
 
 ## Prochaines étapes
 
-- [Signature électronique](/fonctionnalites/signature-electronique) - Intégrer Yousign
-- [Génération automatique](/fonctionnalites/generation-documents) - Automatiser la création de documents
+- [Signature électronique](/fr/features/electronic-signature) - Intégrer Yousign
+- [Génération automatique](/fr/features/document-generation) - Automatiser la création de documents

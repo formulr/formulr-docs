@@ -11,13 +11,13 @@ Formulr offers a comprehensive set of features to digitize your information coll
 
 <div class="features-grid">
 
-### [Module Types](/en/features/modules)
+### [Module Types](/features/modules)
 Over 15 types of fields available: text, email, phone, date, file, signature, multiple choice, tables...
 
-### [Conditional Logic](/en/features/conditional-logic)
+### [Conditional Logic](/features/conditional-logic)
 Show or hide sections based on user responses.
 
-### [Field Validation](/en/features/validation)
+### [Field Validation](/features/validation)
 Configure custom validation rules to ensure data quality.
 
 </div>
@@ -26,13 +26,13 @@ Configure custom validation rules to ensure data quality.
 
 <div class="features-grid">
 
-### [PDF Templates](/en/features/pdf-templates)
+### [PDF Templates](/features/pdf-templates)
 Create templates with the visual editor or Liquid code to generate personalized documents.
 
-### [Electronic Signature](/en/features/electronic-signature)
+### [Electronic Signature](/features/electronic-signature)
 Integrate Yousign for legal electronic signatures directly in your forms.
 
-### [Automatic Generation](/en/features/document-generation)
+### [Automatic Generation](/features/document-generation)
 Automatically generate PDFs from collected responses.
 
 </div>
@@ -41,10 +41,10 @@ Automatically generate PDFs from collected responses.
 
 <div class="features-grid">
 
-### [Translations](/en/features/translations)
+### [Translations](/features/translations)
 Translate your forms into multiple languages for an international audience.
 
-### [AI Translation](/en/features/ai-translation)
+### [AI Translation](/features/ai-translation)
 Use artificial intelligence to automatically translate your content.
 
 </div>
@@ -53,16 +53,16 @@ Use artificial intelligence to automatically translate your content.
 
 <div class="features-grid">
 
-### [Workflows](/en/features/workflows)
+### [Workflows](/features/workflows)
 Create conditional paths with the visual workflow editor.
 
-### [Notifications](/en/features/notifications)
+### [Notifications](/features/notifications)
 Configure automatic emails at each step of the process.
 
-### [Automatic Reminders](/en/features/reminders)
+### [Automatic Reminders](/features/reminders)
 Schedule reminders for incomplete forms.
 
-### [AI Analysis](/en/features/ai-analysis)
+### [AI Analysis](/features/ai-analysis)
 Use AI to analyze and summarize collected responses.
 
 </div>
@@ -71,13 +71,13 @@ Use AI to analyze and summarize collected responses.
 
 <div class="features-grid">
 
-### [API & Webhooks](/en/features/api-webhooks)
+### [API & Webhooks](/features/api-webhooks)
 Integrate Formulr with your existing tools via our REST API and webhooks.
 
-### [Yousign](/en/features/yousign)
+### [Yousign](/features/yousign)
 eIDAS certified electronic signature.
 
-### [Stripe](/en/features/stripe)
+### [Stripe](/features/stripe)
 Collect payments directly in your forms.
 
 </div>

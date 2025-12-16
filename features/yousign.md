@@ -274,6 +274,6 @@ Yousign signatures are:
 
 ## Next Steps
 
-- [Electronic Signature](/en/features/electronic-signature) - General guide
-- [PDF Templates](/en/features/pdf-templates) - Create documents
-- [Workflows](/en/features/workflows) - Automate signatures
+- [Electronic Signature](/features/electronic-signature) - General guide
+- [PDF Templates](/features/pdf-templates) - Create documents
+- [Workflows](/features/workflows) - Automate signatures

@@ -127,6 +127,6 @@ Trigger an external action:
 
 ## Next Steps
 
-- [Notifications](/en/features/notifications) - Configure emails
-- [API & Webhooks](/en/features/api-webhooks) - External integrations
-- [Automatic reminders](/en/features/reminders) - Scheduled reminders
+- [Notifications](/features/notifications) - Configure emails
+- [API & Webhooks](/features/api-webhooks) - External integrations
+- [Automatic reminders](/features/reminders) - Scheduled reminders

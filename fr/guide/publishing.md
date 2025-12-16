@@ -115,6 +115,6 @@ Ces statistiques sont visibles dans l'onglet **Réponses**.
 
 ## Prochaines étapes
 
-- [Gérer les réponses](/guide/reponses) - Traiter les soumissions
-- [Workflows](/fonctionnalites/workflows) - Automatiser le suivi
-- [Notifications](/fonctionnalites/notifications) - Configurer les alertes
+- [Gérer les réponses](/fr/guide/responses) - Traiter les soumissions
+- [Workflows](/fr/features/workflows) - Automatiser le suivi
+- [Notifications](/fr/features/notifications) - Configurer les alertes

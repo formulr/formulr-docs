@@ -28,7 +28,7 @@ Formulr allows you to automatically generate PDF documents from collected data.
 | **WYSIWYG** | Everyone | Visual, simple |
 | **Liquid** | Developers | Flexible, powerful |
 
-[Learn more about templates →](/en/features/pdf-templates)
+[Learn more about templates →](/features/pdf-templates)
 
 ## Available Variables
 
@@ -151,6 +151,6 @@ Generated documents are:
 
 ## Next Steps
 
-- [PDF Templates](/en/features/pdf-templates) - Detailed syntax
-- [Electronic Signature](/en/features/electronic-signature) - Sign documents
-- [Workflows](/en/features/workflows) - Automate generation
+- [PDF Templates](/features/pdf-templates) - Detailed syntax
+- [Electronic Signature](/features/electronic-signature) - Sign documents
+- [Workflows](/features/workflows) - Automate generation

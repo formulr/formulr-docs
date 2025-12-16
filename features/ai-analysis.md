@@ -198,6 +198,6 @@ To protect privacy:
 
 ## Next Steps
 
-- [Workflows](/en/features/workflows) - Automate with AI
-- [Export](/en/guide/export) - Export analyses
-- [API & Webhooks](/en/features/api-webhooks) - Integrate AI
+- [Workflows](/features/workflows) - Automate with AI
+- [Export](/guide/export) - Export analyses
+- [API & Webhooks](/features/api-webhooks) - Integrate AI

@@ -115,6 +115,6 @@ These statistics are visible in the **Responses** tab.
 
 ## Next Steps
 
-- [Managing responses](/en/guide/responses) - Process submissions
-- [Workflows](/en/features/workflows) - Automate tracking
-- [Notifications](/en/features/notifications) - Configure alerts
+- [Managing responses](/guide/responses) - Process submissions
+- [Workflows](/features/workflows) - Automate tracking
+- [Notifications](/features/notifications) - Configure alerts

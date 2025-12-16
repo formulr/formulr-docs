@@ -173,5 +173,5 @@ Don't rely solely on client-side validation. Server validation is always enforce
 
 ## Next Steps
 
-- [Module Types](/en/features/modules) - All available modules
-- [Conditional Logic](/en/features/conditional-logic) - Dynamic display
+- [Module Types](/features/modules) - All available modules
+- [Conditional Logic](/features/conditional-logic) - Dynamic display

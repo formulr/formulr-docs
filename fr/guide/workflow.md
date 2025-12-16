@@ -127,6 +127,6 @@ Déclenchez une action externe :
 
 ## Prochaines étapes
 
-- [Notifications](/fonctionnalites/notifications) - Configurer les emails
-- [API & Webhooks](/fonctionnalites/api-webhooks) - Intégrations externes
-- [Relances automatiques](/fonctionnalites/relances) - Rappels programmés
+- [Notifications](/fr/features/notifications) - Configurer les emails
+- [API & Webhooks](/fr/features/api-webhooks) - Intégrations externes
+- [Relances automatiques](/fr/features/reminders) - Rappels programmés

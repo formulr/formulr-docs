@@ -11,13 +11,13 @@ Formulr offre un ensemble complet de fonctionnalités pour digitaliser vos proce
 
 <div class="features-grid">
 
-### [Types de modules](/fonctionnalites/modules)
+### [Types de modules](/fr/features/modules)
 Plus de 15 types de champs disponibles : texte, email, téléphone, date, fichier, signature, choix multiples, tableaux...
 
-### [Logique conditionnelle](/fonctionnalites/logique-conditionnelle)
+### [Logique conditionnelle](/fr/features/conditional-logic)
 Affichez ou masquez des sections selon les réponses de l'utilisateur.
 
-### [Validation des champs](/fonctionnalites/validation)
+### [Validation des champs](/fr/features/validation)
 Configurez des règles de validation personnalisées pour garantir la qualité des données.
 
 </div>
@@ -26,13 +26,13 @@ Configurez des règles de validation personnalisées pour garantir la qualité d
 
 <div class="features-grid">
 
-### [Templates PDF](/fonctionnalites/templates-pdf)
+### [Templates PDF](/fr/features/pdf-templates)
 Créez des templates avec l'éditeur visuel ou en code Liquid pour générer des documents personnalisés.
 
-### [Signature électronique](/fonctionnalites/signature-electronique)
+### [Signature électronique](/fr/features/electronic-signature)
 Intégrez Yousign pour des signatures électroniques légales directement dans vos formulaires.
 
-### [Génération automatique](/fonctionnalites/generation-documents)
+### [Génération automatique](/fr/features/document-generation)
 Générez automatiquement des PDF à partir des réponses collectées.
 
 </div>
@@ -41,10 +41,10 @@ Générez automatiquement des PDF à partir des réponses collectées.
 
 <div class="features-grid">
 
-### [Traductions](/fonctionnalites/traductions)
+### [Traductions](/fr/features/translations)
 Traduisez vos formulaires en plusieurs langues pour une audience internationale.
 
-### [Traduction IA](/fonctionnalites/traduction-ia)
+### [Traduction IA](/fr/features/ai-translation)
 Utilisez l'intelligence artificielle pour traduire automatiquement vos contenus.
 
 </div>
@@ -53,16 +53,16 @@ Utilisez l'intelligence artificielle pour traduire automatiquement vos contenus.
 
 <div class="features-grid">
 
-### [Workflows](/fonctionnalites/workflows)
+### [Workflows](/fr/features/workflows)
 Créez des parcours conditionnels avec l'éditeur visuel de workflows.
 
-### [Notifications](/fonctionnalites/notifications)
+### [Notifications](/fr/features/notifications)
 Configurez des emails automatiques à chaque étape du processus.
 
-### [Relances automatiques](/fonctionnalites/relances)
+### [Relances automatiques](/fr/features/reminders)
 Programmez des rappels pour les formulaires non complétés.
 
-### [Analyse IA](/fonctionnalites/analyse-ia)
+### [Analyse IA](/fr/features/ai-analysis)
 Utilisez l'IA pour analyser et résumer les réponses collectées.
 
 </div>
@@ -71,13 +71,13 @@ Utilisez l'IA pour analyser et résumer les réponses collectées.
 
 <div class="features-grid">
 
-### [API & Webhooks](/fonctionnalites/api-webhooks)
+### [API & Webhooks](/fr/features/api-webhooks)
 Intégrez Formulr à vos outils existants via notre API REST et les webhooks.
 
-### [Yousign](/fonctionnalites/yousign)
+### [Yousign](/fr/features/yousign)
 Signature électronique certifiée eIDAS.
 
-### [Stripe](/fonctionnalites/stripe)
+### [Stripe](/fr/features/stripe)
 Collectez des paiements directement dans vos formulaires.
 
 </div>

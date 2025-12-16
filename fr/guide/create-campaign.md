@@ -84,7 +84,7 @@ Les sections regroupent les champs par thème :
 Les modules sont les champs de saisie :
 - Plus de 15 types disponibles
 - Configurables individuellement
-- [Voir tous les types de modules →](/fonctionnalites/modules)
+- [Voir tous les types de modules →](/fr/features/modules)
 
 ## Sommaire
 
@@ -103,6 +103,6 @@ Vos modifications sont enregistrées automatiquement. Le statut s'affiche en hau
 
 ## Prochaines étapes
 
-- [Sections et modules](/guide/sections-modules) - Structurer votre formulaire
-- [Configuration](/guide/configuration) - Paramètres avancés
-- [Publication](/guide/publication) - Rendre la campagne accessible
+- [Sections et modules](/fr/guide/sections-modules) - Structurer votre formulaire
+- [Configuration](/fr/guide/configuration) - Paramètres avancés
+- [Publication](/fr/guide/publishing) - Rendre la campagne accessible

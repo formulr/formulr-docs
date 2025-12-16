@@ -88,5 +88,5 @@ Quand un utilisateur accède à votre formulaire :
 
 ## Prochaines étapes
 
-- [Traduction IA](/fonctionnalites/traduction-ia) - En savoir plus sur la traduction automatique
-- [Templates PDF multi-langues](/fonctionnalites/templates-pdf) - Documents localisés
+- [Traduction IA](/fr/features/ai-translation) - En savoir plus sur la traduction automatique
+- [Templates PDF multi-langues](/fr/features/pdf-templates) - Documents localisés

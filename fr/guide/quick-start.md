@@ -86,6 +86,6 @@ Dans l'onglet **"Réponses"** de votre campagne :
 
 ## Prochaines étapes
 
-- [Découvrir tous les types de modules](/fonctionnalites/modules)
-- [Créer des templates de documents](/fonctionnalites/templates-pdf)
-- [Configurer les workflows](/fonctionnalites/workflows)
+- [Découvrir tous les types de modules](/fr/features/modules)
+- [Créer des templates de documents](/fr/features/pdf-templates)
+- [Configurer les workflows](/fr/features/workflows)

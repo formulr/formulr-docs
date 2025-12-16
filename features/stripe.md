@@ -275,6 +275,6 @@ Payment fees are included in your Formulr subscription. See our [pricing page](h
 
 ## Next Steps
 
-- [Workflows](/en/features/workflows) - Automate after payment
-- [PDF Templates](/en/features/pdf-templates) - Custom invoices
-- [Notifications](/en/features/notifications) - Confirmation emails
+- [Workflows](/features/workflows) - Automate after payment
+- [PDF Templates](/features/pdf-templates) - Custom invoices
+- [Notifications](/features/notifications) - Confirmation emails

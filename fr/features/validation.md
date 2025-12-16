@@ -173,5 +173,5 @@ Ne comptez pas uniquement sur la validation côté client. La validation serveur
 
 ## Prochaines étapes
 
-- [Types de modules](/fonctionnalites/modules) - Tous les modules disponibles
-- [Logique conditionnelle](/fonctionnalites/logique-conditionnelle) - Affichage dynamique
+- [Types de modules](/fr/features/modules) - Tous les modules disponibles
+- [Logique conditionnelle](/fr/features/conditional-logic) - Affichage dynamique

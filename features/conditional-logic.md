@@ -166,5 +166,5 @@ Section "Enterprise Offer"
 
 ## Next Steps
 
-- [Field Validation](/en/features/validation) - Validation rules
-- [Workflows](/en/features/workflows) - Advanced automation
+- [Field Validation](/features/validation) - Validation rules
+- [Workflows](/features/workflows) - Advanced automation

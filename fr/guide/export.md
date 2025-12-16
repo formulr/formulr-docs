@@ -68,7 +68,7 @@ Pour des exports automatisés, utilisez l'API :
 GET /api/v1/campaigns/{id}/responses?format=csv
 ```
 
-[Documentation API →](/fonctionnalites/api-webhooks)
+[Documentation API →](/fr/features/api-webhooks)
 
 ## Planification d'exports
 
@@ -85,5 +85,5 @@ Les exports planifiés (quotidien, hebdomadaire) seront disponibles prochainemen
 
 ## Prochaines étapes
 
-- [API & Webhooks](/fonctionnalites/api-webhooks) - Automatiser les exports
-- [Templates PDF](/fonctionnalites/templates-pdf) - Documents personnalisés
+- [API & Webhooks](/fr/features/api-webhooks) - Automatiser les exports
+- [Templates PDF](/fr/features/pdf-templates) - Documents personnalisés

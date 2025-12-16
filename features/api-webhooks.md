@@ -316,6 +316,6 @@ Complete API documentation is available:
 
 ## Next Steps
 
-- [Workflows](/en/features/workflows) - No-code automation
-- [Export](/en/guide/export) - Data export
-- [Yousign](/en/features/yousign) - Signature integration
+- [Workflows](/features/workflows) - No-code automation
+- [Export](/guide/export) - Data export
+- [Yousign](/features/yousign) - Signature integration

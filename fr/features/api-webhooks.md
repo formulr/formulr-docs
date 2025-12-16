@@ -316,6 +316,6 @@ La documentation complète de l'API est disponible :
 
 ## Prochaines étapes
 
-- [Workflows](/fonctionnalites/workflows) - Automatisation sans code
-- [Export](/guide/export) - Export des données
-- [Yousign](/fonctionnalites/yousign) - Intégration signature
+- [Workflows](/fr/features/workflows) - Automatisation sans code
+- [Export](/fr/guide/export) - Export des données
+- [Yousign](/fr/features/yousign) - Intégration signature

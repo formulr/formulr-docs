@@ -146,7 +146,7 @@ Les templates de documents peuvent aussi être traduits :
 3. Adaptez le contenu du template
 4. Le bon template est utilisé selon la langue de la réponse
 
-[En savoir plus sur les templates PDF →](/fonctionnalites/templates-pdf)
+[En savoir plus sur les templates PDF →](/fr/features/pdf-templates)
 
 ## Limites
 
@@ -156,5 +156,5 @@ Les templates de documents peuvent aussi être traduits :
 
 ## Prochaines étapes
 
-- [Templates PDF](/fonctionnalites/templates-pdf) - Documents multilingues
-- [Publication](/guide/publication) - Partager votre formulaire
+- [Templates PDF](/fr/features/pdf-templates) - Documents multilingues
+- [Publication](/fr/guide/publishing) - Partager votre formulaire

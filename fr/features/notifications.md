@@ -149,7 +149,7 @@ Pour des scénarios avancés, utilisez les workflows :
 3. Configurez le template personnalisé
 4. Définissez les conditions
 
-[En savoir plus sur les workflows →](/fonctionnalites/workflows)
+[En savoir plus sur les workflows →](/fr/features/workflows)
 
 ## Historique des envois
 
@@ -209,6 +209,6 @@ Les utilisateurs peuvent :
 
 ## Prochaines étapes
 
-- [Relances](/fonctionnalites/relances) - Automatiser les rappels
-- [Workflows](/fonctionnalites/workflows) - Notifications avancées
-- [Templates PDF](/fonctionnalites/templates-pdf) - Documents à joindre
+- [Relances](/fr/features/reminders) - Automatiser les rappels
+- [Workflows](/fr/features/workflows) - Notifications avancées
+- [Templates PDF](/fr/features/pdf-templates) - Documents à joindre

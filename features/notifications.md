@@ -149,7 +149,7 @@ For advanced scenarios, use workflows:
 3. Configure custom template
 4. Define conditions
 
-[Learn more about workflows →](/en/features/workflows)
+[Learn more about workflows →](/features/workflows)
 
 ## Sending History
 
@@ -209,6 +209,6 @@ Users can:
 
 ## Next Steps
 
-- [Reminders](/en/features/reminders) - Automate reminders
-- [Workflows](/en/features/workflows) - Advanced notifications
-- [PDF Templates](/en/features/pdf-templates) - Documents to attach
+- [Reminders](/features/reminders) - Automate reminders
+- [Workflows](/features/workflows) - Advanced notifications
+- [PDF Templates](/features/pdf-templates) - Documents to attach
