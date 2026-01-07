@@ -115,6 +115,12 @@ export default defineConfig({
                 { text: 'Stripe', link: '/features/stripe' },
               ],
             },
+            {
+              text: 'Enterprise',
+              items: [
+                { text: 'Custom Domain', link: '/features/custom-domain' },
+              ],
+            },
           ],
           '/changelog/': [
             {
@@ -234,6 +240,12 @@ export default defineConfig({
                 { text: 'Stripe', link: '/fr/features/stripe' },
               ],
             },
+            {
+              text: 'Enterprise',
+              items: [
+                { text: 'Domaine personnalisé', link: '/fr/features/custom-domain' },
+              ],
+            },
           ],
           '/fr/changelog/': [
             {
@@ -290,7 +302,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.svg',
-    siteTitle: 'Formulr Docs',
+    siteTitle: false,
 
     socialLinks: [
       { icon: 'linkedin', link: 'https://www.linkedin.com/company/formulr-io/' },
