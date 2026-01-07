@@ -74,17 +74,21 @@ forms    CNAME    10800    dns.formulr.app.
 _formulr-verify.forms    TXT    300    "formulr-verify=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-For a root domain `forms-yourcompany.com`:
+For a root domain `forms-yourcompany.com` (no subdomain):
 
 **CNAME Record:**
 ```
-forms-yourcompany.com    CNAME    10800    dns.formulr.app.
+@    CNAME    10800    dns.formulr.app.
 ```
 
 **TXT Record:**
 ```
-_formulr-verify.forms-yourcompany.com    TXT    300    "formulr-verify=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+_formulr-verify    TXT    300    "formulr-verify=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
+
+::: warning Root domain (apex)
+Using a CNAME on a root domain (apex) is not recommended by DNS standards and may cause issues with other records (MX for emails, etc.). Some hosts like Cloudflare support "CNAME flattening" to work around this, but Gandi does not. If you have emails on this domain, consider using a subdomain like `app.yourcompany.com` instead.
+:::
 
 ### OVH
 
