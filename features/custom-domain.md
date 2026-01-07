@@ -41,7 +41,12 @@ This record points your domain to Formulr's servers.
 
 ::: tip Note
 - The **Name** corresponds to your chosen subdomain (here `forms` for `forms.yourcompany.com`)
+- For a root domain (no subdomain), use `@` as the name
 - Don't forget the **trailing dot** after `dns.formulr.app.`
+:::
+
+::: warning Root domain (apex)
+Using a CNAME on a root domain (apex) is not recommended by DNS standards and may cause issues with other records (MX for emails, etc.). Some hosts like Cloudflare support "CNAME flattening" to work around this, but most registrars like Gandi do not. If you have emails on this domain, consider using a subdomain like `app.yourcompany.com` instead.
 :::
 
 ### 2. TXT Verification Record
@@ -53,7 +58,7 @@ This record allows Formulr to verify that you own the domain.
 | TXT | `_formulr-verify.forms` | `formulr-verify=xxxxxxxxxxxxxxxx` | 300 |
 
 ::: warning Important
-- The **Name** must be `_formulr-verify.` followed by your subdomain
+- The **Name** must be `_formulr-verify.` followed by your subdomain (or just `_formulr-verify` for a root domain)
 - The **Value** is provided in your Formulr interface (unique for each domain)
 - Keep the quotes around the value if your host requires them
 :::
@@ -85,10 +90,6 @@ For a root domain `forms-yourcompany.com` (no subdomain):
 ```
 _formulr-verify    TXT    300    "formulr-verify=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
-
-::: warning Root domain (apex)
-Using a CNAME on a root domain (apex) is not recommended by DNS standards and may cause issues with other records (MX for emails, etc.). Some hosts like Cloudflare support "CNAME flattening" to work around this, but Gandi does not. If you have emails on this domain, consider using a subdomain like `app.yourcompany.com` instead.
-:::
 
 ### OVH
 

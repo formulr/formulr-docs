@@ -41,7 +41,12 @@ Cet enregistrement pointe votre domaine vers les serveurs Formulr.
 
 ::: tip Note
 - Le **Nom** correspond au sous-domaine choisi (ici `forms` pour `forms.votreentreprise.com`)
+- Pour un domaine racine (sans sous-domaine), utilisez `@` comme nom
 - N'oubliez pas le **point final** après `dns.formulr.app.`
+:::
+
+::: warning Domaine racine (apex)
+Utiliser un CNAME sur un domaine racine (apex) n'est pas recommandé par les standards DNS et peut causer des problèmes avec d'autres enregistrements (MX pour les emails, etc.). Certains hébergeurs comme Cloudflare supportent le "CNAME flattening" pour contourner ce problème, mais la plupart des registrars comme Gandi ne le supportent pas. Si vous avez des emails sur ce domaine, envisagez d'utiliser un sous-domaine comme `app.votreentreprise.com` à la place.
 :::
 
 ### 2. Enregistrement TXT de vérification
@@ -53,7 +58,7 @@ Cet enregistrement permet à Formulr de vérifier que vous êtes bien propriéta
 | TXT | `_formulr-verify.forms` | `formulr-verify=xxxxxxxxxxxxxxxx` | 300 |
 
 ::: warning Important
-- Le **Nom** doit être `_formulr-verify.` suivi de votre sous-domaine
+- Le **Nom** doit être `_formulr-verify.` suivi de votre sous-domaine (ou juste `_formulr-verify` pour un domaine racine)
 - La **Valeur** est fournie dans votre interface Formulr (unique pour chaque domaine)
 - Conservez les guillemets autour de la valeur si votre hébergeur le demande
 :::
@@ -85,10 +90,6 @@ Pour un domaine racine `forms-votreentreprise.com` (sans sous-domaine) :
 ```
 _formulr-verify    TXT    300    "formulr-verify=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
-
-::: warning Domaine racine (apex)
-Utiliser un CNAME sur un domaine racine (apex) n'est pas recommandé par les standards DNS et peut causer des problèmes avec d'autres enregistrements (MX pour les emails, etc.). Certains hébergeurs comme Cloudflare supportent le "CNAME flattening" pour contourner ce problème, mais Gandi ne le supporte pas. Si vous avez des emails sur ce domaine, envisagez d'utiliser un sous-domaine comme `app.votreentreprise.com` à la place.
-:::
 
 ### OVH
 
