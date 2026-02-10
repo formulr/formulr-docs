@@ -8,7 +8,11 @@ description: Embed Formulr forms into your application using embed mode and sign
 Integrate Formulr forms directly into your application. Two independent mechanisms are available:
 
 - **Embed mode** (`?embed=true`): hide Formulr's header, footer and logo for iframe display
-- **Signed URL**: auto-login to an existing response via HMAC-signed URL
+- **Client SSO**: auto-login to an existing response via HMAC-signed URL
+
+::: tip Enterprise plan
+Embed mode and Client SSO are available exclusively on the [Enterprise plan](/features/custom-domain).
+:::
 
 ## Integration Methods
 
@@ -33,7 +37,7 @@ Use the `/to/{campaignUuid}` URL to let users start a new response. Add `?embed=
 
 The user will register or log in through the standard Formulr flow.
 
-### Access an Existing Response (Signed URL)
+### Access an Existing Response (Client SSO)
 
 Use a signed URL to give a user direct access to their existing response, without requiring them to log in. This is useful when your backend already manages the user-response relationship.
 
@@ -52,9 +56,9 @@ Use a signed URL to give a user direct access to their existing response, withou
 </a>
 ```
 
-## Generating a Signed URL
+## Generating a Client SSO URL
 
-Signed URLs apply to the `/response/{responseUuid}` endpoint only.
+Client SSO URLs apply to the `/response/{responseUuid}` endpoint only.
 
 ### Parameters
 

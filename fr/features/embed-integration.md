@@ -8,7 +8,11 @@ description: Intégrez les formulaires Formulr dans votre application grâce au 
 Intégrez les formulaires Formulr directement dans votre application. Deux mécanismes indépendants sont disponibles :
 
 - **Mode embed** (`?embed=true`) : masquer l'en-tête, le pied de page et le logo Formulr pour l'affichage en iframe
-- **URL signée** : auto-login sur une réponse existante via URL signée HMAC
+- **SSO client** : auto-login sur une réponse existante via URL signée HMAC
+
+::: tip Plan Enterprise
+Le mode embed et le SSO client sont disponibles exclusivement sur le [plan Enterprise](/fr/features/custom-domain).
+:::
 
 ## Méthodes d'intégration
 
@@ -33,7 +37,7 @@ Utilisez l'URL `/to/{campaignUuid}` pour permettre aux utilisateurs de démarrer
 
 L'utilisateur s'inscrira ou se connectera via le flow standard de Formulr.
 
-### Accéder à une réponse existante (URL signée)
+### Accéder à une réponse existante (SSO client)
 
 Utilisez une URL signée pour donner à un utilisateur un accès direct à sa réponse existante, sans qu'il ait besoin de se connecter. C'est utile quand votre backend gère déjà la relation utilisateur-réponse.
 
@@ -52,9 +56,9 @@ Utilisez une URL signée pour donner à un utilisateur un accès direct à sa r�
 </a>
 ```
 
-## Générer une URL signée
+## Générer une URL SSO client
 
-Les URLs signées s'appliquent uniquement à l'endpoint `/response/{responseUuid}`.
+Les URLs SSO client s'appliquent uniquement à l'endpoint `/response/{responseUuid}`.
 
 ### Paramètres
 
