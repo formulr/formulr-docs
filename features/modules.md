@@ -5,20 +5,20 @@ description: Discover all the module types available in Formulr to create your f
 
 # Module Types
 
-Formulr offers over 15 module types to create forms adapted to all needs.
+Formulr offers 17 module types to build forms adapted to all needs: text input, choices, file upload, display content, and more.
 
 ## Text Input
 
 ### Short Text
 
-Single-line input field.
+Single-line text input field.
 
 **Usage**: First name, last name, city, company...
 
 **Options**:
-- Minimum/maximum length
-- Regular expression (custom validation)
-- Input mask
+- Minimum/maximum character count
+- Placeholder text
+- Repeatable (allow multiple entries)
 
 ---
 
@@ -29,271 +29,248 @@ Multi-line text area.
 **Usage**: Comments, descriptions, messages...
 
 **Options**:
-- Number of displayed lines
-- Maximum length
-- Character counter
-
----
-
-### Email
-
-Field with email address validation.
-
-**Usage**: Contact email collection
-
-**Automatic validation**:
-- Email format verified
-- Blocked domains (optional)
-
----
-
-### Phone
-
-Field with automatic formatting.
-
-**Usage**: Phone numbers
-
-**Options**:
-- International format
-- Default country code
-- Format validation
+- Maximum character count
+- Placeholder text
+- Repeatable (allow multiple entries)
 
 ---
 
 ### Number
 
-Numeric field.
+Numeric input field.
 
 **Usage**: Quantities, amounts, age...
 
 **Options**:
 - Minimum/maximum value
-- Number of decimals
-- Increment step
-- Prefix/suffix (€, %, etc.)
+- Minimum/maximum number of digits
+- Placeholder text
+- Repeatable (allow multiple entries)
 
-## Dates
+## Date
 
 ### Date
 
-Date picker with calendar.
+Date input field with configurable format.
 
-**Usage**: Date of birth, deadlines...
-
-**Options**:
-- Display format
-- Minimum/maximum date
-- Disabled days (weekends, holidays)
-
----
-
-### Date and Time
-
-Date with time selection.
-
-**Usage**: Appointments, events...
+**Usage**: Date of birth, deadlines, events...
 
 **Options**:
-- 12h/24h format
-- Interval (15min, 30min, 1h)
-- Available time slots
-
----
-
-### Date Range
-
-Period selection (from/to).
-
-**Usage**: Vacation, reservations, contracts...
-
-**Options**:
-- Minimum/maximum duration
-- Overlaps allowed
+- Date structure: `DD/MM/YYYY`, `MM/DD/YYYY`, or `YYYY/MM/DD`
+- Date separator: `/`, `-`, or `.`
+- Repeatable (allow multiple entries)
 
 ## Choice
 
-### Dropdown (Select)
+### Multiple Choice
 
-Dropdown menu with single choice.
+Versatile choice module supporting several display modes and data sources.
 
-**Usage**: Selection from a predefined list
+**Usage**: Surveys, product selection, category filtering...
+
+**Display modes**:
+- **Buttons** — Radio buttons (single) or checkboxes (multiple), vertical or horizontal layout
+- **Dropdown** — Select menu with search
+
+**Data source**:
+- **Static** — Predefined list of options
+- **API** — Dynamically loaded from an external endpoint (URL, method, headers, data path)
 
 **Options**:
-- List of options
-- Search in list
-- Default option
-- "Other" choice with free input
+- Single or multiple selection
+- Selection constraints (exact count, min/max range)
+- "Other" option with free text input
 
 ---
 
-### Radio Buttons
+### Yes/No
 
-Single choice with visible options.
+Binary choice displayed as radio buttons.
 
-**Usage**: Few options (2-5), important choices
-
-**Options**:
-- Vertical/horizontal display
-- Images for options
-- Default option
-
----
-
-### Checkboxes
-
-Multiple choice.
-
-**Usage**: Multiple selection, acceptances
-
-**Options**:
-- Min/max number of selections
-- Exclusive options
-- "Select all"
-
----
-
-### Yes/No (Toggle)
-
-Binary question.
-
-**Usage**: Acceptances, simple confirmations
-
-**Options**:
-- Custom labels (Yes/No, Accept/Decline)
-- Default value
+**Usage**: Consents, simple confirmations...
 
 ## Files
 
-### File Upload
+### Document
 
-Single document upload.
+Single file upload with validation.
 
-**Usage**: ID, proof of address...
+**Usage**: ID document, proof of address, resume...
 
 **Options**:
-- Accepted types (PDF, images, etc.)
-- Maximum size
-- Automatic preview
+- Accepted file types (PDF, images, etc.)
+- Maximum file size (1–20 MB)
+- Source file (pre-loaded document available for download)
+- AI processing (if configured)
 
 ---
 
-### Multiple Upload
+### Document Collection
 
-Multiple file upload.
+Dynamic document gallery with configurable display rules.
 
-**Usage**: Complete folder, multiple photos
+**Usage**: Document library, conditional file access...
+
+**Two sections**:
+- **Generic files** — Pre-uploaded documents displayed for reference
+- **Specific files** — Documents matching configurable rules or manual uploads
+
+**Rule-based filtering**:
+- Match by tag, type, filename, or creation date
+- Match strategy: any rule or all rules
+- Sort by creation date, label, or filename
 
 **Options**:
-- Min/max number of files
-- Maximum total size
-- Types per file
+- Display limit (1–20 documents)
+- Allowed file types
+- Maximum file size
+
+## Display & Content
+
+### WYSIWYG
+
+Rich text content block (display only, no user input).
+
+**Usage**: Instructions, terms & conditions, formatted information...
+
+**Features**:
+- Full rich text editor
+- HTML formatting support
+- Dynamic content display
 
 ---
 
-### Photo / Camera
+### Image
 
-Image capture or upload.
+Display an image in the form (no user input).
 
-**Usage**: Selfie, document photo
+**Usage**: Branding, instructional diagrams, visual content...
 
 **Options**:
-- Camera only / gallery allowed
-- Minimum resolution
-- Cropping
+- Width (1–100% of container)
+- Center alignment toggle
+- Accepted formats: PNG, JPG, JPEG, GIF (max 2 MB)
+
+---
+
+### Separator
+
+Visual divider between form sections (no user input).
+
+**Usage**: Organize sections, visual grouping...
+
+**Options**:
+- Optional text label
+
+---
+
+### Liquid
+
+Dynamic content block using Liquid template language (display only).
+
+**Usage**: Personalized messages, conditional content, variable substitution...
+
+**Features**:
+- Full Liquid template syntax
+- Code editor with syntax highlighting
+- Variable interpolation from form data
 
 ## Special Modules
 
-### Signature
+### Contact Information
 
-Handwritten signature area.
+Pre-built contact form with toggleable fields.
 
-**Usage**: Validation, legal commitment
+**Usage**: User registration, lead capture, attendee forms...
+
+**Available fields** (each can be shown/hidden and set as required):
+- Company
+- Civility
+- First name / Last name
+- Date of birth (with configurable date format)
+- Place of birth
+- Phone
+- Email
+- Address / Zip code / City
+- Country
+- Nationality
 
 **Options**:
-- Area dimensions
-- Stroke color
-- Signature required
+- Repeatable (allow multiple contact entries)
+
+---
+
+### Signature
+
+Digital signature collection with document signing workflow.
+
+**Usage**: Contract signing, approval workflows, legal documents...
+
+**Signature types**:
+- **Generic** — Current form user signs
+- **Client-specific** — Designated signers (from contact info module or manual entry)
+
+**Features**:
+- Upload PDF documents to sign
+- Visual signature placement editor (position per page)
+- Multi-signer support
+- Per-signer status tracking
+- Custom button text
 
 ::: tip
-The signature can be integrated into PDF templates for electronically signed documents.
+Signatures are integrated with external e-signature services for legally binding documents.
 :::
 
 ---
 
-### Table
+### RGPD Consent
 
-Tabular data with dynamic rows.
+GDPR/RGPD compliance checkbox.
 
-**Usage**: Product list, participants, details
-
-**Options**:
-- Columns (name, type, width)
-- Min/max number of rows
-- Default row
-
----
-
-### Contact Information
-
-Complete contact details block.
-
-**Usage**: Contact form, complete coordinates
-
-**Includes**:
-- Title
-- First name / Last name
-- Email
-- Phone
-- Address
-
----
-
-### Address
-
-Address field with autocomplete.
-
-**Usage**: Postal address
+**Usage**: Data privacy consent, newsletter opt-in, terms acceptance...
 
 **Options**:
-- Autocomplete (Google Places)
-- Separate or unified fields
-- Allowed countries
+- Consent description text
+- Required toggle
 
 ---
 
-### IBAN
+### Checkout
 
-Bank account details input.
+Shopping cart and payment integration.
 
-**Usage**: Direct debits, transfers
+**Usage**: Product ordering, subscriptions, donations, event tickets...
 
-**Validation**:
-- IBAN format verified
-- Check key
-- Allowed countries
-
----
-
-### HTML Block
-
-Custom content (text, images).
-
-**Usage**: Instructions, information, separators
+**Cart modes**:
+- **Compact** — Minimal cart display
+- **Full** — Detailed cart interface
 
 **Options**:
-- WYSIWYG editor
-- Raw HTML
-- Dynamic variables
+- Auto-add products with quantities
+- Required billing fields (address, zip, city, company, VAT, name, email, country)
+- Prefill from authenticated user or contact info module
+- Custom button text
+
+---
+
+### Iframe
+
+Embed external content or services.
+
+**Usage**: Third-party tools, calendar scheduling, external forms...
+
+**Options**:
+- URL to embed
+- Completion tracking (pending/completed status)
 
 ## Common Parameters
 
-All modules share these options:
+All input modules share these options:
 
 | Parameter | Description |
 |-----------|-------------|
 | **Label** | Displayed question |
-| **Placeholder** | Example text |
-| **Help text** | Additional indication |
+| **Description** | Additional help text |
 | **Required** | Must be filled |
 | **Identifier** | Unique technical name |
 | **Width** | Half-width or full-width |

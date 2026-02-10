@@ -5,7 +5,7 @@ description: Découvrez tous les types de modules disponibles dans Formulr pour 
 
 # Types de modules
 
-Formulr propose plus de 15 types de modules pour créer des formulaires adaptés à tous les besoins.
+Formulr propose 17 types de modules pour construire des formulaires adaptés à tous les besoins : saisie de texte, choix, upload de fichiers, contenu d'affichage, et plus encore.
 
 ## Saisie de texte
 
@@ -16,9 +16,9 @@ Champ de saisie sur une ligne.
 **Usage** : Nom, prénom, ville, entreprise...
 
 **Options** :
-- Longueur minimum/maximum
-- Expression régulière (validation personnalisée)
-- Masque de saisie
+- Nombre minimum/maximum de caractères
+- Texte indicatif (placeholder)
+- Répétable (permettre plusieurs entrées)
 
 ---
 
@@ -29,271 +29,248 @@ Zone de texte multiligne.
 **Usage** : Commentaires, descriptions, messages...
 
 **Options** :
-- Nombre de lignes affichées
-- Longueur maximum
-- Compteur de caractères
-
----
-
-### Email
-
-Champ avec validation d'adresse email.
-
-**Usage** : Collecte d'emails de contact
-
-**Validation automatique** :
-- Format email vérifié
-- Domaines bloqués (optionnel)
-
----
-
-### Téléphone
-
-Champ avec formatage automatique.
-
-**Usage** : Numéros de téléphone
-
-**Options** :
-- Format international
-- Indicatif pays par défaut
-- Validation du format
+- Nombre maximum de caractères
+- Texte indicatif (placeholder)
+- Répétable (permettre plusieurs entrées)
 
 ---
 
 ### Nombre
 
-Champ numérique.
+Champ de saisie numérique.
 
 **Usage** : Quantités, montants, âge...
 
 **Options** :
 - Valeur minimum/maximum
-- Nombre de décimales
-- Pas d'incrémentation
-- Préfixe/suffixe (€, %, etc.)
+- Nombre minimum/maximum de chiffres
+- Texte indicatif (placeholder)
+- Répétable (permettre plusieurs entrées)
 
-## Dates
+## Date
 
 ### Date
 
-Sélecteur de date avec calendrier.
+Champ de saisie de date avec format configurable.
 
-**Usage** : Date de naissance, échéances...
-
-**Options** :
-- Format d'affichage
-- Date minimum/maximum
-- Jours désactivés (week-ends, fériés)
-
----
-
-### Date et heure
-
-Date avec sélection de l'heure.
-
-**Usage** : Rendez-vous, événements...
+**Usage** : Date de naissance, échéances, événements...
 
 **Options** :
-- Format 12h/24h
-- Intervalle (15min, 30min, 1h)
-- Plages horaires disponibles
-
----
-
-### Plage de dates
-
-Sélection d'une période (du/au).
-
-**Usage** : Congés, réservations, contrats...
-
-**Options** :
-- Durée minimum/maximum
-- Chevauchements autorisés
+- Structure de la date : `JJ/MM/AAAA`, `MM/JJ/AAAA` ou `AAAA/MM/JJ`
+- Séparateur de date : `/`, `-` ou `.`
+- Répétable (permettre plusieurs entrées)
 
 ## Choix
 
-### Liste déroulante (Select)
+### Choix multiple
 
-Menu déroulant avec choix unique.
+Module de choix polyvalent supportant plusieurs modes d'affichage et sources de données.
 
-**Usage** : Sélection parmi une liste prédéfinie
+**Usage** : Sondages, sélection de produits, filtrage par catégorie...
+
+**Modes d'affichage** :
+- **Boutons** — Boutons radio (choix unique) ou cases à cocher (choix multiples), disposition verticale ou horizontale
+- **Liste déroulante** — Menu select avec recherche
+
+**Source de données** :
+- **Statique** — Liste d'options prédéfinies
+- **API** — Chargement dynamique depuis un endpoint externe (URL, méthode, headers, chemin des données)
 
 **Options** :
-- Liste des options
-- Recherche dans la liste
-- Option par défaut
-- Choix "Autre" avec saisie libre
+- Sélection unique ou multiple
+- Contraintes de sélection (nombre exact, plage min/max)
+- Option "Autre" avec saisie libre
 
 ---
 
-### Boutons radio
+### Oui/Non
 
-Choix unique avec options visibles.
+Choix binaire affiché sous forme de boutons radio.
 
-**Usage** : Peu d'options (2-5), choix importants
-
-**Options** :
-- Affichage vertical/horizontal
-- Images pour les options
-- Option par défaut
-
----
-
-### Cases à cocher (Checkbox)
-
-Choix multiples.
-
-**Usage** : Sélection multiple, acceptations
-
-**Options** :
-- Nombre min/max de sélections
-- Options exclusives
-- "Tout sélectionner"
-
----
-
-### Oui/Non (Toggle)
-
-Question binaire.
-
-**Usage** : Acceptations, confirmations simples
-
-**Options** :
-- Libellés personnalisés (Oui/Non, Accepte/Refuse)
-- Valeur par défaut
+**Usage** : Consentements, confirmations simples...
 
 ## Fichiers
 
-### Upload de fichier
+### Document
 
-Upload d'un document unique.
+Upload d'un fichier unique avec validation.
 
-**Usage** : Pièce d'identité, justificatif...
+**Usage** : Pièce d'identité, justificatif de domicile, CV...
 
 **Options** :
-- Types acceptés (PDF, images, etc.)
+- Types de fichiers acceptés (PDF, images, etc.)
+- Taille maximum (1–20 Mo)
+- Fichier source (document pré-chargé disponible au téléchargement)
+- Traitement par IA (si configuré)
+
+---
+
+### Collection de documents
+
+Galerie dynamique de documents avec règles d'affichage configurables.
+
+**Usage** : Bibliothèque de documents, accès conditionnel aux fichiers...
+
+**Deux sections** :
+- **Fichiers génériques** — Documents pré-uploadés affichés en référence
+- **Fichiers spécifiques** — Documents correspondant à des règles configurables ou uploads manuels
+
+**Filtrage par règles** :
+- Correspondance par tag, type, nom de fichier ou date de création
+- Stratégie de correspondance : au moins une règle ou toutes les règles
+- Tri par date de création, libellé ou nom de fichier
+
+**Options** :
+- Limite d'affichage (1–20 documents)
+- Types de fichiers autorisés
 - Taille maximum
-- Aperçu automatique
+
+## Affichage & Contenu
+
+### WYSIWYG
+
+Bloc de contenu texte riche (affichage uniquement, pas de saisie utilisateur).
+
+**Usage** : Instructions, conditions générales, informations formatées...
+
+**Fonctionnalités** :
+- Éditeur de texte riche complet
+- Support du formatage HTML
+- Affichage de contenu dynamique
 
 ---
 
-### Upload multiple
+### Image
 
-Upload de plusieurs fichiers.
+Affichage d'une image dans le formulaire (pas de saisie utilisateur).
 
-**Usage** : Dossier complet, photos multiples
+**Usage** : Branding, schémas explicatifs, contenu visuel...
 
 **Options** :
-- Nombre min/max de fichiers
-- Taille totale maximum
-- Types par fichier
+- Largeur (1–100% du conteneur)
+- Alignement centré
+- Formats acceptés : PNG, JPG, JPEG, GIF (max 2 Mo)
 
 ---
 
-### Photo / Caméra
+### Séparateur
 
-Capture ou upload d'image.
+Séparateur visuel entre les sections du formulaire (pas de saisie utilisateur).
 
-**Usage** : Selfie, photo de document
+**Usage** : Organisation des sections, regroupement visuel...
 
 **Options** :
-- Caméra uniquement / galerie autorisée
-- Résolution minimum
-- Recadrage
+- Libellé optionnel
+
+---
+
+### Liquid
+
+Bloc de contenu dynamique utilisant le langage de template Liquid (affichage uniquement).
+
+**Usage** : Messages personnalisés, contenu conditionnel, substitution de variables...
+
+**Fonctionnalités** :
+- Syntaxe complète des templates Liquid
+- Éditeur de code avec coloration syntaxique
+- Interpolation de variables depuis les données du formulaire
 
 ## Modules spéciaux
 
-### Signature
+### Informations de contact
 
-Zone de signature manuscrite.
+Formulaire de contact pré-construit avec des champs activables individuellement.
 
-**Usage** : Validation, engagement légal
+**Usage** : Inscription, capture de leads, fiches participants...
+
+**Champs disponibles** (chacun peut être affiché/masqué et rendu obligatoire) :
+- Entreprise
+- Civilité
+- Prénom / Nom
+- Date de naissance (avec format de date configurable)
+- Lieu de naissance
+- Téléphone
+- Email
+- Adresse / Code postal / Ville
+- Pays
+- Nationalité
 
 **Options** :
-- Dimensions de la zone
-- Couleur du trait
-- Signature obligatoire
+- Répétable (permettre plusieurs entrées de contact)
+
+---
+
+### Signature
+
+Collecte de signature numérique avec workflow de signature de documents.
+
+**Usage** : Signature de contrats, workflows de validation, documents légaux...
+
+**Types de signature** :
+- **Générique** — L'utilisateur actuel du formulaire signe
+- **Spécifique au client** — Signataires désignés (depuis un module contact ou saisie manuelle)
+
+**Fonctionnalités** :
+- Upload de documents PDF à signer
+- Éditeur visuel de placement de signature (position par page)
+- Support multi-signataires
+- Suivi du statut par signataire
+- Texte du bouton personnalisable
 
 ::: tip
-La signature peut être intégrée dans les templates PDF pour les documents à signer électroniquement.
+Les signatures sont intégrées avec des services de signature électronique externes pour les documents juridiquement contraignants.
 :::
 
 ---
 
-### Tableau
+### Consentement RGPD
 
-Données tabulaires avec lignes dynamiques.
+Case à cocher de conformité RGPD.
 
-**Usage** : Liste de produits, participants, détails
-
-**Options** :
-- Colonnes (nom, type, largeur)
-- Nombre min/max de lignes
-- Ligne par défaut
-
----
-
-### Informations de contact
-
-Bloc complet de coordonnées.
-
-**Usage** : Fiche contact, coordonnées complètes
-
-**Inclut** :
-- Civilité
-- Nom / Prénom
-- Email
-- Téléphone
-- Adresse
-
----
-
-### Adresse
-
-Champ d'adresse avec autocomplétion.
-
-**Usage** : Adresse postale
+**Usage** : Consentement au traitement des données, inscription newsletter, acceptation des CGU...
 
 **Options** :
-- Autocomplétion (Google Places)
-- Champs séparés ou unifié
-- Pays autorisés
+- Texte descriptif du consentement
+- Obligatoire ou facultatif
 
 ---
 
-### IBAN
+### Checkout
 
-Saisie de coordonnées bancaires.
+Panier d'achat et intégration de paiement.
 
-**Usage** : Prélèvements, virements
+**Usage** : Commande de produits, abonnements, dons, billetterie...
 
-**Validation** :
-- Format IBAN vérifié
-- Clé de contrôle
-- Pays autorisés
-
----
-
-### Bloc HTML
-
-Contenu personnalisé (texte, images).
-
-**Usage** : Instructions, informations, séparateurs
+**Modes du panier** :
+- **Compact** — Affichage minimaliste du panier
+- **Complet** — Interface détaillée du panier
 
 **Options** :
-- Éditeur WYSIWYG
-- HTML brut
-- Variables dynamiques
+- Ajout automatique de produits avec quantités
+- Champs de facturation requis (adresse, code postal, ville, entreprise, TVA, nom, email, pays)
+- Pré-remplissage depuis l'utilisateur connecté ou un module contact
+- Texte du bouton personnalisable
+
+---
+
+### Iframe
+
+Intégration de contenu ou services externes.
+
+**Usage** : Outils tiers, planification de rendez-vous, formulaires externes...
+
+**Options** :
+- URL à intégrer
+- Suivi de complétion (statut en attente/terminé)
 
 ## Paramètres communs
 
-Tous les modules partagent ces options :
+Tous les modules de saisie partagent ces options :
 
 | Paramètre | Description |
 |-----------|-------------|
 | **Libellé** | Question affichée |
-| **Placeholder** | Texte d'exemple |
-| **Texte d'aide** | Indication supplémentaire |
+| **Description** | Texte d'aide supplémentaire |
 | **Obligatoire** | Doit être rempli |
 | **Identifiant** | Nom technique unique |
 | **Largeur** | Demi-largeur ou pleine largeur |
