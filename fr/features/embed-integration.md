@@ -1,53 +1,66 @@
 ---
 title: Intégration & Embed
-description: Intégrez les formulaires Formulr dans votre application grâce aux URLs signées.
+description: Intégrez les formulaires Formulr dans votre application grâce au mode embed et aux URLs signées.
 ---
 
 # Intégration & Embed
 
-Intégrez les formulaires Formulr directement dans votre application. Vos utilisateurs peuvent accéder aux formulaires et y répondre sans quitter votre plateforme, sans connexion séparée.
+Intégrez les formulaires Formulr directement dans votre application. Deux mécanismes indépendants sont disponibles :
 
-## Fonctionnement
-
-1. **Générez un secret d'intégration** depuis votre panneau d'administration Formulr (Paramètres > Intégration)
-2. **Votre backend signe une URL** avec ce secret via HMAC-SHA256
-3. **Intégrez le formulaire** via une iframe ou redirigez vos utilisateurs
-
-L'URL signée donne accès à une campagne spécifique en tant que répondant. Le secret d'intégration ne quitte jamais votre serveur.
+- **Mode embed** (`?embed=true`) : masquer l'en-tête, le pied de page et le logo Formulr pour l'affichage en iframe
+- **URL signée** : auto-login sur une réponse existante via URL signée HMAC
 
 ## Méthodes d'intégration
 
-### Iframe (intégré)
+### Démarrer un nouveau formulaire
 
-Affichez le formulaire directement dans votre application. Utilisez le paramètre `embed=true` pour masquer l'en-tête et le pied de page Formulr.
+Utilisez l'URL `/to/{campaignUuid}` pour permettre aux utilisateurs de démarrer une nouvelle réponse. Ajoutez `?embed=true` pour masquer le chrome Formulr en iframe.
 
 ```html
+<!-- Iframe : nouveau formulaire en mode embed -->
 <iframe
-  src="https://app.formulr.io/c/{campaignUuid}?...&embed=true&sig=xxx"
+  src="https://app.formulr.io/to/{campaignUuid}?embed=true"
   width="100%"
   height="800"
   frameborder="0">
 </iframe>
+
+<!-- Redirect : nouveau formulaire avec interface Formulr complète -->
+<a href="https://app.formulr.io/to/{campaignUuid}">
+  Accéder au formulaire
+</a>
 ```
 
-### Redirect (bouton)
+L'utilisateur s'inscrira ou se connectera via le flow standard de Formulr.
 
-Redirigez vos utilisateurs vers le formulaire sur Formulr. Ils verront l'interface complète de Formulr.
+### Accéder à une réponse existante (URL signée)
+
+Utilisez une URL signée pour donner à un utilisateur un accès direct à sa réponse existante, sans qu'il ait besoin de se connecter. C'est utile quand votre backend gère déjà la relation utilisateur-réponse.
 
 ```html
-<a href="https://app.formulr.io/c/{campaignUuid}?...&sig=xxx">
-  Accéder au formulaire
+<!-- Iframe : réponse existante en mode embed -->
+<iframe
+  src="https://app.formulr.io/response/{responseUuid}?user_email=...&expires=...&embed=true&sig=..."
+  width="100%"
+  height="800"
+  frameborder="0">
+</iframe>
+
+<!-- Redirect : réponse existante -->
+<a href="https://app.formulr.io/response/{responseUuid}?user_email=...&expires=...&sig=...">
+  Continuer le formulaire
 </a>
 ```
 
 ## Générer une URL signée
 
+Les URLs signées s'appliquent uniquement à l'endpoint `/response/{responseUuid}`.
+
 ### Paramètres
 
 | Paramètre    | Requis | Description                                              |
 |-------------|--------|----------------------------------------------------------|
-| `user_email` | Oui    | Adresse email de l'utilisateur accédant au formulaire    |
-| `user_name`  | Non    | Nom affiché de l'utilisateur                             |
+| `user_email` | Oui    | Adresse email de l'utilisateur accédant à la réponse     |
 | `expires`    | Oui    | Timestamp Unix — date d'expiration de l'URL              |
 | `embed`      | Non    | Mettre à `true` pour masquer l'en-tête/pied de page (mode iframe) |
 
@@ -67,18 +80,19 @@ Les paramètres **doivent être triés par ordre alphabétique** avant la signat
 
 ```php
 $secret = 'votre_secret_integration';
+$responseUuid = 'uuid-de-la-reponse';
 
 $params = [
+    'embed'      => 'true', // optionnel, pour iframe
     'expires'    => time() + 3600,
     'user_email' => 'jean@exemple.fr',
-    'user_name'  => 'Jean Dupont',
 ];
 
 ksort($params);
 $query = http_build_query($params);
 $sig   = hash_hmac('sha256', $query, $secret);
 
-$url = "https://app.formulr.io/c/{campaignUuid}?{$query}&sig={$sig}";
+$url = "https://app.formulr.io/response/{$responseUuid}?{$query}&sig={$sig}";
 ```
 
 ### Node.js
@@ -87,11 +101,12 @@ $url = "https://app.formulr.io/c/{campaignUuid}?{$query}&sig={$sig}";
 const crypto = require('crypto');
 
 const secret = 'votre_secret_integration';
+const responseUuid = 'uuid-de-la-reponse';
 
 const params = {
+  embed: 'true', // optionnel, pour iframe
   expires: Math.floor(Date.now() / 1000) + 3600,
   user_email: 'jean@exemple.fr',
-  user_name: 'Jean Dupont',
 };
 
 const sorted = Object.keys(params).sort().reduce((acc, key) => {
@@ -102,7 +117,7 @@ const sorted = Object.keys(params).sort().reduce((acc, key) => {
 const query = sorted.toString();
 const sig   = crypto.createHmac('sha256', secret).update(query).digest('hex');
 
-const url = `https://app.formulr.io/c/${campaignUuid}?${query}&sig=${sig}`;
+const url = `https://app.formulr.io/response/${responseUuid}?${query}&sig=${sig}`;
 ```
 
 ### Python
@@ -112,17 +127,18 @@ import hashlib, hmac, time
 from urllib.parse import urlencode
 
 secret = 'votre_secret_integration'
+response_uuid = 'uuid-de-la-reponse'
 
 params = {
+    'embed': 'true',  # optionnel, pour iframe
     'expires': int(time.time()) + 3600,
     'user_email': 'jean@exemple.fr',
-    'user_name': 'Jean Dupont',
 }
 
 query = urlencode(sorted(params.items()))
 sig   = hmac.new(secret.encode(), query.encode(), hashlib.sha256).hexdigest()
 
-url = f"https://app.formulr.io/c/{campaign_uuid}?{query}&sig={sig}"
+url = f"https://app.formulr.io/response/{response_uuid}?{query}&sig={sig}"
 ```
 
 ## Gérer votre secret d'intégration
