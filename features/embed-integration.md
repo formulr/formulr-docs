@@ -11,7 +11,7 @@ Integrate Formulr forms directly into your application. Two independent mechanis
 - **Client SSO**: auto-login to an existing response via HMAC-signed URL
 
 ::: tip Enterprise plan
-Embed mode and Client SSO are available exclusively on the [Enterprise plan](/features/custom-domain).
+Embed mode and Client SSO are available exclusively on the Enterprise plan.
 :::
 
 ## Integration Methods
