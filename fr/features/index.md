@@ -71,6 +71,9 @@ Utilisez l'IA pour analyser et résumer les réponses collectées.
 
 <div class="features-grid">
 
+### [Intégration & Embed](/fr/features/embed-integration)
+Intégrez les formulaires directement dans votre application via des URLs signées, en iframe ou en redirect.
+
 ### [API & Webhooks](/fr/features/api-webhooks)
 Intégrez Formulr à vos outils existants via notre API REST et les webhooks.
 

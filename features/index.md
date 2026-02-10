@@ -71,6 +71,9 @@ Use AI to analyze and summarize collected responses.
 
 <div class="features-grid">
 
+### [Embed & Integration](/features/embed-integration)
+Embed forms directly into your application using signed URLs, via iframe or redirect.
+
 ### [API & Webhooks](/features/api-webhooks)
 Integrate Formulr with your existing tools via our REST API and webhooks.
 

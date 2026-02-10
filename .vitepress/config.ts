@@ -110,6 +110,7 @@ export default defineConfig({
             {
               text: 'Integrations',
               items: [
+                { text: 'Embed & Integration', link: '/features/embed-integration' },
                 { text: 'API & Webhooks', link: '/features/api-webhooks' },
                 { text: 'Yousign', link: '/features/yousign' },
                 { text: 'Stripe', link: '/features/stripe' },
@@ -235,6 +236,7 @@ export default defineConfig({
             {
               text: 'Intégrations',
               items: [
+                { text: 'Intégration & Embed', link: '/fr/features/embed-integration' },
                 { text: 'API & Webhooks', link: '/fr/features/api-webhooks' },
                 { text: 'Yousign', link: '/fr/features/yousign' },
                 { text: 'Stripe', link: '/fr/features/stripe' },
