@@ -140,11 +140,6 @@ Le connecteur expose les 42 outils ci-dessous. Les outils **Lecture** ne modifie
 | Erreur « Unknown client » à la connexion | Supprimez le connecteur puis ajoutez-le à nouveau pour enregistrer un nouveau client |
 | Erreur `401` en cours de conversation | Votre session a expiré : déconnectez puis reconnectez le connecteur |
 
-## Support et confidentialité
-
-- Support : [support@formulr.io](mailto:support@formulr.io)
-- [Politique de confidentialité](https://www.formulr.io/fr/legal/privacy)
-
 ## Prochaines étapes
 
 - [Types de modules](/fr/features/modules) - Les champs disponibles

@@ -140,11 +140,6 @@ The connector exposes the 42 tools below. **Read** tools never change data, **Cr
 | "Unknown client" error when connecting | Remove the connector, then add it again to register a fresh client |
 | `401` error during a conversation | Your session has expired: disconnect and reconnect the connector |
 
-## Support and Privacy
-
-- Support: [support@formulr.io](mailto:support@formulr.io)
-- [Privacy policy](https://www.formulr.io/en/legal/privacy)
-
 ## Next Steps
 
 - [Module Types](/features/modules) - Fields you can build
