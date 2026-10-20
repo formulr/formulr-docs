@@ -83,6 +83,9 @@ Signature électronique certifiée eIDAS.
 ### [Stripe](/fr/features/stripe)
 Collectez des paiements directement dans vos formulaires.
 
+### [Connecteur Claude & MCP](/fr/features/mcp)
+Créez des formulaires et traitez vos réponses depuis Claude ou tout client MCP.
+
 </div>
 
 <style>
