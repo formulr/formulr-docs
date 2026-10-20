@@ -114,6 +114,7 @@ export default defineConfig({
                 { text: 'API & Webhooks', link: '/features/api-webhooks' },
                 { text: 'Yousign', link: '/features/yousign' },
                 { text: 'Stripe', link: '/features/stripe' },
+                { text: 'Claude & MCP Connector', link: '/features/mcp' },
               ],
             },
             {
@@ -240,6 +241,7 @@ export default defineConfig({
                 { text: 'API & Webhooks', link: '/fr/features/api-webhooks' },
                 { text: 'Yousign', link: '/fr/features/yousign' },
                 { text: 'Stripe', link: '/fr/features/stripe' },
+                { text: 'Connecteur Claude & MCP', link: '/fr/features/mcp' },
               ],
             },
             {

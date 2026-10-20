@@ -83,6 +83,9 @@ eIDAS certified electronic signature.
 ### [Stripe](/features/stripe)
 Collect payments directly in your forms.
 
+### [Claude & MCP Connector](/features/mcp)
+Build forms and process responses from Claude or any MCP client.
+
 </div>
 
 <style>
