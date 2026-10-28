@@ -115,6 +115,7 @@ export default defineConfig({
                 { text: 'Yousign', link: '/features/yousign' },
                 { text: 'Stripe', link: '/features/stripe' },
                 { text: 'Claude & MCP Connector', link: '/features/mcp' },
+                { text: 'Google Drive', link: '/features/google-drive' },
               ],
             },
             {
@@ -242,6 +243,7 @@ export default defineConfig({
                 { text: 'Yousign', link: '/fr/features/yousign' },
                 { text: 'Stripe', link: '/fr/features/stripe' },
                 { text: 'Connecteur Claude & MCP', link: '/fr/features/mcp' },
+                { text: 'Google Drive', link: '/fr/features/google-drive' },
               ],
             },
             {
