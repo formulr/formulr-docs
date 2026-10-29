@@ -90,6 +90,7 @@ export default defineConfig({
                 {
                   text: 'Electronic Signature',
                   link: '/features/electronic-signature',
+                  collapsed: true,
                   items: [
                     { text: 'Formulr Trust', link: '/features/formulr-trust' },
                     { text: 'Yousign (on request)', link: '/features/yousign' },
@@ -152,6 +153,7 @@ export default defineConfig({
           copyright: '© 2024 Formulr. All rights reserved.',
         },
         outline: {
+          level: [2, 3],
           label: 'On this page',
         },
         docFooter: {
@@ -230,6 +232,7 @@ export default defineConfig({
                 {
                   text: 'Signature électronique',
                   link: '/fr/features/electronic-signature',
+                  collapsed: true,
                   items: [
                     { text: 'Formulr Trust', link: '/fr/features/formulr-trust' },
                     { text: 'Yousign (sur demande)', link: '/fr/features/yousign' },
@@ -311,6 +314,7 @@ export default defineConfig({
           },
         },
         outline: {
+          level: [2, 3],
           label: 'Sur cette page',
         },
         docFooter: {

@@ -9,6 +9,7 @@ The **Electronic signature** module lets you have a document (contract, mandate,
 
 Signing is provided by [Formulr Trust](./formulr-trust), Formulr's own signature solution, used by default. [Yousign](./yousign) remains available on request.
 
+
 ## How it works
 
 1. The respondent fills in the form.
@@ -27,7 +28,7 @@ Signing is provided by [Formulr Trust](./formulr-trust), Formulr's own signature
    - **Use a template**: a [PDF template](./pdf-templates) filled with the answers. This choice shows when the campaign has at least one template (**Documents** tab).
 4. In **Place the signature**, click **Place** and drag each signer's name to the right spot on the document. With a template, signatures can also be placed with anchors (see below).
 5. You can add several documents with **Add another document**.
-6. Option: **The signer can be an external person** lets the respondent name someone else, who receives the request by email.
+6. Option: **The signer can be an external person** lets the respondent have someone else sign (see [When the signer is not the respondent](#when-the-signer-is-not-the-respondent)).
 7. Click **Validate**, then publish the campaign.
 
 ![Electronic signature module settings](/screenshots/esignature-module-en.png)
@@ -58,10 +59,33 @@ Example with two signers:
 
 The template editor warns you if the numbering is incomplete. The anchor is invisible in the final document: only the signature shows.
 
+## When the signer is not the respondent
+
+The person filling in the form is not always the one who must sign: a team member completes the file, but the legal representative signs.
+
+### Enable the option
+
+In the module settings, turn on **The signer can be an external person (signature request sent by email)**, then click **Validate** and publish the campaign.
+
+### What the respondent sees
+
+When it is time to sign, the respondent sees who is planned as **Signer** and can either:
+
+- **Sign now**, themselves, as usual;
+- name another person:
+  - if they are the planned signer, they click **Someone else must sign** and enter the signer's **First name**, **Last name** and **Email**, then **Send the signature request by email**;
+  - if the planned signer is a person entered in the form, they click **This person is not me: send them the signature request by email**.
+
+The **Signature request sent** message confirms it. The respondent can still **Preview document** and leave the page: they are notified by email once the document is signed.
+
+### What the signer receives
+
+The signer receives the signature request **by email**. Once signed, the document is attached to the response like any other signature.
+
 ## Several signers
 
 - A single signer, the respondent: they sign **in the form**.
-- Several signers, or an external signer: each one receives **an email invitation to sign**. The respondent sees a message telling them the requests have been sent.
+- Several signers: each one receives **an email invitation to sign**. The respondent sees a message telling them the requests have been sent.
 
 ## Tracking in the response
 

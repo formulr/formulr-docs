@@ -9,6 +9,7 @@ Le module **Signature électronique** permet de faire signer un document (contra
 
 La signature est assurée par [Formulr Trust](./formulr-trust), la solution de signature de Formulr, utilisée par défaut. [Yousign](./yousign) reste disponible sur demande.
 
+
 ## Fonctionnement
 
 1. Le répondant remplit le formulaire.
@@ -27,7 +28,7 @@ La signature est assurée par [Formulr Trust](./formulr-trust), la solution de s
    - **Utiliser un template** : un [template PDF](./pdf-templates) rempli avec les réponses. Ce choix apparaît quand la campagne a au moins un template (onglet **Documents**).
 4. Dans **Positionner la signature**, cliquez sur **Positionner** et glissez le nom de chaque signataire à l'endroit voulu du document. Avec un template, les signatures peuvent aussi être placées par des ancres (voir ci-dessous).
 5. Vous pouvez ajouter plusieurs documents avec **Ajouter un autre document**.
-6. Option : **Le signataire peut être une personne externe** permet au répondant d'indiquer quelqu'un d'autre, qui recevra la demande par email.
+6. Option : **Le signataire peut être une personne externe** permet au répondant de faire signer quelqu'un d'autre (voir [Quand le signataire n'est pas le répondant](#quand-le-signataire-n-est-pas-le-repondant)).
 7. Cliquez sur **Valider**, puis publiez la campagne.
 
 ![Réglages du module Signature électronique](/screenshots/esignature-module-fr.png)
@@ -58,10 +59,33 @@ Exemple avec deux signataires :
 
 L'éditeur de template vous alerte si la numérotation est incomplète. L'ancre est invisible dans le document final : seule la signature apparaît.
 
+## Quand le signataire n'est pas le répondant
+
+Celui qui remplit le formulaire n'est pas toujours celui qui doit signer : un collaborateur complète le dossier, mais c'est le représentant légal qui signe.
+
+### Activer l'option
+
+Dans les réglages du module, activez **Le signataire peut être une personne externe (demande de signature envoyée par email)**, puis cliquez sur **Valider** et publiez la campagne.
+
+### Ce que voit le répondant
+
+Au moment de signer, le répondant voit qui est prévu comme **Signataire** et peut, au choix :
+
+- **Signer maintenant**, lui-même, comme d'habitude ;
+- désigner une autre personne :
+  - si c'est lui qui est prévu comme signataire, il clique sur **Quelqu'un d'autre doit signer** et saisit le **Prénom**, le **Nom** et l'**Email** du signataire, puis **Envoyer la demande de signature par email** ;
+  - si le signataire prévu est une personne saisie dans le formulaire, il clique sur **Cette personne n'est pas moi : lui envoyer la demande de signature par email**.
+
+Le message **Demande de signature envoyée** confirme l'envoi. Le répondant peut toujours **Voir le document** et quitter la page : il est prévenu par email dès que le document est signé.
+
+### Ce que reçoit le signataire
+
+Le signataire reçoit la demande de signature **par email**. Une fois le document signé, il est rattaché à la réponse comme pour une signature classique.
+
 ## Plusieurs signataires
 
 - Un seul signataire, le répondant : il signe **dans le formulaire**.
-- Plusieurs signataires, ou un signataire externe : chacun reçoit **un email d'invitation à signer**. Le répondant voit un message lui indiquant que les demandes ont été envoyées.
+- Plusieurs signataires : chacun reçoit **un email d'invitation à signer**. Le répondant voit un message lui indiquant que les demandes ont été envoyées.
 
 ## Suivi dans la réponse
 
