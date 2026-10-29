@@ -161,3 +161,32 @@ tr:hover {
 html {
   scroll-behavior: smooth;
 }
+
+/* Sidebar: section titles as small caps headers, like a docs portal */
+.VPSidebarItem.level-0 > .item > .text,
+.VPSidebarItem.level-0 > .item > .link > .text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--vp-c-text-1);
+}
+
+/* Right outline: plain list with a thin rail */
+.VPDocAsideOutline .content {
+  border-left: 1px solid var(--vp-c-divider);
+}
+.VPDocAsideOutline .outline-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--vp-c-text-2);
+}
+.VPDocAsideOutline .outline-link {
+  font-size: 13px;
+  white-space: normal;
+  overflow: visible;
+  line-height: 1.4;
+  padding: 4px 0;
+  color: var(--vp-c-text-2);
+}

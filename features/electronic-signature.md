@@ -1,161 +1,113 @@
 ---
 title: Electronic Signature
-description: Integrate Yousign electronic signature into your Formulr forms.
+description: Have your documents signed directly in your forms with the Electronic signature module.
 ---
 
 # Electronic Signature
 
-Formulr integrates with Yousign to offer certified electronic signatures directly in your processes.
+The **Electronic signature** module lets you have a document (contract, mandate, statement...) signed directly within your form. The signed document is then attached to the response.
 
-## How It Works
+Signing is provided by [Formulr Trust](./formulr-trust), Formulr's own signature solution, used by default. [Yousign](./yousign) remains available on request.
 
-1. The user fills out the form
-2. A PDF document is generated with their data
-3. The document is sent to Yousign for signature
-4. The user signs electronically
-5. The signed document is archived
 
-## Prerequisites
+## How it works
 
-Electronic signature is natively integrated into Formulr via Yousign, a French eIDAS-certified solution. No additional configuration is required.
+1. The respondent fills in the form.
+2. On the signature module, they review the document, prefilled with their answers.
+3. They sign directly in the form, without leaving the page.
+4. The signed document is saved in the response and the field is set to **Approved**.
 
-### Enable Signature
+## Add a signature to a form
 
-1. Go to **Settings** > **Signature**
-2. Enable electronic signature
-3. Choose the environment (Test/Production)
+1. In the editor, add an **Electronic signature** module. It must be alone in its section.
+2. Open its settings and choose the **Type**:
+   - **Generic document**: the logged-in respondent signs;
+   - **Personalized document**: you choose the **Signatories** (the respondent, or a person whose details are entered in another module of the form). This type is not available on the first step.
+3. Choose the **Document to sign**:
+   - **Add a PDF file**: a fixed document, uploaded with **Browse**;
+   - **Use a template**: a [PDF template](./pdf-templates) filled with the answers. This choice shows when the campaign has at least one template (**Documents** tab).
+4. In **Place the signature**, click **Place** and drag each signer's name to the right spot on the document. With a template, signatures can also be placed with anchors (see below).
+5. You can add several documents with **Add another document**.
+6. Option: **The signer can be an external person** lets the respondent have someone else sign (see [When the signer is not the respondent](#when-the-signer-is-not-the-respondent)).
+7. Click **Validate**, then publish the campaign.
 
-## Create a Template with Signature
+![Electronic signature module settings](/screenshots/esignature-module-en.png)
 
-### 1. PDF Template
+## Signature areas in a PDF template
 
-Create a document template including signature zones:
+In a template, place an anchor where the signature must appear:
 
-```liquid
-<div class="signature-zone">
-  <p>Client signature:</p>
-  {% raw %}{{s1|signature|210|130}}{% endraw %}
-</div>
-
-<div class="signature-zone">
-  <p>Advisor signature:</p>
-  {% raw %}{{s2|signature|210|130}}{% endraw %}
-</div>
+```text
+{{s1|signature|210|130}}
 ```
 
-### 2. Signature Syntax
+| Part | Role |
+|------|------|
+| `s1` | Signer number: `s1`, `s2`, `s3`... in order, with no gap |
+| `210` | Width of the area |
+| `130` | Height of the area |
 
+Example with two signers:
+
+```text
+<p>The client:</p>
+{{s1|signature|210|130}}
+
+<p>The advisor:</p>
+{{s2|signature|210|130}}
 ```
-{{s[N]|signature|[width]|[height]}}
-```
 
-| Parameter | Description |
-|-----------|-------------|
-| `s[N]` | Signer identifier (s1, s2, s3...) |
-| `width` | Zone width in pixels |
-| `height` | Zone height in pixels |
+The template editor warns you if the numbering is incomplete. The anchor is invisible in the final document: only the signature shows.
 
-### 3. Multiple Signers
+## When the signer is not the respondent
 
-For multiple signers, number sequentially:
+The person filling in the form is not always the one who must sign: a team member completes the file, but the legal representative signs.
 
-- `s1`: First signer (e.g., client)
-- `s2`: Second signer (e.g., advisor)
-- `s3`: Third signer (e.g., witness)
+### Enable the option
 
-::: warning Important
-Numbers must be sequential (s1, s2, s3...). The editor alerts you if the sequence is incomplete.
-:::
+In the module settings, turn on **The signer can be an external person (signature request sent by email)**, then click **Validate** and publish the campaign.
 
-## Trigger Signature
+### What the respondent sees
 
-### From a Response
+When it is time to sign, the respondent sees who is planned as **Signer** and can either:
 
-1. Open the response details
-2. Generate the PDF document
-3. Click **"Send for signature"**
-4. Enter the signers' emails
-5. Validate
+- **Sign now**, themselves, as usual;
+- name another person:
+  - if they are the planned signer, they click **Someone else must sign** and enter the signer's **First name**, **Last name** and **Email**, then **Send the signature request by email**;
+  - if the planned signer is a person entered in the form, they click **This person is not me: send them the signature request by email**.
 
-### Automatically via Workflow
+The **Signature request sent** message confirms it. The respondent can still **Preview document** and leave the page: they are notified by email once the document is signed.
 
-Configure the workflow to trigger automatically:
+### What the signer receives
 
-1. Add a "Electronic signature" action
-2. Associate the template
-3. Map the signers
+The signer receives the signature request **by email**. Once signed, the document is attached to the response like any other signature.
 
-## Signature Tracking
+## Several signers
 
-### Possible States
+- A single signer, the respondent: they sign **in the form**.
+- Several signers: each one receives **an email invitation to sign**. The respondent sees a message telling them the requests have been sent.
 
-| State | Description |
-|------|-------------|
-| **Pending** | Sent, awaiting signature |
-| **Partially Signed** | Some signers have signed |
-| **Signed** | All have signed |
-| **Declined** | A signer declined |
-| **Expired** | Deadline passed |
+## Tracking in the response
 
-### Notifications
+| Display | Meaning |
+|---------|---------|
+| **Waiting for signature** | The document has not been signed yet. |
+| **Signature in progress** | At least one signature is in progress. |
+| **Signatories statuses** | With several signers, each one is shown with their state (signed or pending). |
+| **See signed document** | All signatures are done: open the signed PDF. |
 
-- Email to each signer
-- Automatic reminders
-- Completion notification
+![Signed document in the response](/screenshots/esignature-response-en.png)
 
-## Signed Document
+An administrator can **Reset signature**: the signed or pending document is then lost and the respondent has to sign again.
 
-Once signed:
+## Good to know
 
-- The PDF is timestamped and certified
-- A signature certificate is attached
-- The document is archived in Formulr
-- Downloadable from the response
+- **Test mode**: until your account is switched to production, signatures are test signatures with no legal value. Request production through your **Support** access.
+- The respondent can **download** their signed document at the end of the signature.
+- Fields from previous steps are locked when the signature starts, so that the signed document matches the answers.
 
-## Legal Value
+## See also
 
-Yousign signatures are:
-
-- Compliant with eIDAS (European regulation)
-- Legally recognized in France and Europe
-- Timestamped and traceable
-- Securely archived
-
-## Use Cases
-
-### Contracts
-
-- Engagement letters
-- Mandates
-- Terms and conditions
-
-### HR
-
-- Employment contracts
-- Amendments
-- Internship agreements
-
-### Real Estate
-
-- Leases
-- Condition reports
-- Management mandates
-
-### Finance
-
-- Account openings
-- Subscriptions
-- Powers of attorney
-
-## Best Practices
-
-1. **Clearly position** signature zones
-2. **Identify** each signer (name, role)
-3. **Test** with Yousign sandbox environment
-4. **Inform** signers of the process
-
-## Next Steps
-
-- [PDF Templates](/features/pdf-templates) - Create documents
-- [Yousign](/features/yousign) - Advanced configuration
-- [Workflows](/features/workflows) - Automation
+- [Formulr Trust](./formulr-trust): the default signature solution
+- [Yousign](./yousign): on request
+- [PDF Templates](./pdf-templates)

@@ -87,8 +87,23 @@ export default defineConfig({
               text: 'Documents',
               items: [
                 { text: 'PDF Templates', link: '/features/pdf-templates' },
-                { text: 'Electronic Signature', link: '/features/electronic-signature' },
+                {
+                  text: 'Electronic Signature',
+                  link: '/features/electronic-signature',
+                  collapsed: true,
+                  items: [
+                    { text: 'Formulr Trust', link: '/features/formulr-trust' },
+                    { text: 'Yousign (on request)', link: '/features/yousign' },
+                  ],
+                },
                 { text: 'Automatic Generation', link: '/features/document-generation' },
+              ],
+            },
+            {
+              text: 'Artificial Intelligence',
+              items: [
+                { text: 'AI agents on documents', link: '/features/ai-analysis' },
+                { text: 'Dossier analysis by AI', link: '/features/ai-dossier-analysis' },
               ],
             },
             {
@@ -104,7 +119,6 @@ export default defineConfig({
                 { text: 'Workflows', link: '/features/workflows' },
                 { text: 'Notifications', link: '/features/notifications' },
                 { text: 'Automatic Reminders', link: '/features/reminders' },
-                { text: 'AI Analysis', link: '/features/ai-analysis' },
               ],
             },
             {
@@ -112,7 +126,6 @@ export default defineConfig({
               items: [
                 { text: 'Embed & Integration', link: '/features/embed-integration' },
                 { text: 'API & Webhooks', link: '/features/api-webhooks' },
-                { text: 'Yousign', link: '/features/yousign' },
                 { text: 'Stripe', link: '/features/stripe' },
                 { text: 'Claude & MCP Connector', link: '/features/mcp' },
                 { text: 'Google Drive', link: '/features/google-drive' },
@@ -140,6 +153,7 @@ export default defineConfig({
           copyright: '© 2024 Formulr. All rights reserved.',
         },
         outline: {
+          level: [2, 3],
           label: 'On this page',
         },
         docFooter: {
@@ -215,8 +229,23 @@ export default defineConfig({
               text: 'Documents',
               items: [
                 { text: 'Templates PDF', link: '/fr/features/pdf-templates' },
-                { text: 'Signature électronique', link: '/fr/features/electronic-signature' },
+                {
+                  text: 'Signature électronique',
+                  link: '/fr/features/electronic-signature',
+                  collapsed: true,
+                  items: [
+                    { text: 'Formulr Trust', link: '/fr/features/formulr-trust' },
+                    { text: 'Yousign (sur demande)', link: '/fr/features/yousign' },
+                  ],
+                },
                 { text: 'Génération automatique', link: '/fr/features/document-generation' },
+              ],
+            },
+            {
+              text: 'Intelligence artificielle',
+              items: [
+                { text: 'Agents IA sur les documents', link: '/fr/features/ai-analysis' },
+                { text: 'Analyse du dossier par l\'IA', link: '/fr/features/ai-dossier-analysis' },
               ],
             },
             {
@@ -232,7 +261,6 @@ export default defineConfig({
                 { text: 'Workflows', link: '/fr/features/workflows' },
                 { text: 'Notifications', link: '/fr/features/notifications' },
                 { text: 'Relances automatiques', link: '/fr/features/reminders' },
-                { text: 'Analyse IA', link: '/fr/features/ai-analysis' },
               ],
             },
             {
@@ -240,7 +268,6 @@ export default defineConfig({
               items: [
                 { text: 'Intégration & Embed', link: '/fr/features/embed-integration' },
                 { text: 'API & Webhooks', link: '/fr/features/api-webhooks' },
-                { text: 'Yousign', link: '/fr/features/yousign' },
                 { text: 'Stripe', link: '/fr/features/stripe' },
                 { text: 'Connecteur Claude & MCP', link: '/fr/features/mcp' },
                 { text: 'Google Drive', link: '/fr/features/google-drive' },
@@ -287,6 +314,7 @@ export default defineConfig({
           },
         },
         outline: {
+          level: [2, 3],
           label: 'Sur cette page',
         },
         docFooter: {

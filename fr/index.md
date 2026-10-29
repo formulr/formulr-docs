@@ -29,7 +29,7 @@ features:
     link: /fr/features/pdf-templates
   - icon: ✍️
     title: Signature électronique
-    details: Intégrez la signature électronique Yousign directement dans vos formulaires pour des processus 100% dématérialisés.
+    details: Faites signer vos documents directement dans vos formulaires pour des processus 100% dématérialisés.
     link: /fr/features/electronic-signature
   - icon: 🌍
     title: Multi-langue
@@ -40,9 +40,9 @@ features:
     details: Automatisez vos processus avec des workflows visuels, des conditions et des actions automatiques.
     link: /fr/features/workflows
   - icon: 🤖
-    title: Analyse IA
-    details: Utilisez l'intelligence artificielle pour analyser les réponses et générer des résumés automatiques.
-    link: /fr/features/ai-analysis
+    title: Vérification par l'IA
+    details: Faites vérifier chaque document déposé et chaque dossier complet par l'IA, selon vos propres règles.
+    link: /fr/features/ai-dossier-analysis
 ---
 
 <style>

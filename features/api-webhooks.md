@@ -318,4 +318,4 @@ Complete API documentation is available:
 
 - [Workflows](/features/workflows) - No-code automation
 - [Export](/guide/export) - Data export
-- [Yousign](/features/yousign) - Signature integration
+- [Electronic Signature](/features/electronic-signature) - Signature integration

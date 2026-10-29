@@ -29,7 +29,7 @@ features:
     link: /features/pdf-templates
   - icon: ✍️
     title: Electronic Signature
-    details: Integrate Yousign electronic signature directly into your forms for 100% paperless processes.
+    details: Have your documents signed directly in your forms for 100% paperless processes.
     link: /features/electronic-signature
   - icon: 🌍
     title: Multi-language
@@ -40,9 +40,9 @@ features:
     details: Automate your processes with visual workflows, conditions, and automatic actions.
     link: /features/workflows
   - icon: 🤖
-    title: AI Analysis
-    details: Use artificial intelligence to analyze responses and generate automatic summaries.
-    link: /features/ai-analysis
+    title: AI verification
+    details: Have AI check each uploaded document and each complete file, against your own rules.
+    link: /features/ai-dossier-analysis
 ---
 
 <style>

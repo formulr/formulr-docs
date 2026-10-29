@@ -30,10 +30,28 @@ Configure custom validation rules to ensure data quality.
 Create templates with the visual editor or Liquid code to generate personalized documents.
 
 ### [Electronic Signature](/features/electronic-signature)
-Integrate Yousign for legal electronic signatures directly in your forms.
+Have your documents signed directly in the form.
+
+### [Formulr Trust](/features/formulr-trust)
+Formulr's electronic signature solution, used by default.
+
+### [Yousign](/features/yousign)
+Signing with Yousign, on request.
 
 ### [Automatic Generation](/features/document-generation)
 Automatically generate PDFs from collected responses.
+
+</div>
+
+## Artificial Intelligence
+
+<div class="features-grid">
+
+### [AI agents on documents](/features/ai-analysis)
+Have each uploaded document checked automatically (identity document, KBIS, proof of address).
+
+### [Dossier analysis by AI](/features/ai-dossier-analysis)
+Have each complete file analyzed against your rules: score, points of attention and recommendation.
 
 </div>
 
@@ -62,9 +80,6 @@ Configure automatic emails at each step of the process.
 ### [Automatic Reminders](/features/reminders)
 Schedule reminders for incomplete forms.
 
-### [AI Analysis](/features/ai-analysis)
-Use AI to analyze and summarize collected responses.
-
 </div>
 
 ## Integrations
@@ -77,14 +92,14 @@ Embed forms directly into your application using signed URLs, via iframe or redi
 ### [API & Webhooks](/features/api-webhooks)
 Integrate Formulr with your existing tools via our REST API and webhooks.
 
-### [Yousign](/features/yousign)
-eIDAS certified electronic signature.
-
 ### [Stripe](/features/stripe)
 Collect payments directly in your forms.
 
 ### [Claude & MCP Connector](/features/mcp)
 Build forms and process responses from Claude or any MCP client.
+
+### [Google Drive](/features/google-drive)
+Create your working documents in your Google Drive, from each response.
 
 </div>
 
