@@ -1,203 +1,57 @@
 ---
-title: Analyse IA
-description: Exploitez l'intelligence artificielle pour analyser vos réponses et extraire des insights.
+title: Agents IA sur les documents
+description: Faites vérifier automatiquement par l'IA chaque document déposé par vos clients (pièce d'identité, KBIS, justificatif de domicile).
 ---
 
-# Analyse IA
+# Agents IA sur les documents
 
-Formulr intègre des fonctionnalités d'intelligence artificielle pour vous aider à analyser et exploiter vos données collectées.
+Un **agent IA** se branche sur un module **Document** de votre formulaire. Dès que le client dépose son fichier, l'agent le lit et vérifie qu'il correspond bien à ce qui est attendu : bon type de document, informations présentes, cohérence avec les réponses du formulaire. Le résultat s'affiche directement sur le champ, dans la fiche de la réponse.
 
-## Fonctionnalités
+Pour analyser le **dossier complet** (toutes les réponses et tous les documents ensemble), voir [Analyse du dossier par l'IA](./ai-dossier-analysis).
 
-### Résumé automatique
+## Agents disponibles
 
-L'IA génère un résumé concis de chaque réponse :
+| Agent | Ce qu'il vérifie |
+|-------|------------------|
+| **Carte d'identité** | Pièce d'identité officielle (carte d'identité, passeport, permis) : nom, prénom, numéro du document, date de naissance, date d'expiration, pays émetteur. Le nom et le prénom doivent correspondre à ceux saisis dans le formulaire (sans tenir compte des majuscules, de l'ordre ni des accents). |
+| **KBIS** | Extrait Kbis d'une société. |
+| **Justificatif de domicile** | Justificatif de domicile. |
 
-- Points clés extraits
-- Informations importantes mises en avant
-- Synthèse des données saisies
+::: info Un autre type de document ?
+Les agents sont fournis par Formulr. Pour vérifier un nouveau type de document, faites la demande via votre accès **Support**.
+:::
 
-### Analyse de sentiment
+## Ajouter un agent à un module Document
 
-Pour les champs texte libre :
+1. Ouvrez la campagne dans l'**éditeur** (onglet **Modifier**).
+2. Cliquez sur le module **Document** concerné : ses réglages s'ouvrent dans le panneau de droite.
+3. Dans la partie **Agents IA**, choisissez l'agent à utiliser.
+4. Activez **Peut mettre à jour le statut** si vous voulez que le verdict de l'IA valide ou refuse le champ automatiquement (voir ci-dessous).
+5. Publiez la mise à jour de la campagne.
 
-- Détection du ton (positif, neutre, négatif)
-- Identification des points de satisfaction
-- Alertes sur les commentaires négatifs
+![Agent IA sur un module Document](/screenshots/ai-agent-module-fr.png)
 
-### Extraction d'entités
+## Le résultat sur la réponse
 
-Identification automatique :
+Sur la fiche de la réponse, le champ affiche un badge **IA** avec le verdict de l'agent :
 
-- Noms de personnes
-- Entreprises mentionnées
-- Dates et montants
-- Lieux géographiques
+| Verdict | Signification |
+|---------|---------------|
+| **En cours de vérification** | Le document vient d'être déposé, l'analyse est en cours. |
+| **Vérifié** | Le document correspond à ce qui est attendu. |
+| **Incorrect** | Un élément manque ou ne correspond pas (mauvais document, nom différent, information absente...). |
 
-### Catégorisation
+Avec l'option **Peut mettre à jour le statut** :
+- un document **Vérifié** passe le champ en **Validé** ;
+- un document **Incorrect** passe le champ en **Rejeté**.
 
-Classification automatique des réponses :
+Sans cette option, le verdict reste une simple indication : c'est vous qui validez ou refusez le champ.
 
-- Par thématique
-- Par urgence
-- Par type de demande
+![Verdict de l'agent IA sur un champ de la réponse](/screenshots/ai-agent-result-fr.png)
 
-## Utilisation
+## Bon à savoir
 
-### Sur une réponse
-
-1. Ouvrez le détail d'une réponse
-2. Cliquez sur **Analyser avec l'IA**
-3. L'analyse s'affiche dans le panneau latéral
-
-### En masse
-
-Pour analyser plusieurs réponses :
-
-1. Sélectionnez les réponses dans la liste
-2. **Actions** > **Analyse IA**
-3. Un rapport consolidé est généré
-
-## Résumé intelligent
-
-### Ce qui est analysé
-
-L'IA parcourt tous les champs de la réponse et extrait :
-
-- Les informations d'identification
-- Les demandes exprimées
-- Les points d'attention
-- Les données chiffrées importantes
-
-### Format du résumé
-
-```
-📋 Résumé de la réponse #REF-2024-001
-
-Demandeur : Jean Dupont, Entreprise ABC
-Type : Demande de devis
-Montant estimé : 15 000 €
-
-Points clés :
-• Projet de refonte du site web
-• Délai souhaité : 3 mois
-• Budget validé par la direction
-
-⚠️ Attention :
-• Demande urgente mentionnée
-• Client existant (historique détecté)
-```
-
-## Analyse de fichiers
-
-### Documents PDF
-
-L'IA peut analyser les PDF uploadés :
-
-- Extraction du texte
-- Résumé du contenu
-- Vérification de conformité
-
-### Images
-
-Pour les photos et scans :
-
-- OCR (reconnaissance de texte)
-- Détection du type de document
-- Extraction des informations clés
-
-## Suggestions d'actions
-
-Basées sur l'analyse, l'IA peut suggérer :
-
-| Situation détectée | Suggestion |
-|-------------------|------------|
-| Demande urgente | Priorité haute recommandée |
-| Montant élevé | Escalade vers direction |
-| Information manquante | Demande de compléments |
-| Client mécontent | Appel téléphonique suggéré |
-
-## Configuration
-
-### Activer l'analyse IA
-
-1. **Paramètres** > **Intelligence artificielle**
-2. Activez les fonctionnalités souhaitées
-
-### Options disponibles
-
-| Option | Description |
-|--------|-------------|
-| **Résumé automatique** | Génère un résumé à chaque nouvelle réponse |
-| **Analyse de sentiment** | Active la détection de sentiment |
-| **Extraction d'entités** | Identifie automatiquement les entités |
-| **Suggestions** | Propose des actions recommandées |
-
-### Analyse automatique vs manuelle
-
-- **Automatique** : Analyse déclenchée à chaque soumission
-- **Manuelle** : Analyse à la demande uniquement
-
-## Intégration workflows
-
-Utilisez l'analyse IA dans vos workflows :
-
-```
-[Nouvelle réponse]
-    ↓
-[Analyse IA]
-    ↓
-[Si sentiment = négatif]
-    → [Alerte équipe support]
-    → [Priorité haute]
-[Si montant > 50000]
-    → [Notification direction]
-```
-
-## Confidentialité
-
-### Traitement des données
-
-- Analyse effectuée de manière sécurisée
-- Données non utilisées pour entraîner des modèles
-- Conformité RGPD
-
-### Limitations
-
-Pour protéger la vie privée :
-
-- Pas d'analyse des données sensibles (santé, religion...)
-- Option de désactivation par champ
-- Anonymisation possible
-
-## Limites actuelles
-
-- Analyse textuelle principalement
-- Langues supportées : français, anglais
-- Maximum 100 analyses automatiques/jour par campagne
-
-## Cas d'usage
-
-### Service client
-
-- Priorisation automatique des demandes
-- Détection des clients insatisfaits
-- Routage intelligent
-
-### Ressources humaines
-
-- Analyse des candidatures
-- Extraction des compétences
-- Scoring automatique
-
-### Commercial
-
-- Qualification des leads
-- Estimation du potentiel
-- Détection des opportunités
-
-## Prochaines étapes
-
-- [Workflows](/fr/features/workflows) - Automatiser avec l'IA
-- [Export](/fr/guide/export) - Exporter les analyses
-- [API & Webhooks](/fr/features/api-webhooks) - Intégrer l'IA
+- **Vous gardez la main** : même quand l'IA a mis à jour le statut, un administrateur peut toujours le modifier.
+- **La vérification se lance à chaque dépôt** : si le client remplace son document, l'agent le revérifie.
+- **Les formats acceptés** sont ceux du module Document (par défaut PDF, PNG, JPG).
+- L'IA est une **aide à la vérification** : en cas de doute, ouvrez le document pour le contrôler vous-même.

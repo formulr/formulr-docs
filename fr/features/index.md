@@ -35,6 +35,21 @@ Intégrez Yousign pour des signatures électroniques légales directement dans v
 ### [Génération automatique](/fr/features/document-generation)
 Générez automatiquement des PDF à partir des réponses collectées.
 
+### [Yousign](/fr/features/yousign)
+Signature électronique certifiée eIDAS.
+
+</div>
+
+## Intelligence artificielle
+
+<div class="features-grid">
+
+### [Agents IA sur les documents](/fr/features/ai-analysis)
+Faites vérifier automatiquement chaque document déposé (pièce d'identité, KBIS, justificatif de domicile).
+
+### [Analyse du dossier par l'IA](/fr/features/ai-dossier-analysis)
+Faites analyser chaque dossier complet selon vos règles : score, points d'attention et recommandation.
+
 </div>
 
 ## Multi-langue
@@ -62,9 +77,6 @@ Configurez des emails automatiques à chaque étape du processus.
 ### [Relances automatiques](/fr/features/reminders)
 Programmez des rappels pour les formulaires non complétés.
 
-### [Analyse IA](/fr/features/ai-analysis)
-Utilisez l'IA pour analyser et résumer les réponses collectées.
-
 </div>
 
 ## Intégrations
@@ -77,14 +89,14 @@ Intégrez les formulaires directement dans votre application via des URLs signé
 ### [API & Webhooks](/fr/features/api-webhooks)
 Intégrez Formulr à vos outils existants via notre API REST et les webhooks.
 
-### [Yousign](/fr/features/yousign)
-Signature électronique certifiée eIDAS.
-
 ### [Stripe](/fr/features/stripe)
 Collectez des paiements directement dans vos formulaires.
 
 ### [Connecteur Claude & MCP](/fr/features/mcp)
 Créez des formulaires et traitez vos réponses depuis Claude ou tout client MCP.
+
+### [Google Drive](/fr/features/google-drive)
+Créez vos documents de travail dans votre Google Drive, depuis chaque réponse.
 
 </div>
 

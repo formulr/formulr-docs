@@ -1,203 +1,57 @@
 ---
-title: AI Analysis
-description: Leverage artificial intelligence to analyze your responses and extract insights.
+title: AI agents on documents
+description: Have AI automatically check each document uploaded by your clients (identity document, company registration, proof of address).
 ---
 
-# AI Analysis
+# AI agents on documents
 
-Formulr integrates artificial intelligence features to help you analyze and leverage your collected data.
+An **AI agent** plugs into a **Document** module of your form. As soon as the client uploads a file, the agent reads it and checks that it matches what is expected: the right type of document, the required information, consistency with the form answers. The result shows directly on the field, in the response.
 
-## Features
+To analyze the **whole file** (all answers and all documents together), see [Dossier analysis by AI](./ai-dossier-analysis).
 
-### Automatic Summary
+## Available agents
 
-AI generates a concise summary of each response:
+| Agent | What it checks |
+|-------|----------------|
+| **Identity document** | Official identity document (ID card, passport, driving licence): last name, first name, document number, date of birth, expiry date, issuing country. The last name and first name must match the ones entered in the form (regardless of case, order and accents). |
+| **KBIS** | French company registration extract (Kbis). |
+| **Proof of address** | Proof of address. |
 
-- Extracted key points
-- Highlighted important information
-- Synthesis of entered data
+::: info Another type of document?
+Agents are provided by Formulr. To check a new type of document, request it through your **Support** access.
+:::
 
-### Sentiment Analysis
+## Add an agent to a Document module
 
-For free text fields:
+1. Open the campaign in the **editor** (**Edit** tab).
+2. Click the **Document** module: its settings open in the right panel.
+3. In the **AI Agents** section, choose the agent to use.
+4. Turn on **Can update status** if you want the AI verdict to approve or reject the field automatically (see below).
+5. Publish the campaign update.
 
-- Tone detection (positive, neutral, negative)
-- Identification of satisfaction points
-- Alerts on negative comments
+![AI agent on a Document module](/screenshots/ai-agent-module-en.png)
 
-### Entity Extraction
+## The result on the response
 
-Automatic identification:
+In the response, the field shows an **AI** badge with the agent's verdict:
 
-- People's names
-- Mentioned companies
-- Dates and amounts
-- Geographic locations
+| Verdict | Meaning |
+|---------|---------|
+| **Processing** | The document has just been uploaded, the check is running. |
+| **Verified** | The document matches what is expected. |
+| **Incorrect** | Something is missing or does not match (wrong document, different name, missing information...). |
 
-### Categorization
+With the **Can update status** option:
+- a **Verified** document sets the field to **Approved**;
+- an **Incorrect** document sets the field to **Rejected**.
 
-Automatic response classification:
+Without this option, the verdict is only an indication: you approve or reject the field yourself.
 
-- By theme
-- By urgency
-- By request type
+![AI agent verdict on a response field](/screenshots/ai-agent-result-en.png)
 
-## Usage
+## Good to know
 
-### On a Response
-
-1. Open the response details
-2. Click **Analyze with AI**
-3. The analysis displays in the side panel
-
-### Bulk
-
-To analyze multiple responses:
-
-1. Select responses in the list
-2. **Actions** > **AI Analysis**
-3. A consolidated report is generated
-
-## Smart Summary
-
-### What is Analyzed
-
-AI reviews all response fields and extracts:
-
-- Identification information
-- Expressed requests
-- Points of attention
-- Important numerical data
-
-### Summary Format
-
-```
-Response Summary #REF-2024-001
-
-Requester: John Doe, ABC Company
-Type: Quote request
-Estimated amount: $15,000
-
-Key points:
-• Website redesign project
-• Desired timeline: 3 months
-• Budget validated by management
-
-Attention:
-• Urgent request mentioned
-• Existing client (history detected)
-```
-
-## File Analysis
-
-### PDF Documents
-
-AI can analyze uploaded PDFs:
-
-- Text extraction
-- Content summary
-- Compliance verification
-
-### Images
-
-For photos and scans:
-
-- OCR (text recognition)
-- Document type detection
-- Key information extraction
-
-## Action Suggestions
-
-Based on analysis, AI can suggest:
-
-| Detected Situation | Suggestion |
-|-------------------|-----------|
-| Urgent request | High priority recommended |
-| High amount | Escalation to management |
-| Missing information | Request additional information |
-| Unhappy customer | Phone call suggested |
-
-## Configuration
-
-### Enable AI Analysis
-
-1. **Settings** > **Artificial Intelligence**
-2. Enable desired features
-
-### Available Options
-
-| Option | Description |
-|--------|-------------|
-| **Automatic summary** | Generates summary for each new response |
-| **Sentiment analysis** | Enables sentiment detection |
-| **Entity extraction** | Automatically identifies entities |
-| **Suggestions** | Proposes recommended actions |
-
-### Automatic vs Manual Analysis
-
-- **Automatic**: Analysis triggered on each submission
-- **Manual**: Analysis on demand only
-
-## Workflow Integration
-
-Use AI analysis in your workflows:
-
-```
-[New response]
-    ↓
-[AI Analysis]
-    ↓
-[If sentiment = negative]
-    → [Alert support team]
-    → [High priority]
-[If amount > 50000]
-    → [Notify management]
-```
-
-## Privacy
-
-### Data Processing
-
-- Analysis performed securely
-- Data not used to train models
-- GDPR compliant
-
-### Limitations
-
-To protect privacy:
-
-- No analysis of sensitive data (health, religion...)
-- Option to disable per field
-- Anonymization possible
-
-## Current Limitations
-
-- Primarily text analysis
-- Supported languages: French, English
-- Maximum 100 automatic analyses/day per campaign
-
-## Use Cases
-
-### Customer Service
-
-- Automatic request prioritization
-- Detection of dissatisfied customers
-- Smart routing
-
-### Human Resources
-
-- Application analysis
-- Skills extraction
-- Automatic scoring
-
-### Sales
-
-- Lead qualification
-- Potential estimation
-- Opportunity detection
-
-## Next Steps
-
-- [Workflows](/features/workflows) - Automate with AI
-- [Export](/guide/export) - Export analyses
-- [API & Webhooks](/features/api-webhooks) - Integrate AI
+- **You stay in control**: even when the AI has updated the status, an administrator can always change it.
+- **The check runs on each upload**: if the client replaces their document, the agent checks it again.
+- **Accepted formats** are the ones of the Document module (PDF, PNG, JPG by default).
+- AI is a **verification aid**: when in doubt, open the document and check it yourself.

@@ -89,6 +89,14 @@ export default defineConfig({
                 { text: 'PDF Templates', link: '/features/pdf-templates' },
                 { text: 'Electronic Signature', link: '/features/electronic-signature' },
                 { text: 'Automatic Generation', link: '/features/document-generation' },
+                { text: 'Yousign', link: '/features/yousign' },
+              ],
+            },
+            {
+              text: 'Artificial Intelligence',
+              items: [
+                { text: 'AI agents on documents', link: '/features/ai-analysis' },
+                { text: 'Dossier analysis by AI', link: '/features/ai-dossier-analysis' },
               ],
             },
             {
@@ -104,7 +112,6 @@ export default defineConfig({
                 { text: 'Workflows', link: '/features/workflows' },
                 { text: 'Notifications', link: '/features/notifications' },
                 { text: 'Automatic Reminders', link: '/features/reminders' },
-                { text: 'AI Analysis', link: '/features/ai-analysis' },
               ],
             },
             {
@@ -112,7 +119,6 @@ export default defineConfig({
               items: [
                 { text: 'Embed & Integration', link: '/features/embed-integration' },
                 { text: 'API & Webhooks', link: '/features/api-webhooks' },
-                { text: 'Yousign', link: '/features/yousign' },
                 { text: 'Stripe', link: '/features/stripe' },
                 { text: 'Claude & MCP Connector', link: '/features/mcp' },
                 { text: 'Google Drive', link: '/features/google-drive' },
@@ -217,6 +223,14 @@ export default defineConfig({
                 { text: 'Templates PDF', link: '/fr/features/pdf-templates' },
                 { text: 'Signature électronique', link: '/fr/features/electronic-signature' },
                 { text: 'Génération automatique', link: '/fr/features/document-generation' },
+                { text: 'Yousign', link: '/fr/features/yousign' },
+              ],
+            },
+            {
+              text: 'Intelligence artificielle',
+              items: [
+                { text: 'Agents IA sur les documents', link: '/fr/features/ai-analysis' },
+                { text: 'Analyse du dossier par l\'IA', link: '/fr/features/ai-dossier-analysis' },
               ],
             },
             {
@@ -232,7 +246,6 @@ export default defineConfig({
                 { text: 'Workflows', link: '/fr/features/workflows' },
                 { text: 'Notifications', link: '/fr/features/notifications' },
                 { text: 'Relances automatiques', link: '/fr/features/reminders' },
-                { text: 'Analyse IA', link: '/fr/features/ai-analysis' },
               ],
             },
             {
@@ -240,7 +253,6 @@ export default defineConfig({
               items: [
                 { text: 'Intégration & Embed', link: '/fr/features/embed-integration' },
                 { text: 'API & Webhooks', link: '/fr/features/api-webhooks' },
-                { text: 'Yousign', link: '/fr/features/yousign' },
                 { text: 'Stripe', link: '/fr/features/stripe' },
                 { text: 'Connecteur Claude & MCP', link: '/fr/features/mcp' },
                 { text: 'Google Drive', link: '/fr/features/google-drive' },
