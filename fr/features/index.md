@@ -30,13 +30,16 @@ Configurez des règles de validation personnalisées pour garantir la qualité d
 Créez des templates avec l'éditeur visuel ou en code Liquid pour générer des documents personnalisés.
 
 ### [Signature électronique](/fr/features/electronic-signature)
-Intégrez Yousign pour des signatures électroniques légales directement dans vos formulaires.
+Faites signer vos documents directement dans le formulaire.
+
+### [Formulr Trust](/fr/features/formulr-trust)
+La solution de signature électronique de Formulr, utilisée par défaut.
+
+### [Yousign](/fr/features/yousign)
+Signature via Yousign, sur demande.
 
 ### [Génération automatique](/fr/features/document-generation)
 Générez automatiquement des PDF à partir des réponses collectées.
-
-### [Yousign](/fr/features/yousign)
-Signature électronique certifiée eIDAS.
 
 </div>
 

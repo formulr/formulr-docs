@@ -122,7 +122,7 @@ THEN → Automatic reminder
 | Action | Description |
 |--------|-------------|
 | **Generate PDF** | Create document from template |
-| **Electronic signature** | Send for signature via Yousign |
+| **Electronic signature** | Send for signature |
 
 ### Management
 

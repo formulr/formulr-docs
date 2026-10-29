@@ -46,7 +46,7 @@ For unsigned documents:
 
 - Automatic reminder after X days
 - Configurable per document template
-- Integrated with Yousign
+- Integrated with electronic signature
 
 ## Configuration
 

@@ -30,13 +30,16 @@ Configure custom validation rules to ensure data quality.
 Create templates with the visual editor or Liquid code to generate personalized documents.
 
 ### [Electronic Signature](/features/electronic-signature)
-Integrate Yousign for legal electronic signatures directly in your forms.
+Have your documents signed directly in the form.
+
+### [Formulr Trust](/features/formulr-trust)
+Formulr's electronic signature solution, used by default.
+
+### [Yousign](/features/yousign)
+Signing with Yousign, on request.
 
 ### [Automatic Generation](/features/document-generation)
 Automatically generate PDFs from collected responses.
-
-### [Yousign](/features/yousign)
-eIDAS certified electronic signature.
 
 </div>
 

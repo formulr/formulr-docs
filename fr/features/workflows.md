@@ -122,7 +122,7 @@ ALORS → Relance automatique
 | Action | Description |
 |--------|-------------|
 | **Générer PDF** | Créer un document depuis un template |
-| **Signature électronique** | Envoyer pour signature via Yousign |
+| **Signature électronique** | Envoyer pour signature |
 
 ### Gestion
 

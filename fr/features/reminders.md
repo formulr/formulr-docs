@@ -46,7 +46,7 @@ Pour les documents non signés :
 
 - Relance automatique après X jours
 - Configurable par template de document
-- Intégré avec Yousign
+- Intégré à la signature électronique
 
 ## Configuration
 

@@ -87,9 +87,15 @@ export default defineConfig({
               text: 'Documents',
               items: [
                 { text: 'PDF Templates', link: '/features/pdf-templates' },
-                { text: 'Electronic Signature', link: '/features/electronic-signature' },
+                {
+                  text: 'Electronic Signature',
+                  link: '/features/electronic-signature',
+                  items: [
+                    { text: 'Formulr Trust', link: '/features/formulr-trust' },
+                    { text: 'Yousign (on request)', link: '/features/yousign' },
+                  ],
+                },
                 { text: 'Automatic Generation', link: '/features/document-generation' },
-                { text: 'Yousign', link: '/features/yousign' },
               ],
             },
             {
@@ -221,9 +227,15 @@ export default defineConfig({
               text: 'Documents',
               items: [
                 { text: 'Templates PDF', link: '/fr/features/pdf-templates' },
-                { text: 'Signature électronique', link: '/fr/features/electronic-signature' },
+                {
+                  text: 'Signature électronique',
+                  link: '/fr/features/electronic-signature',
+                  items: [
+                    { text: 'Formulr Trust', link: '/fr/features/formulr-trust' },
+                    { text: 'Yousign (sur demande)', link: '/fr/features/yousign' },
+                  ],
+                },
                 { text: 'Génération automatique', link: '/fr/features/document-generation' },
-                { text: 'Yousign', link: '/fr/features/yousign' },
               ],
             },
             {

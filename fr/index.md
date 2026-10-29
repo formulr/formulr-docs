@@ -29,7 +29,7 @@ features:
     link: /fr/features/pdf-templates
   - icon: ✍️
     title: Signature électronique
-    details: Intégrez la signature électronique Yousign directement dans vos formulaires pour des processus 100% dématérialisés.
+    details: Faites signer vos documents directement dans vos formulaires pour des processus 100% dématérialisés.
     link: /fr/features/electronic-signature
   - icon: 🌍
     title: Multi-langue

@@ -29,7 +29,7 @@ features:
     link: /features/pdf-templates
   - icon: ✍️
     title: Electronic Signature
-    details: Integrate Yousign electronic signature directly into your forms for 100% paperless processes.
+    details: Have your documents signed directly in your forms for 100% paperless processes.
     link: /features/electronic-signature
   - icon: 🌍
     title: Multi-language
