@@ -69,6 +69,7 @@ export default defineConfig({
               items: [
                 { text: 'Overview', link: '/guide/responses' },
                 { text: 'Workflow and Statuses', link: '/guide/workflow' },
+                { text: 'Attachments (annexes)', link: '/guide/annexes' },
                 { text: 'Data Export', link: '/guide/export' },
               ],
             },
@@ -211,6 +212,7 @@ export default defineConfig({
               items: [
                 { text: 'Vue d\'ensemble', link: '/fr/guide/responses' },
                 { text: 'Workflow et statuts', link: '/fr/guide/workflow' },
+                { text: 'Les annexes', link: '/fr/guide/annexes' },
                 { text: 'Export des données', link: '/fr/guide/export' },
               ],
             },
