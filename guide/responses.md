@@ -63,7 +63,7 @@ Click a dossier to open it.
 The decision can be made at three levels, from the finest to the broadest.
 
 ::: warning Client notification
-The client receives a confirmation email **only when the whole dossier is validated**. Validating individual modules or sections triggers no notification.
+Validating or rejecting individual modules or sections triggers no notification. The client receives an email only when the status of the whole dossier changes (validated, rejected or put back to "Création"). See the status table in [Workflow and statuses](/guide/workflow#dossier-statuses).
 :::
 
 1. **Module level:** at the top right of each module, change its status individually. The statuses offered are "Rejected", "Pending" and "To validate" (editable by the client), as well as "Validated" and "To validate (locked)" (locked).
@@ -77,6 +77,8 @@ The client receives a confirmation email **only when the whole dossier is valida
 3. **Dossier level:** at the top right of the dossier, click the small arrow next to "Validate the response" to validate or reject the entire dossier.
 
    ![Global actions on the dossier](/screenshots/responses/action-dossier-level.png)
+
+To know which action to choose depending on the dossier status (validate, reject, reopen), see [Which action to take depending on the situation](/guide/workflow#which-action-to-take-depending-on-the-situation). To ask again for a document, see [Annexes](/guide/annexes).
 
 ## Follow the progress of a multi-step dossier
 
@@ -92,7 +94,23 @@ The step you are viewing is underlined. If it differs from the current step, a b
 
 ![Step tracking of a dossier](/screenshots/responses/multi-step-progress.png)
 
-## Step actions and global actions
+## Multi-step forms: moving the client from one step to the next
+
+A step is a human checkpoint: the client fills in a step, the admin validates it, and the next step then opens for the client.
+
+1. **Step 1, the client fills in** (Création): they enter data and submit.
+2. **Step 1, the admin checks** (À valider): the client sees the end screen.
+3. **Step 2**: the admin clicks "Valider l'étape" (Validate the step), and the dossier goes back to Création on step 2.
+4. **Last step, closing**: the admin clicks "Valider la réponse" (Validate the response), and the dossier is Validé.
+
+| Situation | Admin action | Effect | What the client sees |
+|-----------|--------------|--------|----------------------|
+| Step N submitted and correct, not the last one | "Valider l'étape" | Moves to step N+1, status put back to Création | The next step opens. "Step updated" email with the dossier link |
+| Step N submitted, some modules are still to validate | "Valider l'étape" and tick "Valider également les N module(s) en attente" (also validate the N pending module(s)) | Rejected modules are not changed by this action | Same |
+| Step N submitted but needs fixing | Reject the fields, then "Réviser la réponse" | Stays on step N, in Création | Fixing step N, with the red banner |
+| A step was validated too quickly, the previous step must be fixed | "Annuler la validation de l'étape" (Cancel the step validation) | Back to step N-1, in Création | The client returns to the previous step, their answers are kept |
+| Last step submitted and correct | "Valider la réponse" | Dossier validated | Dossier closed |
+| The admin views a past step | "Charger l'étape en cours" (Load the current step) | No status action is possible on a past step | Nothing changes |
 
 The menu next to the validation button separates two families of actions.
 
@@ -106,9 +124,17 @@ They validate the current step or cancel its validation to go back to the previo
 
 They apply to the whole dossier, not to a particular step:
 
-- **Revise the response:** reopen an already validated dossier so it can be edited (see [Annexes](/guide/annexes)).
+- **Revise the response:** reopen a dossier so it can be edited (see [Annexes](/guide/annexes)).
 - **Validate or reject the response:** approve or reject the whole dossier.
 - **Archive or delete:** remove the dossier from active responses, or delete it.
+
+For the general rule (the client can only edit their dossier in the Creation status), see [The rule to remember](/guide/workflow#the-rule-to-remember).
+
+## Assign a dossier to a collaborator
+
+Open the dossier, then select the collaborator you want to assign it to ("Assigné à" field, right column, "Organisation réponse client" section). Once the dossier is assigned, the collaborator and the campaign owner receive the notifications related to its follow-up, notably when it is created, when it is submitted, when messages sent by the client are received, and so on.
+
+![Assign a dossier to a collaborator](/screenshots/responses/assign-dossier.png)
 
 ## Take over a client dossier
 
@@ -120,7 +146,7 @@ You can complete or edit the information on the client's behalf. Click the penci
 
 ## Statuses and Workflow
 
-A dossier is open ("In progress") while the client fills it in, then closed ("To validate", "Validated" or "Rejected"). For the detail of each status and what the client sees, see [Workflow and statuses](/guide/workflow).
+A dossier is editable by the client while it is in "Création", then read-only ("To validate", "Validated" or "Rejected"). For the detail of each status and what the client sees, see [Workflow and statuses](/guide/workflow).
 
 ## Bulk Actions
 

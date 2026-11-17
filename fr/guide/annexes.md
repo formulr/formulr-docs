@@ -47,17 +47,13 @@ Rendez au moins un élément obligatoire. Sinon le client n'est pas alerté par 
 
 Tant que le dossier n'est pas rouvert, le client ne voit que la page de remerciement et ne peut pas compléter l'annexe.
 
-6. **Rouvrir le dossier :** cliquez sur la flèche à côté de « Valider la réponse », puis sur « Réviser la réponse ».
+6. **Rouvrir le dossier :** cliquez sur la flèche à côté de « Valider la réponse », puis sur « Réviser la réponse ». Le client recevra automatiquement un e-mail l'invitant à apporter des modifications à son dossier.
 
    ![Menu Réviser la réponse](/screenshots/annexes/a08.png)
 
    Le dossier repasse au statut « En création » : le client peut à nouveau y accéder.
 
    ![Statut En création](/screenshots/annexes/a09.png)
-
-7. **Prévenir le client :** menu ⋮ > « Envoyer un rappel », ou « Copier le lien d'accès client » pour le lui transmettre.
-
-   ![Menu Envoyer un rappel](/screenshots/annexes/a08b.png)
 
 ## Côté client : compléter l'annexe
 

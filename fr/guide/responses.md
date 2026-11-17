@@ -59,7 +59,7 @@ Cliquez sur un dossier pour l'ouvrir.
 La décision peut être prise à trois niveaux, du plus fin au plus global.
 
 ::: warning Notification du client
-Le client reçoit un e-mail de confirmation **uniquement lorsque l'ensemble du dossier est validé**. La validation individuelle des modules ou des sections ne déclenche aucune notification.
+La validation ou le refus individuel des modules ou des sections ne déclenche aucune notification. Le client reçoit un e-mail uniquement lorsque le statut de l'ensemble du dossier change (validé, refusé ou remis en « Création »). Voir le tableau des statuts dans [Workflow et statuts](/fr/guide/workflow#les-statuts-d-un-dossier).
 :::
 
 1. **Au niveau du module :** en haut à droite de chaque module, modifiez son statut individuellement. Les statuts proposés sont « Rejeté », « En attente » et « À valider » (modifiables par le client), ainsi que « Validé » et « À valider (verrouillé) » (verrouillés).
@@ -73,6 +73,8 @@ Le client reçoit un e-mail de confirmation **uniquement lorsque l'ensemble du d
 3. **Au niveau du dossier :** en haut à droite du dossier, cliquez sur la petite flèche à côté de « Valider la réponse » pour valider ou refuser l'intégralité du dossier.
 
    ![Actions globales sur le dossier](/screenshots/responses/action-dossier-level.png)
+
+Pour savoir quelle action choisir selon le statut du dossier (valider, refuser, rouvrir), voir [Les actions à faire selon la situation](/fr/guide/workflow#les-actions-a-faire-selon-la-situation). Pour redemander un document, voir [Les annexes](/fr/guide/annexes).
 
 ## Suivre la progression d'un dossier à plusieurs étapes
 
@@ -88,7 +90,23 @@ L'étape que vous consultez est soulignée. Si elle diffère de l'étape en cour
 
 ![Suivi des étapes d'un dossier](/screenshots/responses/multi-step-progress.png)
 
-## Actions de l'étape et actions globales
+## Formulaires en plusieurs étapes : faire avancer le client d'une étape à l'autre
+
+Une étape est un point de contrôle humain : le client remplit une étape, l'admin la valide, l'étape suivante s'ouvre alors au client.
+
+1. **Étape 1, le client remplit** (Création) : il saisit et soumet.
+2. **Étape 1, l'admin contrôle** (À valider) : le client voit l'écran de fin.
+3. **Étape 2** : l'admin clique sur « Valider l'étape », le dossier repasse en Création sur l'étape 2.
+4. **Dernière étape, clôture** : l'admin clique sur « Valider la réponse », le dossier est Validé.
+
+| Situation | Action admin | Effet | Ce que voit le client |
+|-----------|--------------|-------|-----------------------|
+| Étape N soumise et correcte, ce n'est pas la dernière | « Valider l'étape » | Passage à l'étape N+1, statut remis en Création | L'étape suivante s'ouvre. E-mail « Étape mise à jour » avec le lien du dossier |
+| Étape N soumise, des modules sont encore à valider | « Valider l'étape » et cocher « Valider également les N module(s) en attente » | Les modules refusés ne sont pas modifiés par cette action | Idem |
+| Étape N soumise mais à corriger | Refuser les champs, puis « Réviser la réponse » | On reste sur l'étape N, en Création | Correction de l'étape N, avec le bandeau rouge |
+| Une étape a été validée trop vite, l'étape précédente doit être corrigée | « Annuler la validation de l'étape » | Retour à l'étape N-1, en Création | Le client revient sur l'étape précédente, ses réponses sont conservées |
+| Dernière étape soumise et correcte | « Valider la réponse » | Dossier validé | Dossier clôturé |
+| L'admin consulte une étape passée | « Charger l'étape en cours » | Aucune action de statut n'est possible sur une étape passée | Rien ne change |
 
 Le menu à côté du bouton de validation sépare deux familles d'actions.
 
@@ -102,9 +120,17 @@ Elles valident l'étape en cours ou annulent sa validation pour revenir à l'ét
 
 Elles concernent l'ensemble du dossier, et non une étape en particulier :
 
-- **Réviser la réponse :** rouvrir un dossier déjà validé pour permettre sa modification (voir [Les annexes](/fr/guide/annexes)).
+- **Réviser la réponse :** rouvrir un dossier pour permettre sa modification (voir [Les annexes](/fr/guide/annexes)).
 - **Valider ou refuser la réponse :** approuver ou rejeter l'ensemble du dossier.
 - **Archiver ou supprimer :** retirer le dossier des réponses actives, ou le supprimer.
+
+Pour la règle générale (le client ne peut modifier son dossier qu'en statut Création), voir [La règle à retenir](/fr/guide/workflow#la-regle-a-retenir).
+
+## Assigner un dossier à un collaborateur
+
+Accédez au dossier concerné, puis sélectionnez le collaborateur auquel vous souhaitez l'assigner (champ « Assigné à », colonne de droite, rubrique « Organisation réponse client »). Une fois le dossier assigné, le collaborateur et le responsable de la campagne recevront les notifications liées à son suivi, notamment lors de sa création, de sa soumission, de la réception de messages envoyés par le client, etc.
+
+![Assigner un dossier à un collaborateur](/screenshots/responses/assign-dossier.png)
 
 ## Reprendre la main sur un dossier client
 
@@ -116,7 +142,7 @@ Vous pouvez compléter ou modifier les informations à la place du client. Cliqu
 
 ## Statuts et workflow
 
-Un dossier est ouvert (« En création ») tant que le client le remplit, puis fermé (« À valider », « Validé » ou « Refusé »). Pour le détail de chaque statut et ce que voit le client, voir [Workflow et statuts](/fr/guide/workflow).
+Un dossier est modifiable par le client tant qu'il est en « Création », puis en lecture seule (« À valider », « Validé » ou « Rejeté »). Pour le détail de chaque statut et ce que voit le client, voir [Workflow et statuts](/fr/guide/workflow).
 
 ## Actions en masse
 
