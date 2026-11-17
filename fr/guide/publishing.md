@@ -30,9 +30,9 @@ Ces points méritent attention mais ne bloquent pas :
 
 1. Vérifiez que votre campagne est prête
 2. Cliquez sur le bouton **"Publier"** en haut à droite
-3. La campagne est maintenant accessible
+3. La campagne est maintenant accessible via le lien de partage
 
-Le statut passe de "Brouillon" à "Publié".
+Le statut passe de "Brouillon" à "Publié", et le bouton devient **"Dépublier"**.
 
 ## États de publication
 
@@ -48,20 +48,20 @@ Vous pouvez modifier une campagne après publication :
 
 1. Effectuez vos modifications dans l'éditeur
 2. Le statut passe à "Modifications non publiées"
-3. Cliquez sur **"Publier la mise à jour"**
+3. **Republiez** la campagne pour appliquer les changements
 
-::: warning Important
-Les modifications sont appliquées immédiatement après publication.
-Les réponses en cours verront les changements.
+::: warning Pensez à republier après chaque modification
+Tant que vous n'avez pas republié, le lien de partage affiche toujours la version précédente de la campagne.
 :::
+
+Une fois la mise à jour publiée, les modifications sont appliquées immédiatement : les réponses en cours verront les changements.
 
 ## Dépublier une campagne
 
 Pour retirer l'accès à une campagne :
 
-1. Cliquez sur le menu **"Publier"**
-2. Sélectionnez **"Dépublier"**
-3. La campagne redevient un brouillon
+1. Cliquez sur le bouton **"Dépublier"** en haut à droite
+2. La campagne redevient un brouillon
 
 Les utilisateurs ne pourront plus accéder au formulaire.
 Les réponses existantes sont conservées.

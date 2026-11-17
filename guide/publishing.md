@@ -30,9 +30,9 @@ These points deserve attention but don't block:
 
 1. Verify your campaign is ready
 2. Click the **"Publish"** button in the top right
-3. The campaign is now accessible
+3. The campaign is now accessible through the sharing link
 
-The status changes from "Draft" to "Published".
+The status changes from "Draft" to "Published", and the button becomes **"Unpublish"**.
 
 ## Publishing States
 
@@ -48,20 +48,20 @@ You can edit a campaign after publishing:
 
 1. Make your changes in the editor
 2. The status changes to "Unpublished changes"
-3. Click **"Publish update"**
+3. **Republish** the campaign to apply the changes
 
-::: warning Important
-Changes are applied immediately after publishing.
-Responses in progress will see the changes.
+::: warning Remember to republish after every change
+Until you republish, the sharing link keeps showing the previous version of the campaign.
 :::
+
+Once the update is published, changes are applied immediately: responses in progress will see them.
 
 ## Unpublishing a Campaign
 
 To remove access to a campaign:
 
-1. Click on the **"Publish"** menu
-2. Select **"Unpublish"**
-3. The campaign becomes a draft again
+1. Click the **"Unpublish"** button at the top right
+2. The campaign becomes a draft again
 
 Users will no longer be able to access the form.
 Existing responses are preserved.

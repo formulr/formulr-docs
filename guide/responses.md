@@ -1,91 +1,126 @@
 ---
 title: Managing Responses
-description: View, validate, and process your campaign responses.
+description: Find, validate and process your clients' dossiers.
 ---
 
 # Managing Responses
 
-The **Responses** tab of your campaign centralizes all received submissions.
+Each client submission is a **dossier**. This page explains where to find them, how to validate or reject them, how to follow their progress and how to step in on the client's behalf.
 
-## Overview
+::: info Screenshots
+The screenshots below show the interface in French.
+:::
 
-The response list displays:
+## Where to find client dossiers
+
+Three places give access to dossiers:
+
+1. **"Home" tab:** only the dossiers assigned to you. Counters summarize your activity (assigned dossiers, unread messages, in progress, pending, late). "See all" opens the full list.
+
+   ![Home: assigned dossiers](/screenshots/responses/home-assigned.png)
+
+2. **"Responses" tab:** all the dossiers of all your campaigns. View tabs (for example "All", "To validate", "In progress", "My responses") quickly filter the list.
+
+   ![Responses: all dossiers](/screenshots/responses/all-responses.png)
+
+3. **From a campaign:** select a campaign, then click its "Responses" tab to show only the related dossiers.
+
+   ![Responses of a campaign](/screenshots/responses/campaign-responses.png)
+
+The list shows, for each dossier:
 
 | Column | Description |
-|---------|-------------|
-| **Respondent** | Name or email of the user |
-| **Status** | Current state of the response |
-| **Date** | Creation date or last activity |
-| **Progress** | Completed steps |
-| **Owner** | Assigned team member |
+|--------|-------------|
+| **Client name** | Client name and last modification date |
+| **Campaigns** | Campaign concerned (global list only) |
+| **Progress** | Dossier progress, with a check mark when a step is validated |
+| **Deadline** | Dossier deadline, if one is set |
+| **Last login** | Date of the client's last activity |
+| **Status** | Dossier state (see [Dossier statuses](/guide/workflow#dossier-statuses)) |
 
 ## Filters and Search
 
-### Search
+In the "Responses" tab of a campaign:
 
-Use the search bar to find a response:
-- By name
-- By email
-- By content
+- **Search by name:** find a client by name.
+- **Status:** filter by dossier state.
+- **Tags:** filter by the tags set on dossiers.
+- **Assigned to me:** show only your dossiers.
+- **Export / Import / Create:** export the list, import dossiers or create one.
 
-### Status Filters
+## Dossier Detail
 
-Filter responses by their state:
-- **In progress**: user hasn't finished
-- **Completed**: all steps are filled
-- **Validated**: approved by your team
-- **Rejected**: non-compliant, needs correction
+Click a dossier to open it.
 
-## Response Detail
+- **Header:** client name, dossier status and action buttons ("Validate the response", or "Validate the step" on a multi-step dossier). The ⋮ menu groups the links, sending a reminder and downloading.
+- **Content:** the dossier sections, with their status and a progress bar. Use "Expand all" and the "Status" filter to navigate. Uploaded files and captured signatures are visible there.
+- **Right panel:** client information and the "Messages" button, campaign information (reminders), dossier organization (assignment, internal reference, tags).
+- **Below the content:** "Add an annex" (see [Annexes](/guide/annexes)), "Documents", "Custom fields" and "History" with internal comments.
+- **AI summary:** available if AI analysis is configured.
 
-Click on a response to see the detail:
+## Validate or reject a dossier
 
-### Header
+The decision can be made at three levels, from the finest to the broadest.
 
-- Respondent information
-- Current status with quick actions
-- Creation date and last modification
+::: warning Client notification
+The client receives a confirmation email **only when the whole dossier is validated**. Validating individual modules or sections triggers no notification.
+:::
 
-### Content
+1. **Module level:** at the top right of each module, change its status individually. The statuses offered are "Rejected", "Pending" and "To validate" (editable by the client), as well as "Validated" and "To validate (locked)" (locked).
 
-Complete view of entered data:
-- Organized by section
-- Uploaded files with preview
-- Captured signatures
+   ![Changing a module's status](/screenshots/responses/action-module-level.png)
 
-### Actions
+2. **Section level:** at the top right of each section, the "Actions" menu lets you validate or reject all of its content.
 
-- **Validate step**: approve the current step
-- **Reject**: request corrections
-- **Archive**: file the response
+   ![Actions on a section](/screenshots/responses/action-section-level.png)
 
-### Side Panel
+3. **Dossier level:** at the top right of the dossier, click the small arrow next to "Validate the response" to validate or reject the entire dossier.
 
-Additional information:
-- Action history
-- Internal notes
-- Generated documents
-- AI summary (if configured)
+   ![Global actions on the dossier](/screenshots/responses/action-dossier-level.png)
+
+## Follow the progress of a multi-step dossier
+
+When the campaign has several steps, the list of steps appears at the top of the dossier. Three icons show the progress of each one:
+
+| Icon | Meaning |
+|------|---------|
+| Check mark | Step validated |
+| Pencil | Step in progress |
+| Hourglass | Step to complete |
+
+The step you are viewing is underlined. If it differs from the current step, a banner says so and offers "Go to the current step".
+
+![Step tracking of a dossier](/screenshots/responses/multi-step-progress.png)
+
+## Step actions and global actions
+
+The menu next to the validation button separates two families of actions.
+
+![Step actions and global actions](/screenshots/responses/step-and-global-actions.png)
+
+**Step actions**
+
+They validate the current step or cancel its validation to go back to the previous step. For example, to go back to step 2 of a 3-step dossier, cancel the validation of step 3.
+
+**Global actions**
+
+They apply to the whole dossier, not to a particular step:
+
+- **Revise the response:** reopen an already validated dossier so it can be edited (see [Annexes](/guide/annexes)).
+- **Validate or reject the response:** approve or reject the whole dossier.
+- **Archive or delete:** remove the dossier from active responses, or delete it.
+
+## Take over a client dossier
+
+You can complete or edit the information on the client's behalf. Click the pencil icon next to the content to edit: a window opens with the section's fields, then click "Submit".
+
+![Dossier submitted by the client, with the edit pencils](/screenshots/responses/edit-on-behalf-list.png)
+
+![Editing a section on the client's behalf](/screenshots/responses/edit-on-behalf-modal.png)
 
 ## Statuses and Workflow
 
-### Response Lifecycle
-
-```
-Created → In Progress → Completed → Validated
-                       ↓
-                   Rejected → In Progress (corrections)
-```
-
-### Changing Status
-
-1. Open the response detail
-2. Click on the corresponding action button
-3. Add a comment if necessary
-
-::: tip Notifications
-The user is automatically notified of status changes.
-:::
+A dossier is open ("In progress") while the client fills it in, then closed ("To validate", "Validated" or "Rejected"). For the detail of each status and what the client sees, see [Workflow and statuses](/guide/workflow).
 
 ## Bulk Actions
 
@@ -140,6 +175,9 @@ From the response list:
 
 ## Next Steps
 
-- [Workflow and statuses](/guide/workflow) - Customize the lifecycle
+- [Workflow and statuses](/guide/workflow) - Understand a dossier's lifecycle
+- [Annexes](/guide/annexes) - Ask the client for additional information
+- [Reminders](/guide/reminders) - Remind clients
+- [Integrated messaging](/guide/messaging) - Talk inside the dossier
 - [Data export](/guide/export) - Retrieve your data
 - [PDF templates](/features/pdf-templates) - Generate documents

@@ -1,131 +1,88 @@
 ---
 title: Sections et modules
-description: Organisez votre formulaire avec des sections et ajoutez des champs avec les modules.
+description: Structurez votre campagne en étapes, pages et modules, puis configurez chaque module.
 ---
 
 # Sections et modules
 
-## Sections
+Une campagne se structure en **étapes**, **pages** (aussi appelées sections) et **modules** (les champs de saisie).
 
-Les sections permettent d'organiser visuellement votre formulaire en regroupant les champs par thème.
+![Éditeur de campagne : écran d'accueil, pages, étapes et bibliothèque de modules](/screenshots/campaign/editor-overview.png)
 
-### Ajouter une section
+## Structurer la campagne
 
-1. Cliquez sur **"Ajouter une section"** en bas de l'éditeur
-2. La section apparaît avec un nom par défaut
-3. Cliquez sur le nom pour le modifier
+### Titre interne
 
-### Actions sur une section
+Le nom de la campagne est un **titre interne** : il est visible uniquement par les utilisateurs de votre espace Formulr, pas par vos clients.
 
-Survolez une section pour voir les actions disponibles :
+### Écran d'accueil
 
-| Action | Description |
-|--------|-------------|
-| ✏️ **Renommer** | Modifier le titre de la section |
-| ⚙️ **Paramètres** | Configuration avancée |
-| 📋 **Dupliquer** | Copier la section avec ses modules |
-| 🗑️ **Supprimer** | Retirer la section |
+Dans le panneau de droite (onglet « Contenu »), la rubrique « Écran d'accueil » permet de personnaliser le **titre**, le **sous-titre** et la **description** visibles par vos clients.
 
-### Paramètres de section
+### Pages (sections)
 
-- **Titre** : affiché aux utilisateurs
-- **Description** : texte explicatif (optionnel)
-- **Collapsible** : permet de replier la section
+Chaque page constitue une section du formulaire. Elles sont listées dans le panneau « Pages » à gauche de l'éditeur.
 
-### Réorganiser les sections
+- **Ajouter une page :** cliquez sur le « + » du panneau « Pages ».
+- **Ajouter, déplacer ou renommer :** utilisez les trois points en haut à droite d'une page.
 
-- Glissez-déposez depuis le sommaire (panneau droit)
-- Ou utilisez les flèches de réorganisation
+### Étapes
+
+Cliquez sur le bouton « + » de la barre « Étapes » pour ajouter des étapes et structurer votre campagne en plusieurs étapes. Dans les paramètres d'une étape, l'option « Validation automatique » fait passer automatiquement à l'étape suivante quand l'utilisateur soumet.
+
+::: tip Quand utiliser plusieurs étapes ?
+Utilisez plusieurs étapes lorsqu'une validation par votre équipe est nécessaire entre deux phases. Voir le suivi côté dossier dans [Gérer les réponses](/fr/guide/responses#suivre-la-progression-d-un-dossier-a-plusieurs-etapes).
+:::
+
+### Publier
+
+Une fois la campagne configurée, cliquez sur « Publier » pour la rendre accessible via le lien de partage. Après chaque modification, pensez à **republier** la campagne (voir [Publication](/fr/guide/publishing)).
 
 ## Modules
 
-Les modules sont les champs de saisie de votre formulaire.
+Les modules sont les éléments de votre formulaire : champs de saisie, contenus informatifs, documents, choix...
 
 ### Ajouter un module
 
-1. Cliquez sur **"Ajouter un module"** dans une section
+1. Sur la page voulue, cliquez sur **« Ajouter un module »**
 2. La bibliothèque de modules s'ouvre
 3. Cliquez sur le type de module souhaité
-4. Le module est ajouté à la section
+4. Le module est ajouté à la page
+
+![Bibliothèque de modules](/screenshots/campaign/module-library.png)
 
 ### Types de modules disponibles
 
-#### Saisie de texte
+| Catégorie | Modules |
+|-----------|---------|
+| **Texte** | Numéro, Texte court, Texte long |
+| **Contenus informatifs** | Image, Liquid, WYSIWYG |
+| **Infos perso** | Informations de contact |
+| **Structure** | Consentement RGPD, Séparateur |
+| **Module document** | Document, Documents à télécharger, Signature électronique |
+| **Choix** | Case à cocher, Liste choix Multiple, Oui / Non |
+| **Date** | Date |
+| **Autre** | iFrame, Paiement |
 
-| Module | Usage |
-|--------|-------|
-| **Texte court** | Nom, prénom, ville... |
-| **Texte long** | Commentaires, descriptions |
-| **Email** | Avec validation automatique |
-| **Téléphone** | Avec formatage |
-| **Nombre** | Valeurs numériques |
-
-#### Dates et heures
-
-| Module | Usage |
-|--------|-------|
-| **Date** | Sélecteur de date |
-| **Date et heure** | Date avec horaire |
-| **Plage de dates** | Période du/au |
-
-#### Choix
-
-| Module | Usage |
-|--------|-------|
-| **Liste déroulante** | Choix unique dans une liste |
-| **Boutons radio** | Choix unique visible |
-| **Cases à cocher** | Choix multiples |
-| **Oui/Non** | Question binaire |
-
-#### Fichiers
-
-| Module | Usage |
-|--------|-------|
-| **Upload de fichier** | Document unique |
-| **Upload multiple** | Plusieurs documents |
-| **Photo** | Capture ou upload d'image |
-
-#### Spéciaux
-
-| Module | Usage |
-|--------|-------|
-| **Signature** | Zone de signature manuscrite |
-| **Tableau** | Données tabulaires |
-| **Informations de contact** | Bloc coordonnées complet |
-| **Adresse** | Avec autocomplétion |
-| **IBAN** | Avec validation |
+[Détail de chaque type de module →](/fr/features/modules)
 
 ### Configurer un module
 
-Cliquez sur l'icône ⚙️ d'un module pour accéder à ses paramètres :
+Cliquez sur un module pour afficher ses paramètres dans le panneau de droite. Chaque module dispose de ses propres options de configuration.
 
-#### Paramètres communs
+![Paramètres d'un module](/screenshots/campaign/module-settings.png)
 
-- **Libellé** : question ou instruction affichée
-- **Placeholder** : texte d'exemple dans le champ
-- **Texte d'aide** : indication supplémentaire
-- **Obligatoire** : le champ doit être rempli
-- **Identifiant** : nom technique pour les templates
+Pour un texte court, par exemple :
 
-#### Paramètres spécifiques
+- **Validation :** rendre le module **obligatoire** (« Requis ») ou **répétable** (« Répétable »), et définir ses règles de saisie (nombre minimum et maximum de caractères).
+- **Avancé :** l'« Identifiant du module » est un nom technique utilisé pour les intégrations et l'API.
+- **Conditions d'affichage :** « Ajouter une condition » permet d'afficher ou de masquer le module en fonction des réponses du client (voir [Logique conditionnelle](/fr/features/conditional-logic)).
+- **Supprimer le module :** le bouton en bas du panneau retire le module.
 
-Chaque type de module a ses propres options :
-- **Texte** : longueur min/max, expression régulière
-- **Nombre** : valeur min/max, décimales
-- **Fichier** : types acceptés, taille max
-- **Liste** : options disponibles
+### Réorganiser et dupliquer
 
-### Réorganiser les modules
-
-- Glissez-déposez les modules dans une section
-- Déplacez entre sections via le sommaire
-- L'ordre affiché est l'ordre de saisie
-
-### Dupliquer un module
-
-1. Survolez le module
-2. Cliquez sur **Dupliquer**
-3. Le module est copié avec sa configuration
+- Glissez-déposez les modules dans une page : l'ordre affiché est l'ordre de saisie.
+- Les icônes à droite du module sélectionné permettent de le dupliquer ou de le supprimer.
 
 ::: tip Astuce
 Dupliquez un module configuré pour gagner du temps, puis modifiez juste le libellé.
@@ -133,14 +90,15 @@ Dupliquez un module configuré pour gagner du temps, puis modifiez juste le libe
 
 ## Bonnes pratiques
 
-1. **Groupez logiquement** - Une section = un thème
+1. **Groupez logiquement** - Une page = un thème
 2. **Limitez les champs** - Ne demandez que l'essentiel
-3. **Utilisez les placeholders** - Donnez des exemples
-4. **Pensez mobile** - Testez sur petit écran
-5. **Ordonnez intelligemment** - Du plus simple au plus complexe
+3. **Pensez mobile** - Testez sur petit écran
+4. **Ordonnez intelligemment** - Du plus simple au plus complexe
+5. **Republiez** - Après chaque modification, publiez à nouveau pour que le lien de partage affiche la dernière version
 
 ## Prochaines étapes
 
 - [Types de modules détaillés](/fr/features/modules)
 - [Validation des champs](/fr/features/validation)
 - [Logique conditionnelle](/fr/features/conditional-logic)
+- [Publication](/fr/guide/publishing)

@@ -68,6 +68,8 @@ Activez les rappels pour les formulaires non complétés.
 - S'arrêtent quand le formulaire est complété
 - Respectent le nombre maximum défini
 
+Pour exclure un dossier ou envoyer une relance manuelle, voir [Relances](/fr/guide/reminders). Les e-mails envoyés (relance, validation, refus...) s'activent et se personnalisent dans la section « E-mails automatiques » des paramètres (voir [Compte et collaborateurs](/fr/guide/account#e-mails-automatiques-d-une-campagne)).
+
 ## Partage
 
 ### Lien de partage
