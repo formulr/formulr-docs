@@ -7,17 +7,38 @@ description: Personnalisez le cycle de vie de vos réponses avec les workflows.
 
 Les workflows vous permettent de définir le parcours de validation de vos réponses.
 
-## Statuts par défaut
+## Les statuts d'un dossier
 
-Chaque réponse passe par différents statuts :
+Un dossier est soit **ouvert**, soit **fermé**. Quatre statuts existent :
 
-| Statut | Description | Couleur |
-|--------|-------------|---------|
-| **En cours** | L'utilisateur remplit le formulaire | Bleu |
-| **Complété** | Toutes les étapes sont remplies | Jaune |
-| **Validé** | Approuvé par votre équipe | Vert |
-| **Refusé** | Non conforme, corrections demandées | Rouge |
-| **Archivé** | Traitement terminé | Gris |
+| Statut | Dossier | Description | Couleur |
+|--------|---------|-------------|---------|
+| **En création** | Ouvert | Le client peut compléter, modifier et signer son dossier | Bleu |
+| **À valider** | Fermé | Le client a soumis son dossier et attend votre décision. Il ne peut plus le modifier | Orange |
+| **Validé** | Fermé | Le dossier a été approuvé. Le client ne peut plus le modifier | Vert |
+| **Refusé** | Fermé | Le dossier a été refusé. Le client ne peut plus le modifier | Rouge |
+
+![Les quatre statuts dans la liste des réponses](/screenshots/responses/statuses.png)
+
+::: info Libellés dans l'interface
+Dans les listes, le statut « En création » s'affiche « Création » et le statut « Refusé » s'affiche « Rejeté ».
+:::
+
+::: warning À retenir
+Pour tous les dossiers fermés, le client ne peut plus modifier ses réponses et accède uniquement à l'écran de fin.
+:::
+
+Sur un dossier fermé, un bandeau rappelle la situation, par exemple « Le client a soumis son dossier et est en attente de votre décision » ou « Ce dossier a été validé. Le client ne peut plus y accéder ».
+
+![Dossier validé : bandeau et bouton Rouvrir](/screenshots/responses/validated-dossier.png)
+
+### Passer d'un statut à l'autre
+
+- **Valider ou refuser :** depuis un dossier « À valider », utilisez les actions globales (voir [Valider ou refuser un dossier](/fr/guide/responses#valider-ou-refuser-un-dossier)).
+- **Rouvrir un dossier fermé :** « Réviser la réponse » (action globale) remet le dossier « En création » pour que le client puisse le modifier. Le parcours complet, avec la demande de pièces complémentaires, est décrit dans [Les annexes](/fr/guide/annexes).
+- **Archiver :** l'archivage est une action sur le dossier, pas un statut.
+
+Le client est notifié par e-mail lorsque l'ensemble du dossier est validé. Les e-mails se personnalisent dans [Compte et collaborateurs](/fr/guide/account).
 
 ## Éditeur de workflow
 

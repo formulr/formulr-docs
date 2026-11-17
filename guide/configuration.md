@@ -68,6 +68,8 @@ Enable reminders for incomplete forms.
 - Stop when the form is completed
 - Respect the maximum number defined
 
+To exclude a dossier or send a manual reminder, see [Reminders](/guide/reminders). The emails sent (reminder, validation, rejection...) are enabled and customized in the "Automatic emails" section of the settings (see [Account and collaborators](/guide/account#automatic-emails-of-a-campaign)).
+
 ## Sharing
 
 ### Sharing Link

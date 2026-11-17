@@ -7,17 +7,42 @@ description: Customize the lifecycle of your responses with workflows.
 
 Workflows allow you to define the validation path of your responses.
 
-## Default Statuses
+## Dossier Statuses
 
-Each response goes through different statuses:
+A dossier is either **open** or **closed**. There are four statuses:
 
-| Status | Description | Color |
-|--------|-------------|---------|
-| **In Progress** | User is filling the form | Blue |
-| **Completed** | All steps are filled | Yellow |
-| **Validated** | Approved by your team | Green |
-| **Rejected** | Non-compliant, corrections requested | Red |
-| **Archived** | Processing finished | Gray |
+| Status | Dossier | Description | Color |
+|--------|---------|-------------|-------|
+| **In progress** | Open | The client can complete, edit and sign their dossier | Blue |
+| **To validate** | Closed | The client has submitted their dossier and awaits your decision. They can no longer edit it | Orange |
+| **Validated** | Closed | The dossier has been approved. The client can no longer edit it | Green |
+| **Rejected** | Closed | The dossier has been rejected. The client can no longer edit it | Red |
+
+::: info Screenshots
+The screenshots on this page show the interface in French.
+:::
+
+![The four statuses in the responses list](/screenshots/responses/statuses.png)
+
+::: info Labels in the interface
+In the French interface, "In progress" is labeled "En création" (shown as "Création" in lists).
+:::
+
+::: warning Remember
+For all closed dossiers, the client can no longer edit their answers and only reaches the end screen.
+:::
+
+On a closed dossier, a banner recalls the situation, for example "The client has submitted their dossier and is awaiting your decision" or "This dossier has been validated. The client can no longer access it".
+
+![Validated dossier: banner and Reopen button](/screenshots/responses/validated-dossier.png)
+
+### Moving between statuses
+
+- **Validate or reject:** from a "To validate" dossier, use the global actions (see [Validate or reject a dossier](/guide/responses#validate-or-reject-a-dossier)).
+- **Reopen a closed dossier:** "Revise the response" (global action) puts the dossier back to "In progress" so the client can edit it. The full process, including requesting additional documents, is described in [Annexes](/guide/annexes).
+- **Archive:** archiving is an action on the dossier, not a status.
+
+The client is notified by email when the whole dossier is validated. Emails can be customized in [Account and collaborators](/guide/account).
 
 ## Workflow Editor
 

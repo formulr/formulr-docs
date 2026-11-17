@@ -56,6 +56,12 @@ export default defineConfig({
               ],
             },
             {
+              text: 'Account',
+              items: [
+                { text: 'Account and Collaborators', link: '/guide/account' },
+              ],
+            },
+            {
               text: 'Create a Campaign',
               items: [
                 { text: 'New Campaign', link: '/guide/create-campaign' },
@@ -70,6 +76,8 @@ export default defineConfig({
                 { text: 'Overview', link: '/guide/responses' },
                 { text: 'Workflow and Statuses', link: '/guide/workflow' },
                 { text: 'Attachments (annexes)', link: '/guide/annexes' },
+                { text: 'Reminders', link: '/guide/reminders' },
+                { text: 'Integrated Messaging', link: '/guide/messaging' },
                 { text: 'Data Export', link: '/guide/export' },
               ],
             },
@@ -199,6 +207,12 @@ export default defineConfig({
               ],
             },
             {
+              text: 'Compte',
+              items: [
+                { text: 'Compte et collaborateurs', link: '/fr/guide/account' },
+              ],
+            },
+            {
               text: 'Créer une campagne',
               items: [
                 { text: 'Nouvelle campagne', link: '/fr/guide/create-campaign' },
@@ -213,6 +227,8 @@ export default defineConfig({
                 { text: 'Vue d\'ensemble', link: '/fr/guide/responses' },
                 { text: 'Workflow et statuts', link: '/fr/guide/workflow' },
                 { text: 'Les annexes', link: '/fr/guide/annexes' },
+                { text: 'Relances', link: '/fr/guide/reminders' },
+                { text: 'Messagerie intégrée', link: '/fr/guide/messaging' },
                 { text: 'Export des données', link: '/fr/guide/export' },
               ],
             },
