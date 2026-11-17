@@ -51,17 +51,13 @@ Make at least one element required. Otherwise the client is not alerted by the "
 
 Until the dossier is reopened, the client only sees the thank-you page and cannot complete the annex.
 
-6. **Reopen the dossier:** click the arrow next to "Validate the response", then "Revise the response".
+6. **Reopen the dossier:** click the arrow next to "Validate the response", then "Revise the response". The client automatically receives an email inviting them to make changes to their dossier.
 
    ![Revise the response menu](/screenshots/annexes/a08.png)
 
    The dossier goes back to the "In progress" status: the client can access it again.
 
    ![In progress status](/screenshots/annexes/a09.png)
-
-7. **Notify the client:** ⋮ menu > "Send a reminder", or "Copy the client access link" to send it yourself.
-
-   ![Send a reminder menu](/screenshots/annexes/a08b.png)
 
 ## Client side: completing the annex
 
